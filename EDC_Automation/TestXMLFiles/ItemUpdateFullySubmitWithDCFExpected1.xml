@@ -1,0 +1,147 @@
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Item Data Update" FileType="Transactional" Granularity="SingleSubject" FileOID="7c83be8f-c5b5-4563-83f3-1b6b0e84e457" CreationDateTime="2018-12-09T10:53:43.026417Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500">
+    <GlobalVariables>
+      <StudyName>Test4500</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="69080780-DD70-4A1C-88A0-5F8A83FB0B41">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Visit05">
+        <Annotation SeqNum="1">
+          <Comment>Visit05</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-09T10:53:41.77</DateTimeStamp>
+            <ReasonForChange>Submitted</ReasonForChange>
+            <SourceID>134</SourceID>
+          </AuditRecord>
+          <Annotation SeqNum="1">
+            <Comment>Additional Notes:</Comment>
+          </Annotation>
+          <ItemGroupData ItemGroupOID="Form1_S1" ItemGroupRepeatKey="1" TransactionType="Insert">
+            <ItemData ItemOID="Text" TransactionType="Insert" Value="Text">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T10:53:41.74</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>58</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Select" TransactionType="Insert" Value="1">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T10:53:41.743</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>59</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Radio" TransactionType="Insert" Value="1">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T10:53:41.75</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>60</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Integer" TransactionType="Insert" Value="5">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T10:53:41.757</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>61</SourceID>
+              </AuditRecord>
+              <dl:DCF OID="3" Description="Q4: Value is not within the expected range (10 to 1000)" Request="Please verify." Type="Auto" QueryOID="1204" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">23</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-09T10:53:41.883</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Draft</dl:ReasonForChange>
+                    <dl:SourceID>7</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+                <dl:QueryCategory Category="SYS_CODING">
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-09T10:53:41.937</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Initial Entry</dl:ReasonForChange>
+                    <dl:SourceID>1</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:QueryCategory>
+              </dl:DCF>
+              <dl:DCF OID="4" Description="The integer value on Form 1 matches the event number." Request="Change the integer value to be something other than the event number." Type="Auto" QueryOID="941" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">24</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-09T10:53:42.127</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Sent</dl:ReasonForChange>
+                    <dl:SourceID>8</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+				<dl:QueryCategory Category="SYS_ENDPOINT">
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-09T10:53:41.937</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Initial Entry</dl:ReasonForChange>
+                    <dl:SourceID>1</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:QueryCategory>
+              </dl:DCF>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Float" TransactionType="Insert" Value="16.66">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T10:53:41.76</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>62</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Date" TransactionType="Insert" Value="09/04/1992">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T10:53:41.767</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>63</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

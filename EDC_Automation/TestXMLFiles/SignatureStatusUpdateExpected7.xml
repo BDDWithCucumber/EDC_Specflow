@@ -1,0 +1,78 @@
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Signature Status" FileType="Transactional" Granularity="SingleSubject" FileOID="99fc13e6-0860-4d4b-a1f5-1efe6a7444d6" CreationDateTime="2018-12-18T11:17:34.6470214Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500_QUER">
+    <GlobalVariables>
+      <StudyName>Test4500_QUER</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500_QUER" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="E80CE6A0-5E8E-404C-8CBF-66228ACE8302">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Visit02">
+        <Annotation SeqNum="1">
+          <Comment>Visit02</Comment>
+        </Annotation>
+        <FormData FormOID="Form4">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-18T11:17:33.733</DateTimeStamp>
+            <ReasonForChange>PI Signature [ Ready ]</ReasonForChange>
+            <SourceID>86</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form5">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-18T11:17:33.737</DateTimeStamp>
+            <ReasonForChange>PI Signature [ Ready ]</ReasonForChange>
+            <SourceID>87</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form6">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-18T11:17:33.74</DateTimeStamp>
+            <ReasonForChange>PI Signature [ Ready ]</ReasonForChange>
+            <SourceID>88</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form2">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-18T11:17:33.75</DateTimeStamp>
+            <ReasonForChange>PI Signature [ Canceled ]</ReasonForChange>
+            <SourceID>89</SourceID>
+          </AuditRecord>
+        </FormData>
+      </StudyEventData>
+      <StudyEventData StudyEventOID="Visit03">
+        <Annotation SeqNum="1">
+          <Comment>Visit03</Comment>
+        </Annotation>
+        <FormData FormOID="DEMO">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-18T11:17:33.757</DateTimeStamp>
+            <ReasonForChange>PI Signature [ Canceled ]</ReasonForChange>
+            <SourceID>90</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="VITALS">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-18T11:17:33.76</DateTimeStamp>
+            <ReasonForChange>PI Signature [ Canceled ]</ReasonForChange>
+            <SourceID>91</SourceID>
+          </AuditRecord>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

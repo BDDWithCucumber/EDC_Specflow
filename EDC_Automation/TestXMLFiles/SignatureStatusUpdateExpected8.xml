@@ -1,0 +1,155 @@
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Item Data Update" FileType="Transactional" Granularity="SingleSubject" FileOID="05f09ac3-6dff-4cae-b7d6-95d8369cbe99" CreationDateTime="2018-12-18T11:58:40.1693747Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500_QUER">
+    <GlobalVariables>
+      <StudyName>Test4500_QUER</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500_QUER" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="E80CE6A0-5E8E-404C-8CBF-66228ACE8302">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Visit04">
+        <Annotation SeqNum="1">
+          <Comment>Visit04</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <ItemGroupData ItemGroupOID="Form1_S1" ItemGroupRepeatKey="1" TransactionType="Update">
+            <ItemData ItemOID="Text" TransactionType="Update" Value="">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2018-12-18T11:58:39.617</dl:DateTimeStamp>
+                  <dl:ReasonForChange>CRF [Reset]</dl:ReasonForChange>
+                  <dl:SourceID>67</dl:SourceID>
+                </dl:AuditRecord>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2018-12-18T11:58:39.513</dl:DateTimeStamp>
+                  <dl:ReasonForChange>Signature Action</dl:ReasonForChange>
+                  <dl:SourceID>61</dl:SourceID>
+                  <dl:AdditionalNotes>PI Signature [ Off ]</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Select" Value="X">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2018-12-18T11:58:39.623</dl:DateTimeStamp>
+                  <dl:ReasonForChange>CRF [Reset]</dl:ReasonForChange>
+                  <dl:SourceID>68</dl:SourceID>
+                </dl:AuditRecord>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2018-12-18T11:58:39.513</dl:DateTimeStamp>
+                  <dl:ReasonForChange>Signature Action</dl:ReasonForChange>
+                  <dl:SourceID>62</dl:SourceID>
+                  <dl:AdditionalNotes>PI Signature [ Off ]</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Radio" Value="X">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2018-12-18T11:58:39.627</dl:DateTimeStamp>
+                  <dl:ReasonForChange>CRF [Reset]</dl:ReasonForChange>
+                  <dl:SourceID>69</dl:SourceID>
+                </dl:AuditRecord>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2018-12-18T11:58:39.513</dl:DateTimeStamp>
+                  <dl:ReasonForChange>Signature Action</dl:ReasonForChange>
+                  <dl:SourceID>63</dl:SourceID>
+                  <dl:AdditionalNotes>PI Signature [ Off ]</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Integer" TransactionType="Update" Value="">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2018-12-18T11:58:39.63</dl:DateTimeStamp>
+                  <dl:ReasonForChange>CRF [Reset]</dl:ReasonForChange>
+                  <dl:SourceID>70</dl:SourceID>
+                </dl:AuditRecord>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2018-12-18T11:58:39.513</dl:DateTimeStamp>
+                  <dl:ReasonForChange>Signature Action</dl:ReasonForChange>
+                  <dl:SourceID>64</dl:SourceID>
+                  <dl:AdditionalNotes>PI Signature [ Off ]</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Float" TransactionType="Update" Value="">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2018-12-18T11:58:39.637</dl:DateTimeStamp>
+                  <dl:ReasonForChange>CRF [Reset]</dl:ReasonForChange>
+                  <dl:SourceID>71</dl:SourceID>
+                </dl:AuditRecord>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2018-12-18T11:58:39.513</dl:DateTimeStamp>
+                  <dl:ReasonForChange>Signature Action</dl:ReasonForChange>
+                  <dl:SourceID>65</dl:SourceID>
+                  <dl:AdditionalNotes>PI Signature [ Off ]</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Date" Value="">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2018-12-18T11:58:39.64</dl:DateTimeStamp>
+                  <dl:ReasonForChange>CRF [Reset]</dl:ReasonForChange>
+                  <dl:SourceID>72</dl:SourceID>
+                </dl:AuditRecord>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2018-12-18T11:58:39.513</dl:DateTimeStamp>
+                  <dl:ReasonForChange>Signature Action</dl:ReasonForChange>
+                  <dl:SourceID>66</dl:SourceID>
+                  <dl:AdditionalNotes>PI Signature [ Off ]</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <dl:AuditRecords>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2018-12-18T11:58:39.513</dl:DateTimeStamp>
+              <dl:ReasonForChange>PI Signature [ Off ]</dl:ReasonForChange>
+              <dl:SourceID>96</dl:SourceID>
+              <dl:AdditionalNotes>CRF [ Reset ]</dl:AdditionalNotes>
+            </dl:AuditRecord>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="testadmin" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2018-12-18T11:58:39.683</dl:DateTimeStamp>
+              <dl:ReasonForChange>CRF [ Reset ]</dl:ReasonForChange>
+              <dl:SourceID>97</dl:SourceID>
+              <dl:AdditionalNotes>Reset CRF Testing</dl:AdditionalNotes>
+            </dl:AuditRecord>
+          </dl:AuditRecords>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

@@ -1,0 +1,32 @@
+<ODM xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Description="Study Update" FileType="Transactional" Granularity="SingleSubject" FileOID="e5ef4075-3f12-4f85-bad6-4813f6d0fb28" CreationDateTime="2018-09-04T08:30:00.4688655Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test3210_Base">
+    <GlobalVariables>
+      <StudyName>Test3210_Base</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.3</StudyDescription>
+      <ProtocolName>20070215</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test3210_Base" MetaDataVersionOID="200702153.0">
+    <SubjectData SubjectKey="E97C5362-609F-4981-9D70-218039F22F26">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Visit03">
+        <FormData FormOID="VITALS">
+          <ItemGroupData ItemGroupOID="VITALS_S1" ItemGroupRepeatKey="1" TransactionType="Update">
+            <ItemData ItemOID="VSBMI" TransactionType="Update" Value="23">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="001-Site" />
+                <DateTimeStamp>2018-09-04T08:29:58.66</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>81</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

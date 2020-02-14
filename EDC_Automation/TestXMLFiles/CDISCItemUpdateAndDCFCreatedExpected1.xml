@@ -1,0 +1,186 @@
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Item Data Update" FileType="Transactional" Granularity="SingleSubject" FileOID="aebce3cf-ef39-47fe-b955-3ee49a23ef37" CreationDateTime="2018-12-09T13:18:26.625459Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500">
+    <GlobalVariables>
+      <StudyName>Test4500</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="72BC3B08-1701-45A3-AD42-9787C9D86786">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Common">
+        <Annotation SeqNum="1">
+          <Comment>Common</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-09T13:18:25.737</DateTimeStamp>
+            <ReasonForChange>Submitted</ReasonForChange>
+            <SourceID>18</SourceID>
+          </AuditRecord>
+          <Annotation SeqNum="1">
+            <Comment>Additional Notes:</Comment>
+          </Annotation>
+          <ItemGroupData ItemGroupOID="Form1_S1" ItemGroupRepeatKey="1" TransactionType="Insert">
+            <ItemData ItemOID="Text" TransactionType="Insert" Value="Text">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T13:18:25.627</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>4</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Select" TransactionType="Insert" Value="1">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T13:18:25.633</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>5</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Radio" TransactionType="Insert" Value="1">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T13:18:25.64</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>6</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Integer" TransactionType="Insert" Value="5">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T13:18:25.643</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>7</SourceID>
+              </AuditRecord>
+              <dl:DCF OID="1" Description="Q4: Value is not within the expected range (10 to 1000)" Request="Please verify." Type="Auto" QueryOID="1431" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">23</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-09T13:18:25.863</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Draft</dl:ReasonForChange>
+                    <dl:SourceID>1</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+                <dl:QueryCategory Category="SYS_CODING">
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-09T13:18:25.917</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Initial Entry</dl:ReasonForChange>
+                    <dl:SourceID>1</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:QueryCategory>
+              </dl:DCF>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Float" TransactionType="Insert" Value="11.11">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T13:18:25.65</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>8</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Date" TransactionType="Insert" Value="12/09/1992">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T13:18:25.653</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>9</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="Form1_T1" ItemGroupRepeatKey="1" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="testadmin" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2018-12-09T13:18:25.68</DateTimeStamp>
+              <ReasonForChange>Row # 1: Added</ReasonForChange>
+              <SourceID>17</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:</Comment>
+            </Annotation>
+            <ItemData ItemOID="T_Text1" TransactionType="Insert" Value="Drug">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T13:18:25.66</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>10</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="T_Text2" TransactionType="Insert" Value="Condition">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T13:18:25.663</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>11</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="T_S1Date" TransactionType="Insert" Value="12/09/1992">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T13:18:25.67</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>12</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="T_S2Date" TransactionType="Insert" Value="12/09/1992">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T13:18:25.673</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>13</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

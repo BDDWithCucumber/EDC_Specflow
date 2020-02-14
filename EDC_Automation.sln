@@ -1,0 +1,121 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDC_Automation", "EDC_Automation\EDC_Automation.csproj", "{73D6DEE8-6CBC-473F-83EA-7E8B991C9643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pages", "Pages\Pages.csproj", "{D9EBBFF7-6AB2-4DA6-B39D-5C7A2B509B33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{764ED9B4-966A-4170-A09E-09DBBBACC962}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework", "Framework\Framework.csproj", "{985B6EF8-78EC-40A5-95AF-524FEE9669B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{2215FC70-9ECA-4572-B01C-ACAF77860F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{7D440347-A1D3-4D53-8F0B-D0FCA377C480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reports", "Reports\Reports.csproj", "{7368EE52-2DA2-4F7F-BBC1-4C3965F1C598}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessProcesses", "BusinessProcesses\BusinessProcesses.csproj", "{4BCE2A74-023A-4DB0-B898-A24EC9262196}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBUtilities", "DBUtilities\DBUtilities.csproj", "{A492D35C-A0B6-40BB-BB4C-5B9B0AD9F4C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLUtilities", "XMLUtilities\XMLUtilities.csproj", "{AE33E213-269C-47AB-AB6B-D778E360A0EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIUtilities", "APIUtilities\APIUtilities.csproj", "{8DCE9102-5EEB-444B-9E15-EDFB990D42DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73D6DEE8-6CBC-473F-83EA-7E8B991C9643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73D6DEE8-6CBC-473F-83EA-7E8B991C9643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73D6DEE8-6CBC-473F-83EA-7E8B991C9643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73D6DEE8-6CBC-473F-83EA-7E8B991C9643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9EBBFF7-6AB2-4DA6-B39D-5C7A2B509B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9EBBFF7-6AB2-4DA6-B39D-5C7A2B509B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9EBBFF7-6AB2-4DA6-B39D-5C7A2B509B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9EBBFF7-6AB2-4DA6-B39D-5C7A2B509B33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{764ED9B4-966A-4170-A09E-09DBBBACC962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764ED9B4-966A-4170-A09E-09DBBBACC962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764ED9B4-966A-4170-A09E-09DBBBACC962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764ED9B4-966A-4170-A09E-09DBBBACC962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{985B6EF8-78EC-40A5-95AF-524FEE9669B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985B6EF8-78EC-40A5-95AF-524FEE9669B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985B6EF8-78EC-40A5-95AF-524FEE9669B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985B6EF8-78EC-40A5-95AF-524FEE9669B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2215FC70-9ECA-4572-B01C-ACAF77860F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2215FC70-9ECA-4572-B01C-ACAF77860F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2215FC70-9ECA-4572-B01C-ACAF77860F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2215FC70-9ECA-4572-B01C-ACAF77860F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D440347-A1D3-4D53-8F0B-D0FCA377C480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D440347-A1D3-4D53-8F0B-D0FCA377C480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D440347-A1D3-4D53-8F0B-D0FCA377C480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D440347-A1D3-4D53-8F0B-D0FCA377C480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7368EE52-2DA2-4F7F-BBC1-4C3965F1C598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7368EE52-2DA2-4F7F-BBC1-4C3965F1C598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7368EE52-2DA2-4F7F-BBC1-4C3965F1C598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7368EE52-2DA2-4F7F-BBC1-4C3965F1C598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BCE2A74-023A-4DB0-B898-A24EC9262196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCE2A74-023A-4DB0-B898-A24EC9262196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BCE2A74-023A-4DB0-B898-A24EC9262196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BCE2A74-023A-4DB0-B898-A24EC9262196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A492D35C-A0B6-40BB-BB4C-5B9B0AD9F4C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A492D35C-A0B6-40BB-BB4C-5B9B0AD9F4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A492D35C-A0B6-40BB-BB4C-5B9B0AD9F4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A492D35C-A0B6-40BB-BB4C-5B9B0AD9F4C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE33E213-269C-47AB-AB6B-D778E360A0EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE33E213-269C-47AB-AB6B-D778E360A0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE33E213-269C-47AB-AB6B-D778E360A0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE33E213-269C-47AB-AB6B-D778E360A0EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DCE9102-5EEB-444B-9E15-EDFB990D42DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DCE9102-5EEB-444B-9E15-EDFB990D42DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DCE9102-5EEB-444B-9E15-EDFB990D42DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DCE9102-5EEB-444B-9E15-EDFB990D42DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://irv-edctfs-901:8080/tfs/products
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EDC_Automation\\EDC_Automation.csproj
+		SccProjectName1 = EDC_Automation
+		SccLocalPath1 = EDC_Automation
+		SccProjectUniqueName2 = Pages\\Pages.csproj
+		SccProjectName2 = Pages
+		SccLocalPath2 = Pages
+		SccProjectUniqueName3 = Interfaces\\Interfaces.csproj
+		SccProjectName3 = Interfaces
+		SccLocalPath3 = Interfaces
+		SccProjectUniqueName4 = Framework\\Framework.csproj
+		SccProjectName4 = Framework
+		SccLocalPath4 = Framework
+		SccProjectUniqueName5 = Utilities\\Utilities.csproj
+		SccProjectName5 = Utilities
+		SccLocalPath5 = Utilities
+		SccProjectUniqueName6 = Common\\Common.csproj
+		SccProjectName6 = Common
+		SccLocalPath6 = Common
+		SccProjectUniqueName7 = Reports\\Reports.csproj
+		SccProjectName7 = Reports
+		SccLocalPath7 = Reports
+		SccProjectUniqueName8 = BusinessProcesses\\BusinessProcesses.csproj
+		SccProjectName8 = BusinessProcesses
+		SccLocalPath8 = BusinessProcesses
+		SccProjectUniqueName9 = DBUtilities\\DBUtilities.csproj
+		SccProjectName9 = DBUtilities
+		SccLocalPath9 = DBUtilities
+		SccProjectUniqueName10 = XMLUtilities\\XMLUtilities.csproj
+		SccProjectName10 = XMLUtilities
+		SccLocalPath10 = XMLUtilities
+		SccProjectUniqueName11 = APIUtilities\\APIUtilities.csproj
+		SccProjectName11 = APIUtilities
+		SccLocalPath11 = APIUtilities
+	EndGlobalSection
+EndGlobal

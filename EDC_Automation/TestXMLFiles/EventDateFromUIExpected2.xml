@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Visit Date" FileType="Transactional" Granularity="SingleSubject" FileOID="7778d1aa-c2ff-4bca-87dc-52951c3143e8" CreationDateTime="2018-12-18T11:46:15.8871675Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500">
+    <GlobalVariables>
+      <StudyName>Test4500</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="85397757-90EA-4C20-8A8D-6057C40022F4">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Screening" TransactionType="Update">
+        <AuditRecord>
+          <UserRef UserOID="testadmin" />
+          <LocationRef LocationOID="01-Site" />
+          <DateTimeStamp>2018-12-18T11:46:14.983</DateTimeStamp>
+          <ReasonForChange>DCF</ReasonForChange>
+          <SourceID>2</SourceID>
+        </AuditRecord>
+        <Annotation SeqNum="1">
+          <Comment>06/29/2018</Comment>
+        </Annotation>
+        <Annotation SeqNum="2">
+          <Comment>Additional Notes:Testing</Comment>
+        </Annotation>
+        <Annotation SeqNum="3">
+          <Comment>Screening</Comment>
+        </Annotation>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

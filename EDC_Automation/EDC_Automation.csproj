@@ -1,0 +1,1943 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\SpecRun.Runner.3.0.344\build\SpecRun.Runner.props" Condition="Exists('..\packages\SpecRun.Runner.3.0.344\build\SpecRun.Runner.props')" />
+  <Import Project="..\packages\Microsoft.NET.Test.Sdk.15.0.0\build\net45\Microsoft.Net.Test.Sdk.props" Condition="Exists('..\packages\Microsoft.NET.Test.Sdk.15.0.0\build\net45\Microsoft.Net.Test.Sdk.props')" />
+  <Import Project="..\packages\NUnit3TestAdapter.3.13.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.3.13.0\build\net35\NUnit3TestAdapter.props')" />
+  <Import Project="..\packages\NUnit.3.11.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.11.0\build\NUnit.props')" />
+  <Import Project="..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73D6DEE8-6CBC-473F-83EA-7E8B991C9643}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EDC_Automation</RootNamespace>
+    <AssemblyName>EDC_Automation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.8.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.8.1\lib\net45\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Autofac.Configuration, Version=4.0.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Configuration.4.0.1\lib\net45\Autofac.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentAssertions, Version=5.3.2.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentAssertions.5.3.2\lib\net45\FluentAssertions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FSharp.Core, Version=4.4.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Core.4.3.3\lib\net45\FSharp.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Holf.AllForOne, Version=1.0.0.27, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AllForOne.1.0.0.27\lib\Holf.AllForOne.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HttpMock, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HttpMock.2.3.0\lib\net45\HttpMock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Kayak, Version=0.7.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kayak.0.7.2\lib\Kayak.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=1.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.1.0.2\lib\netstandard1.1\Microsoft.Extensions.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=1.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.1.0.2\lib\netstandard1.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=1.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.1.0.1\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=5.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.5.4.0\lib\net461\Microsoft.IdentityModel.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.4.0\lib\net461\Microsoft.IdentityModel.Tokens.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.QualityTools.UnitTestFramework.Updated.15.0.26228\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.11.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.11.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Protractor, Version=0.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Protractor.0.11.0\lib\net40\Protractor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SpecRun.SpecFlowPlugin, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.2-4-0.1.8.5\lib\net45\SpecRun.SpecFlowPlugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.2.4.1\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TechTalk.SpecRun, Version=1.8.0.0, Culture=neutral, PublicKeyToken=d0fc5cc18b3b389b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.2-4-0.1.8.5\lib\net45\TechTalk.SpecRun.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TechTalk.SpecRun.Common, Version=1.8.0.0, Culture=neutral, PublicKeyToken=d0fc5cc18b3b389b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.2-4-0.1.8.5\lib\net45\TechTalk.SpecRun.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.abstractions.2.0.3\lib\net35\xunit.abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.2.0.3545, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.assert.2.2.0\lib\netstandard1.1\xunit.assert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.2.0.3545, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.core.2.2.0\lib\netstandard1.1\xunit.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\DataLabs\Autobuild\Autobuild_CodeItemAdd.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Autobuild_CodeItemAdd.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Autobuild\Autobuild_CodeItemDelete.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Autobuild_CodeItemDelete.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Autobuild\Autobuild_CodeItemDescriptionChange.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Autobuild_CodeItemDescriptionChange.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Autobuild\Autobuild_CodeItemReorder.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Autobuild_CodeItemReorder.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Autobuild\Autobuild_CodeItemValueChange.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Autobuild_CodeItemValueChange.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Autobuild\Autobuild_CodelistChange_Obselete.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Autobuild_CodelistChange_Obselete.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Autobuild\Autobuild_DCF.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Autobuild_DCF.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Autobuild\AutoBuilldFunctionalityEnhancements.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoBuilldFunctionalityEnhancements.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\CodelistGroups\Groups_ViewSaveUpdateOnCRF.feature.cs">
+      <DependentUpon>Groups_ViewSaveUpdateOnCRF.feature</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\F10746_DL_Labs_DemoFeedback.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>F10746_DL_Labs_DemoFeedback.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_Assign matching reference ranges to lab value on eCRF.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_Assign matching reference ranges to lab value on eCRF.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Duplicate_Labs_ressociate RR Values when Gender and Age changed[History].feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Duplicate_Labs_ressociate RR Values when Gender and Age changed[History].feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_DL_Display of Lab Form questions-Study Update-All changes_4.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_DL_Display of Lab Form questions-Study Update-All changes_4.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_DL_Display of Lab Form Questions-Study update-All Changes_5.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_DL_Display of Lab Form Questions-Study update-All Changes_5.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_US67399_DL_Lab_Form_changesfromSiteManagement.feature.cs">
+      <DependentUpon>Labs_US67399_DL_Lab_Form_changesfromSiteManagement.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_US67400_Ressociate RR Values when Gender and Age changed[History].feature.cs" />
+    <Compile Include="Features\DataLabs\Labs\Labs_US67409_DL_LabFormchangesfromMRRscreen..feature.cs">
+      <DependentUpon>Labs_US67409_DL_LabFormchangesfromMRRscreen..feature</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_US67412_DL_Display_of_Lab_Form_questions_Unlock_Patients.feature.cs">
+      <DependentUpon>Labs_US67412_DL_Display_of_Lab_Form_questions_Unlock_Patients.feature</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_US67445- Conversion factor shall be displayed based on From unit and to unit matching criteria.feature.cs">
+      <DependentUpon>Labs_US67445- Conversion factor shall be displayed based on From unit and to unit matching criteria.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_US67400-Ressociate RR Values when Gender and Age changed[History].feature.cs">
+      <DependentUpon>Labs_US67400-Ressociate RR Values when Gender and Age changed[History].feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_US65803_StudyupdatechangestoLabDictionaryNameandLabDictionaryLabel_Minor.feature.cs">
+      <DependentUpon>Labs_US65803_StudyupdatechangestoLabDictionaryNameandLabDictionaryLabel_Minor.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_ItemHistory_DictionaryChanges.feature.cs">
+      <DependentUpon>Labs_ItemHistory_DictionaryChanges.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_Populate Latest Lab Dictionary properties on eCRF for Migrated and Non-Migrated Patients - Study Update.feature.cs">
+      <DependentUpon>Labs_Populate Latest Lab Dictionary properties on eCRF for Migrated and Non-Migrated Patients - Study Update.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_Disable Questions Which are Mapped to Lab Parameter Fields%28Except Lab ID, CollectionDate, CRF Test Value, CRF Test Unit%29.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_Disable Questions Which are Mapped to Lab Parameter Fields%28Except Lab ID, CollectionDate, CRF Test Value, CRF Test Unit%29.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\DataLabs_V5.8.0_Labs_Normal Range indicator.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataLabs_V5.8.0_Labs_Normal Range indicator.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_PopulateotherLabMappingsoptionalfieldsoneCRF.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_PopulateotherLabMappingsoptionalfieldsoneCRF.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_Reassociate Reference Range to a Patient Lab Value on standard unit and precision changes- Study Update.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_Reassociate Reference Range to a Patient Lab Value on standard unit and precision changes- Study Update.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\DataLabs_V5.8.0_ReassociateReferenceRange_LabRRChanges.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataLabs_V5.8.0_ReassociateReferenceRange_LabRRChanges.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs__DL-Display of Lab Form questions- Study Update- All changes_1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs__DL-Display of Lab Form questions- Study Update- All changes_1.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_DL_DisplayofLabFormquestions_Study Update_Allchanges_2.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_DL_DisplayofLabFormquestions_Study Update_Allchanges_2.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_DL_DisplayofLabFormquestions_StudyUpdateAllchanges_3.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_DL_DisplayofLabFormquestions_StudyUpdateAllchanges_3.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs__DL-Display of Lab Form questions- Study Update- All changes_5.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs__DL-Display of Lab Form questions- Study Update- All changes_5.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs__DL-Display of Lab Form questions- Study Update- All changes_6.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs__DL-Display of Lab Form questions- Study Update- All changes_6.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Lab_Labform with demographics changes with DayMonthYear.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lab_Labform with demographics changes with DayMonthYear.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Lab_US63142-Study update with Labs changed from Yes to No - Major Update.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lab_US63142-Study update with Labs changed from Yes to No - Major Update.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_US66270_Patient Migration for multiple study updates to Labs setting - Major Update.feature.cs">
+      <DependentUpon>Labs_US66270_Patient Migration for multiple study updates to Labs setting - Major Update.feature</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\PopulateLabInformationbasedonLabMappingsLabIDselectionaftereCRFsave.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PopulateLabInformationbasedonLabMappingsLabIDselectionaftereCRFsave.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_Populate Lab Information on eCRF based on Lab Management changes_impacts.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_Populate Lab Information on eCRF based on Lab Management changes_impacts.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_Populate other Lab Mappings optional fields in DB_Not questions.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_Populate other Lab Mappings optional fields in DB_Not questions.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_Re-associate Reference Range to a Patient Lab Value_eCRF Lab data change - Clear Item and MNA.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_Re-associate Reference Range to a Patient Lab Value_eCRF Lab data change - Clear Item and MNA.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_Re-associate Reference Range to a Patient Lab Value_Age,Gender change - Clear Item and MNA.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_Re-associate Reference Range to a Patient Lab Value_Age,Gender change - Clear Item and MNA.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_Reassociate Reference Range to a Patient Lab Value on Form or Question changes -Study Update.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_Reassociate Reference Range to a Patient Lab Value on Form or Question changes -Study Update.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_PopulateLabInfoInDBbasedOnLabIDSelection_StudyUpdate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_PopulateLabInfoInDBbasedOnLabIDSelection_StudyUpdate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_Re-associate Reference Range to a Patient Lab Value_Lab Mappings change_Study Update.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_Re-associate Reference Range to a Patient Lab Value_Lab Mappings change_Study Update.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_Re-associate Reference Range to a Patient Lab Value_Lab Dictionary Mappings change_Study Update .feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_Re-associate Reference Range to a Patient Lab Value_Lab Dictionary Mappings change_Study Update .feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_VerifyRRfortransferredpatients.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_VerifyRRfortransferredpatients.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_US65460_DictionaryStaticFieldsChangeMinor StudyUpdate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_US65460_DictionaryStaticFieldsChangeMinor StudyUpdate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_US67916_DLLabs icon.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_US67916_DLLabs icon.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\F9191.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>F9191.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\US67862_ConversionFactorUpdate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US67862_ConversionFactorUpdate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\US67400 Demographicchanges-DICT values.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US67400 Demographicchanges-DICT values.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Normalization\F11482_ManualNormalizationForAllPatientsAndUIchanges.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>F11482_ManualNormalizationForAllPatientsAndUIchanges.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\DataLabs_V5.7.0_ODM Eventing for NonDataParameterQuery.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataLabs_V5.7.0_ODM Eventing for NonDataParameterQuery.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\Eventing_PatientFailedRecords.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eventing_PatientFailedRecords.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\FlagUpdateOnFormAndItem.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlagUpdateOnFormAndItem.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\FormStateChange_StudyUpdate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormStateChange_StudyUpdate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ItemUpdate_DerivationManagement.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemUpdate_DerivationManagement.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\FormStateUpdate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormStateUpdate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\FormStatusUpdate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormStatusUpdate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM_DL_Display of Lab Form questions-Study Update-All changes_4.feature.cs">
+      <DependentUpon>ODM_DL_Display of Lab Form questions-Study Update-All changes_4.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM_DL_Display of Lab Form Questions-Study update-All Changes_5.feature.cs">
+      <DependentUpon>ODM_DL_Display of Lab Form Questions-Study update-All Changes_5.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM_Display of Lab Form questions- Study Update- All changes_6.feature.cs">
+      <DependentUpon>ODM_Display of Lab Form questions- Study Update- All changes_6.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM_Display of Lab Form questions- Study Update- All changes_5.feature.cs">
+      <DependentUpon>ODM_Display of Lab Form questions- Study Update- All changes_5.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM_Display of Lab Form questions- Study Update- All changes_4.feature.cs">
+      <DependentUpon>ODM_Display of Lab Form questions- Study Update- All changes_4.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM_Display of Lab Form questions- Study Update- All changes_3.feature.cs">
+      <DependentUpon>ODM_Display of Lab Form questions- Study Update- All changes_3.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM_Display of Lab Form questions- Study Update- All changes_1.feature.cs">
+      <DependentUpon>ODM_Display of Lab Form questions- Study Update- All changes_1.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODMEventingfor_UnlockPatient.feature.cs">
+      <DependentUpon>ODMEventingfor_UnlockPatient.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODMStudyUpdateFlaggingSignatureQueries.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ODMStudyUpdateFlaggingSignatureQueries.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM_InitialFormSave.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ODM_InitialFormSave.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM_Labs Yes to No and No to Yes.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ODM_Labs Yes to No and No to Yes.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM_Patient Migration for multiple study updates to Labs setting.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ODM_Patient Migration for multiple study updates to Labs setting.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM_Metadata.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ODM_Metadata.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM_Normalize_LabManagement.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ODM_Normalize_LabManagement.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM_RecalculateReferenceRanges.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ODM_RecalculateReferenceRanges.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\PatientStateUpdate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientStateUpdate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODMEventingfor_PatientStatusUpdate.feature.cs">
+      <DependentUpon>ODMEventingfor_PatientStatusUpdate.feature</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\FormStatusisupdatedduetopScripts.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormStatusisupdatedduetopScripts.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\QueryCreate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QueryCreate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\SignatureStatusUpdate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SignatureStatusUpdate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\DataLabs_V5.7.0_ODM Eventing for SignatureStatusOnPatient.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataLabs_V5.7.0_ODM Eventing for SignatureStatusOnPatient.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\Datalabs_V5_7_0_ODM Eventing for DCFStatusOnTableQuestions.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Datalabs_V5_7_0_ODM Eventing for DCFStatusOnTableQuestions.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\Visit date updates-Form Question - Study update.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Visit date updates-Form Question - Study update.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\US52722_StudyUpdate_ItemUpdate2.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US52722_StudyUpdate_ItemUpdate2.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\US52721_StudyUpdate_ItemUpdate1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US52721_StudyUpdate_ItemUpdate1.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\QCDefects\QC1697and1654.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QC1697and1654.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\MRR_AuditHistory.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRR_AuditHistory.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\MRR_LabsAndTestsGrid.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRR_LabsAndTestsGrid.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\ManageReferenceRanges_GroupPermissions.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManageReferenceRanges_GroupPermissions.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\AddNewPatient.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddNewPatient.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\DataItemUpdate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataItemUpdate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\EventDate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventDate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ODM_Features\ODM Eventing for Transfer Patient.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ODM Eventing for Transfer Patient.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\MRRtableUI.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRRtableUI.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\MRR_Major Study update changes on Reference Ranges screen for Units.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRR_Major Study update changes on Reference Ranges screen for Units.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\MRR_Major Study update changes on Reference Ranges screen.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRR_Major Study update changes on Reference Ranges screen.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\MRR_Minor Study update changes on Reference Ranges screen for Units.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRR_Minor Study update changes on Reference Ranges screen for Units.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\MRR_Tests_LeftPalette.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRR_Tests_LeftPalette.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\MRR_DeleteReferenceRanges.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRR_DeleteReferenceRanges.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\MRR_Display_Standarad_Values.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRR_Display_Standarad_Values.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\MRR_Study update changes on Reference Ranges screen.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRR_Study update changes on Reference Ranges screen.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\MRR_ViewandHide_Permissions.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRR_ViewandHide_Permissions.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\MRR_AddCopyEditReferenceRange.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRR_AddCopyEditReferenceRange.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\ReferenceRangesAddValidations1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferenceRangesAddValidations.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\ReferenceRangesDuplicatedataValidations.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferenceRangesDuplicatedataValidations.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\ReferenceRangesDuplicatedataValidations_Unit.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferenceRangesDuplicatedataValidations_Unit.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\ReferenceRangesEditValidations.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferenceRangesEditValidations.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\ReferenceRangesCopyValidations.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferenceRangesCopyValidations.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\ReferenceRanges\TransferPatient.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransferPatient.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\StudyVerificationRules\StudyVerificationRules_Errors.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudyVerificationRules_Errors.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\StudyVerificationRules\Verification_Of_SAS_Label_Existance.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Verification_Of_SAS_Label_Existance.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\StudyVerificationRules\StudyVerificationRules_CodeListGroups_Linkages.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudyVerificationRules_CodeListGroups_Linkages.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\StudyVerificationRules\StudyVerificationRules_LabDictMapping.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudyVerificationRules_LabDictMapping.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\StudyVerificationRules\StudyVerificationRules_LabMapping.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudyVerificationRules_LabMapping.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\SafetyTemp.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SafetyTemp.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\Sample_StudyArchive.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sample_StudyArchive.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\DictionaryNotifications.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DictionaryNotifications.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63094_VerifyforCodelistGroupsandLinkages_Updated.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US63094_VerifyforCodelistGroupsandLinkages_Updated.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63093_DisplayOfCodelistGroupsandLinkagesLabel_CreateFromfromExisting.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US63093_DisplayOfCodelistGroupsandLinkagesLabel_CreateFromfromExisting.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63093_DisplayOfCodelistGroupsandLinkagesLabel_Import.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US63093_DisplayOfCodelistGroupsandLinkagesLabel_Import.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63100_UseExistingCodelistGroupsSave.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US63100_UseExistingCodelistGroupsSave.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63102_Useexisting Linkages and save.feature.cs">
+      <DependentUpon>US63102_Useexisting Linkages and save.feature</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Features\Designer\US63112_DifferentStudyDuplicate_Scenarios.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US63112_DifferentStudyDuplicate_Scenarios.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63112_US63121_all the check boxes should be checked by default_Different_Study_Scenarios.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US63112_US63121_all the check boxes should be checked by default_Different_Study_Scenarios.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63112_US63121_Verify_Functionality_Different_Study_Scenarios_Import57to59.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US63112_US63121_Verify_Functionality_Different_Study_Scenarios_Import57to59.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63123_CFFE- Include and use existing for domain, domain items on save.feature.cs">
+      <DependentUpon>US63123_CFFE- Include and use existing for domain, domain items on save.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\Designer\US68945_Create_Form_from_existing_Include_for_codelist_on_save.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US68945_Create_Form_from_existing_Include_for_codelist_on_save.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63113_Create Form from existing_Codelist verification.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US63113_Create Form from existing_Codelist verification.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63110_US63108_DSCreateFormfromexisting_Use Existing UI changes.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US63110_US63108_DSCreateFormfromexisting_Use Existing UI changes.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\F10746_DS_Labs_DemoFeedback.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>F10746_DS_Labs_DemoFeedback.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63112_US63121_all the check boxes should be checked by default_same study.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US63112_US63121_all the check boxes should be checked by default_same study.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US68936 _UI_NewChanges _Verify_Newlabelmessages.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US68936 _UI_NewChanges _Verify_Newlabelmessages.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\LabComponentsDataSetup.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabComponentsDataSetup.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US51092_CodelistgroupsinQueryscripting.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US51092_CodelistgroupsinQueryscripting.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63129_Study properties saved with and without Labs enabled.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US63129_Study properties saved with and without Labs enabled.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63127_confugurationsettingsforLabsmodule.feature.cs">
+      <DependentUpon>US63127_confugurationsettingsforLabsmodule.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\Designer\US63147_CreateStudyFromExisting.feature.cs">
+      <DependentUpon>US63147_CreateStudyFromExisting.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\Designer\US63136_DS_Study publish from Labs enabled to disabled %28xml tag%29 and viceversa.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US63136_DS_Study publish from Labs enabled to disabled %28xml tag%29 and viceversa.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US63653_StudyVerificationRules.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US63653_StudyVerificationRules.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US64424_Lab_Items.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US64424_Lab_Items.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US65400_ LabsIcon.feature.cs">
+      <DependentUpon>US65400_ LabsIcon.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\Designer\US656001_ConversationFactorZero.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US656001_ConversationFactorZero.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US65599-Verification rule to restrict open autobuild table questions_Labs.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US65599-Verification rule to restrict open autobuild table questions_Labs.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US70936_Create_form_from_existing_Save_with_include_checked_and_unchecked.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US70936_Create_form_from_existing_Save_with_include_checked_and_unchecked.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US70936_SaveFunctionality_createNewStudy.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US70936_SaveFunctionality_createNewStudy.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Designer\US_71558_Create form from existing with Derivations.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US_71558_Create form from existing with Derivations.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Webfocus\Reporting_Standard Report.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporting_Standard Report.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ReferenceRangeDataFormatter.cs" />
+    <Compile Include="Features\DataLabs\Labs\DataLabs_V5.8.0_ReassociateReferenceRange_LabDataChange.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataLabs_V5.8.0_ReassociateReferenceRange_LabDataChange.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs-Add Notification.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs-Add Notification.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Steps\DataLabs\Common\Login.cs" />
+    <Compile Include="Features\DataLabs\Labs\Labs_GroupPermissions.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_GroupPermissions.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_CreationAndAssociation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_CreationAndAssociation.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\CodelistLinkages\Linkages_ViewSaveUpdateOnCRF.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Linkages_ViewSaveUpdateOnCRF.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\CodelistGroups\Groups_StudyUpdate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Groups_StudyUpdate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Obsolete\CodelistLinkagesQuestions_ChangeHistory.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodelistLinkagesQuestions_ChangeHistory.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\CodelistLinkages\Linkages_StudyUpdate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Linkages_StudyUpdate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\CodelistGroups\Groups_EditChecks.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Groups_EditChecks.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Obsolete\FormFillingHavingVariousTypesOfQuestions.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormFillingHavingVariousTypesOfQuestions.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Labs\Labs_ViewSaveUpdateAndEditChecksOnCRF.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labs_ViewSaveUpdateAndEditChecksOnCRF.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Obsolete\VerificationOfChangeHistory_CodelistGroups.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VerificationOfChangeHistory_CodelistGroups.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\CodelistLinkages\Linkages_EditChecks.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Linkages_EditChecks.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\CRF_Actions_Scenarios.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRF_Actions_Scenarios.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\DBScenarios.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBScenarios.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\DL_Smoke.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DL_Smoke.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\EventAndFormOperations.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventAndFormOperations.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\IntegrationManagement_RTSM.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntegrationManagement_RTSM.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\SampleTest.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SampleTest.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\SignaturestatusVerification.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SignaturestatusVerification.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\PatientStatusOverride.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientStatusOverride.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\StudyOperations.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudyOperations.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\StudyUpdate_Major.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudyUpdate_Major.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\StudyUpdate_Minor.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudyUpdate_Minor.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\WebserviceScenarios.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebserviceScenarios.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\TempFeatures\XMLScenarios.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XMLScenarios.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Obsolete\US36583_DL_LabAdministrationLinkInStudyAdministrationPage.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US36583_DL_LabAdministrationLinkInStudyAdministrationPage.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Obsolete\US36586_CreateAndUpdateLab.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US36586_CreateAndUpdateLab.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Obsolete\US36587-DL_SiteToLabAssociationIncludingLinkOnSiteManagementPage.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US36587-DL_SiteToLabAssociationIncludingLinkOnSiteManagementPage.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DataLabs\Obsolete\US37126_AddLabsGridOnSiteDetailsScreen.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US37126_AddLabsGridOnSiteDetailsScreen.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ConfigurationHelper.cs" />
+    <Compile Include="Helpers\DataTableUtilities.cs" />
+    <Compile Include="Helpers\TableHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting\ScenarioAssists.cs" />
+    <Compile Include="Steps\DataLabs\AdvancedSearch\Steps_AdvancedSearch.cs" />
+    <Compile Include="Steps\DataLabs\AdvancedSearch\Steps_AdvancedSearchResults.cs" />
+    <Compile Include="Steps\DataLabs\Common\Steps_ActionPalette.cs" />
+    <Compile Include="Steps\DataLabs\Common\Steps_BrowserOperations.cs" />
+    <Compile Include="Steps\DataLabs\Common\Steps_ChangePassword.cs" />
+    <Compile Include="Steps\DataLabs\Common\Steps_DatalabsPage.cs" />
+    <Compile Include="Steps\DataLabs\Common\Steps_MainMenu.cs" />
+    <Compile Include="Steps\DataLabs\Common\Steps_UserPreferences.cs" />
+    <Compile Include="Steps\DataLabs\CRF\CRF_Comments_Operations.cs" />
+    <Compile Include="Steps\DataLabs\CRF\CRF_DCF_Operations.cs" />
+    <Compile Include="Steps\DataLabs\CRF\CRF_MarkItem_Operations.cs" />
+    <Compile Include="Steps\DataLabs\CRF\CRF_Operations.cs" />
+    <Compile Include="Steps\DataLabs\DataBase\DatabaseSteps.cs" />
+    <Compile Include="Steps\DataLabs\Export\Steps_Export.cs" />
+    <Compile Include="Steps\DataLabs\F6074\SampleSteps.cs" />
+    <Compile Include="Steps\DataLabs\F6074\US36583_DL_LabAdministrationLinkInStudyAdministrationPage.cs" />
+    <Compile Include="Steps\DataLabs\F6074\US36587-DL_SiteToLabAssociationIncludingLinkOnSiteManagementPage.cs" />
+    <Compile Include="Steps\DataLabs\F6074\US36590_PermissionsForLabs.cs" />
+    <Compile Include="Steps\DataLabs\Main\Steps_DerivationManagement.cs" />
+    <Compile Include="Steps\DataLabs\Main\Steps_Export.cs" />
+    <Compile Include="Steps\DataLabs\Main\Steps_FlagManagement.cs" />
+    <Compile Include="Steps\DataLabs\Main\Steps_IntegrationManagement.cs" />
+    <Compile Include="Steps\DataLabs\Main\Steps_MainCRFsTab.cs" />
+    <Compile Include="Steps\DataLabs\Main\Steps_MainDCFsTab.cs" />
+    <Compile Include="Steps\DataLabs\Main\Steps_QueryManagement.cs" />
+    <Compile Include="Steps\DataLabs\Main\Steps_SignatureManagement.cs" />
+    <Compile Include="Steps\DataLabs\ManageReferenceRanges\ManageReferenceRanges.cs" />
+    <Compile Include="Steps\DataLabs\ManageReferenceRanges\ReferenceRangesAddCopyModify.cs" />
+    <Compile Include="Steps\DataLabs\ManageReferenceRanges\Steps_MRR_Attributes.cs" />
+    <Compile Include="Steps\DataLabs\ManageReferenceRanges\Steps_Mrr_AuditHistory.cs" />
+    <Compile Include="Steps\DataLabs\ManageReferenceRanges\Steps_Mrr_Delete.cs" />
+    <Compile Include="Steps\DataLabs\ManageReferenceRanges\Steps_MRR_Permissions.cs" />
+    <Compile Include="Steps\DataLabs\ManageReferenceRanges\Steps_MRR_StudyDelta.cs" />
+    <Compile Include="Steps\DataLabs\ManageReferenceRanges\Steps_Mrr_Table.cs" />
+    <Compile Include="Steps\DataLabs\Modal\Steps_ModalOperations.cs" />
+    <Compile Include="Steps\DataLabs\Modal\Steps_QueriesResultOperations.cs" />
+    <Compile Include="Steps\DataLabs\Patient\CRF_Standard_Scenarios.cs" />
+    <Compile Include="Steps\DataLabs\Patient\Steps_AddUnscheduledEvent.cs" />
+    <Compile Include="Steps\DataLabs\Patient\Steps_EventFormOperations.cs" />
+    <Compile Include="Steps\DataLabs\Patient\Steps_FreezeThawCRFs.cs" />
+    <Compile Include="Steps\DataLabs\Patient\Steps_PatientCasebook.cs" />
+    <Compile Include="Steps\DataLabs\Patient\Steps_PatientState.cs" />
+    <Compile Include="Steps\DataLabs\Patient\Steps_PatientStatusOverride.cs" />
+    <Compile Include="Steps\DataLabs\Patient\Steps_PatientTransfer.cs" />
+    <Compile Include="Steps\DataLabs\Patient\Steps_RequestSignature.cs" />
+    <Compile Include="Steps\DataLabs\PermissionGroup\Steps_GroupManagement.cs" />
+    <Compile Include="Steps\DataLabs\Safety\Steps_SafetyHome.cs" />
+    <Compile Include="Steps\DataLabs\Sites\Steps_SiteDetails.cs" />
+    <Compile Include="Steps\DataLabs\Sites\Steps_SiteManagement.cs" />
+    <Compile Include="Steps\DataLabs\Sites\Steps_Site_ManageUsers.cs" />
+    <Compile Include="Steps\DataLabs\Study\Steps_StudyOperations.cs" />
+    <Compile Include="Steps\DataLabs\Study\Steps_Study_EditPreferences.cs" />
+    <Compile Include="Steps\DataLabs\WebServices\WebServiceSteps.cs" />
+    <Compile Include="Steps\DataLabs\XML\XMLSteps.cs" />
+    <Compile Include="Steps\Designer\CreateEvent.cs" />
+    <Compile Include="Steps\Designer\CreateForm.cs" />
+    <Compile Include="Steps\Designer\CreateFormFromExisting.cs" />
+    <Compile Include="Steps\Designer\CreateStudy.cs" />
+    <Compile Include="Steps\Designer\CreateStudyFromExisting.cs" />
+    <Compile Include="Steps\Designer\LabItems.cs" />
+    <Compile Include="Steps\Designer\LabsDependingOnTargetApp.cs" />
+    <Compile Include="Steps\Designer\Scripting.cs" />
+    <Compile Include="Steps\Designer\StudyHomePage.cs" />
+    <Compile Include="Steps\Designer\StudyVerificationRules.cs" />
+    <Compile Include="Steps\TempSteps\SampleTestSteps.cs" />
+    <Compile Include="Steps\WebFocus\wf_steps_Frames.cs" />
+    <Compile Include="Steps\WebFocus\wf_steps_Login.cs" />
+    <Compile Include="Steps\WebFocus\wf_steps_Main.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Default.srprofile" />
+    <None Include="Features\DataLabs\Autobuild\Autobuild_CodeItemAdd.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Autobuild_CodeItemAdd.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Autobuild\Autobuild_CodeItemDelete.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Autobuild_CodeItemDelete.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Autobuild\Autobuild_CodeItemDescriptionChange.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Autobuild_CodeItemDescriptionChange.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Autobuild\Autobuild_CodeItemReorder.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Autobuild_CodeItemReorder.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Autobuild\Autobuild_CodeItemValueChange.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Autobuild_CodeItemValueChange.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Autobuild\Autobuild_CodelistChange_Obselete.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Autobuild_CodelistChange_Obselete.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Autobuild\Autobuild_DCF.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Autobuild_DCF.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Autobuild\AutoBuilldFunctionalityEnhancements.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AutoBuilldFunctionalityEnhancements.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\CodelistGroups\Groups_ViewSaveUpdateOnCRF.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Groups_ViewSaveUpdateOnCRF.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\F10746_DL_Labs_DemoFeedback.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>F10746_DL_Labs_DemoFeedback.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_Assign matching reference ranges to lab value on eCRF.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_Assign matching reference ranges to lab value on eCRF.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Duplicate_Labs_ressociate RR Values when Gender and Age changed[History].feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Duplicate_Labs_ressociate RR Values when Gender and Age changed[History].feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_DL_Display of Lab Form questions-Study Update-All changes_4.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_DL_Display of Lab Form questions-Study Update-All changes_4.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_DL_Display of Lab Form Questions-Study update-All Changes_5.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_DL_Display of Lab Form Questions-Study update-All Changes_5.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_US67399_DL_Lab_Form_changesfromSiteManagement.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_US67399_DL_Lab_Form_changesfromSiteManagement.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_US67409_DL_LabFormchangesfromMRRscreen..feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_US67409_DL_LabFormchangesfromMRRscreen..feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_US67412_DL_Display_of_Lab_Form_questions_Unlock_Patients.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_US67412_DL_Display_of_Lab_Form_questions_Unlock_Patients.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_US67445- Conversion factor shall be displayed based on From unit and to unit matching criteria.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_US67445- Conversion factor shall be displayed based on From unit and to unit matching criteria.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_US67400-Ressociate RR Values when Gender and Age changed[History].feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_US67400-Ressociate RR Values when Gender and Age changed[History].feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_US65803_StudyupdatechangestoLabDictionaryNameandLabDictionaryLabel_Minor.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_US65803_StudyupdatechangestoLabDictionaryNameandLabDictionaryLabel_Minor.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_ItemHistory_DictionaryChanges.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_ItemHistory_DictionaryChanges.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_Populate Latest Lab Dictionary properties on eCRF for Migrated and Non-Migrated Patients - Study Update.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_Populate Latest Lab Dictionary properties on eCRF for Migrated and Non-Migrated Patients - Study Update.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_Disable Questions Which are Mapped to Lab Parameter Fields%28Except Lab ID, CollectionDate, CRF Test Value, CRF Test Unit%29.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_Disable Questions Which are Mapped to Lab Parameter Fields%28Except Lab ID, CollectionDate, CRF Test Value, CRF Test Unit%29.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_GroupPermissions.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_GroupPermissions.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_CreationAndAssociation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_CreationAndAssociation.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\CodelistLinkages\Linkages_ViewSaveUpdateOnCRF.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Linkages_ViewSaveUpdateOnCRF.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\CodelistGroups\Groups_StudyUpdate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Groups_StudyUpdate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\DataLabs_V5.8.0_Labs_Normal Range indicator.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DataLabs_V5.8.0_Labs_Normal Range indicator.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_PopulateotherLabMappingsoptionalfieldsoneCRF.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_PopulateotherLabMappingsoptionalfieldsoneCRF.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_Reassociate Reference Range to a Patient Lab Value on standard unit and precision changes- Study Update.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_Reassociate Reference Range to a Patient Lab Value on standard unit and precision changes- Study Update.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\DataLabs_V5.8.0_ReassociateReferenceRange_LabRRChanges.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DataLabs_V5.8.0_ReassociateReferenceRange_LabRRChanges.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs__DL-Display of Lab Form questions- Study Update- All changes_1.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs__DL-Display of Lab Form questions- Study Update- All changes_1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_DL_DisplayofLabFormquestions_Study Update_Allchanges_2.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_DL_DisplayofLabFormquestions_Study Update_Allchanges_2.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_DL_DisplayofLabFormquestions_StudyUpdateAllchanges_3.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_DL_DisplayofLabFormquestions_StudyUpdateAllchanges_3.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs__DL-Display of Lab Form questions- Study Update- All changes_5.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs__DL-Display of Lab Form questions- Study Update- All changes_5.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs__DL-Display of Lab Form questions- Study Update- All changes_6.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs__DL-Display of Lab Form questions- Study Update- All changes_6.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Lab_Labform with demographics changes with DayMonthYear.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Lab_Labform with demographics changes with DayMonthYear.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Lab_US63142-Study update with Labs changed from Yes to No - Major Update.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Lab_US63142-Study update with Labs changed from Yes to No - Major Update.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_US66270_Patient Migration for multiple study updates to Labs setting - Major Update.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_US66270_Patient Migration for multiple study updates to Labs setting - Major Update.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\PopulateLabInformationbasedonLabMappingsLabIDselectionaftereCRFsave.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PopulateLabInformationbasedonLabMappingsLabIDselectionaftereCRFsave.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_Populate Lab Information on eCRF based on Lab Management changes_impacts.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_Populate Lab Information on eCRF based on Lab Management changes_impacts.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_Populate other Lab Mappings optional fields in DB_Not questions.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_Populate other Lab Mappings optional fields in DB_Not questions.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_Re-associate Reference Range to a Patient Lab Value_eCRF Lab data change - Clear Item and MNA.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_Re-associate Reference Range to a Patient Lab Value_eCRF Lab data change - Clear Item and MNA.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_Re-associate Reference Range to a Patient Lab Value_Age,Gender change - Clear Item and MNA.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_Re-associate Reference Range to a Patient Lab Value_Age,Gender change - Clear Item and MNA.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_Reassociate Reference Range to a Patient Lab Value on Form or Question changes -Study Update.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_Reassociate Reference Range to a Patient Lab Value on Form or Question changes -Study Update.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_PopulateLabInfoInDBbasedOnLabIDSelection_StudyUpdate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_PopulateLabInfoInDBbasedOnLabIDSelection_StudyUpdate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_Re-associate Reference Range to a Patient Lab Value_Lab Mappings change_Study Update.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_Re-associate Reference Range to a Patient Lab Value_Lab Mappings change_Study Update.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_Re-associate Reference Range to a Patient Lab Value_Lab Dictionary Mappings change_Study Update .feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_Re-associate Reference Range to a Patient Lab Value_Lab Dictionary Mappings change_Study Update .feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_VerifyRRfortransferredpatients.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_VerifyRRfortransferredpatients.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_US65460_DictionaryStaticFieldsChangeMinor StudyUpdate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_US65460_DictionaryStaticFieldsChangeMinor StudyUpdate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_US67916_DLLabs icon.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_US67916_DLLabs icon.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\F9191.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>F9191.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\US67862_ConversionFactorUpdate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US67862_ConversionFactorUpdate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\US67400 Demographicchanges-DICT values.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US67400 Demographicchanges-DICT values.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Normalization\F11482_ManualNormalizationForAllPatientsAndUIchanges.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>F11482_ManualNormalizationForAllPatientsAndUIchanges.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\DataLabs_V5.7.0_ODM Eventing for NonDataParameterQuery.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DataLabs_V5.7.0_ODM Eventing for NonDataParameterQuery.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\FlagUpdateOnFormAndItem.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FlagUpdateOnFormAndItem.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\FormStateChange_StudyUpdate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FormStateChange_StudyUpdate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ItemUpdate_DerivationManagement.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ItemUpdate_DerivationManagement.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\FormStateUpdate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FormStateUpdate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\FormStatusUpdate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FormStatusUpdate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\Eventing_PatientFailedRecords.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Eventing_PatientFailedRecords.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM_DL_Display of Lab Form questions-Study Update-All changes_4.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM_DL_Display of Lab Form questions-Study Update-All changes_4.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM_DL_Display of Lab Form Questions-Study update-All Changes_5.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM_DL_Display of Lab Form Questions-Study update-All Changes_5.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM_Display of Lab Form questions- Study Update- All changes_6.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM_Display of Lab Form questions- Study Update- All changes_6.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM_Display of Lab Form questions- Study Update- All changes_5.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM_Display of Lab Form questions- Study Update- All changes_5.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM_Display of Lab Form questions- Study Update- All changes_4.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM_Display of Lab Form questions- Study Update- All changes_4.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM_Display of Lab Form questions- Study Update- All changes_3.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM_Display of Lab Form questions- Study Update- All changes_3.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM_Display of Lab Form questions- Study Update- All changes_1.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM_Display of Lab Form questions- Study Update- All changes_1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODMEventingfor_UnlockPatient.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODMEventingfor_UnlockPatient.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODMStudyUpdateFlaggingSignatureQueries.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODMStudyUpdateFlaggingSignatureQueries.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM_InitialFormSave.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM_InitialFormSave.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM_Labs Yes to No and No to Yes.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM_Labs Yes to No and No to Yes.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM_Patient Migration for multiple study updates to Labs setting.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM_Patient Migration for multiple study updates to Labs setting.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM_Metadata.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM_Metadata.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM_Normalize_LabManagement.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM_Normalize_LabManagement.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM_RecalculateReferenceRanges.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM_RecalculateReferenceRanges.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\PatientStateUpdate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PatientStateUpdate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODMEventingfor_PatientStatusUpdate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODMEventingfor_PatientStatusUpdate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\FormStatusisupdatedduetopScripts.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FormStatusisupdatedduetopScripts.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\QueryCreate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>QueryCreate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\SignatureStatusUpdate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SignatureStatusUpdate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\DataLabs_V5.7.0_ODM Eventing for SignatureStatusOnPatient.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DataLabs_V5.7.0_ODM Eventing for SignatureStatusOnPatient.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\Datalabs_V5_7_0_ODM Eventing for DCFStatusOnTableQuestions.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Datalabs_V5_7_0_ODM Eventing for DCFStatusOnTableQuestions.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\Visit date updates-Form Question - Study update.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Visit date updates-Form Question - Study update.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\US52722_StudyUpdate_ItemUpdate2.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US52722_StudyUpdate_ItemUpdate2.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\US52721_StudyUpdate_ItemUpdate1.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US52721_StudyUpdate_ItemUpdate1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\QCDefects\QC1697and1654.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>QC1697and1654.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\QCDefects\QC1725_PatientLevelFlagRollup.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\MRR_AuditHistory.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MRR_AuditHistory.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\MRR_LabsAndTestsGrid.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MRR_LabsAndTestsGrid.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\ManageReferenceRanges_GroupPermissions.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ManageReferenceRanges_GroupPermissions.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Obsolete\CodelistLinkagesQuestions_ChangeHistory.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CodelistLinkagesQuestions_ChangeHistory.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\CodelistLinkages\Linkages_StudyUpdate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Linkages_StudyUpdate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\CodelistGroups\Groups_EditChecks.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Groups_EditChecks.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Obsolete\FormFillingHavingVariousTypesOfQuestions.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FormFillingHavingVariousTypesOfQuestions.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs_ViewSaveUpdateAndEditChecksOnCRF.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs_ViewSaveUpdateAndEditChecksOnCRF.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Obsolete\VerificationOfChangeHistory_CodelistGroups.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>VerificationOfChangeHistory_CodelistGroups.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\CodelistLinkages\Linkages_EditChecks.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Linkages_EditChecks.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\AddNewPatient.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AddNewPatient.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\DataItemUpdate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DataItemUpdate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\EventDate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EventDate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ODM_Features\ODM Eventing for Transfer Patient.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ODM Eventing for Transfer Patient.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\MRRtableUI.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MRRtableUI.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\MRR_Major Study update changes on Reference Ranges screen for Units.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MRR_Major Study update changes on Reference Ranges screen for Units.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\MRR_Major Study update changes on Reference Ranges screen.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MRR_Major Study update changes on Reference Ranges screen.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\MRR_Minor Study update changes on Reference Ranges screen for Units.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MRR_Minor Study update changes on Reference Ranges screen for Units.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\MRR_Tests_LeftPalette.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MRR_Tests_LeftPalette.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\MRR_DeleteReferenceRanges.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MRR_DeleteReferenceRanges.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\MRR_Display_Standarad_Values.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MRR_Display_Standarad_Values.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\MRR_Study update changes on Reference Ranges screen.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MRR_Study update changes on Reference Ranges screen.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\MRR_ViewandHide_Permissions.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MRR_ViewandHide_Permissions.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\MRR_AddCopyEditReferenceRange.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MRR_AddCopyEditReferenceRange.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\ReferenceRangesAddValidations.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ReferenceRangesAddValidations1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\ReferenceRangesDuplicatedataValidations.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ReferenceRangesDuplicatedataValidations.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\ReferenceRangesDuplicatedataValidations_Unit.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ReferenceRangesDuplicatedataValidations_Unit.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\ReferenceRangesEditValidations.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ReferenceRangesEditValidations.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\ReferenceRangesCopyValidations.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ReferenceRangesCopyValidations.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\ReferenceRanges\TransferPatient.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TransferPatient.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\StudyVerificationRules\StudyVerificationRules_Errors.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>StudyVerificationRules_Errors.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\StudyVerificationRules\Verification_Of_SAS_Label_Existance.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Verification_Of_SAS_Label_Existance.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\StudyVerificationRules\StudyVerificationRules_CodeListGroups_Linkages.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>StudyVerificationRules_CodeListGroups_Linkages.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\StudyVerificationRules\StudyVerificationRules_LabDictMapping.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>StudyVerificationRules_LabDictMapping.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\StudyVerificationRules\StudyVerificationRules_LabMapping.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>StudyVerificationRules_LabMapping.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\CRF_Actions_Scenarios.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CRF_Actions_Scenarios.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\DBScenarios.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DBScenarios.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\DL_Smoke.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DL_Smoke.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\EventAndFormOperations.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EventAndFormOperations.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\IntegrationManagement_RTSM.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>IntegrationManagement_RTSM.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\SafetyTemp.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SafetyTemp.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\SampleTest.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SampleTest.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\Sample_StudyArchive.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Sample_StudyArchive.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\SignaturestatusVerification.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SignaturestatusVerification.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\PatientStatusOverride.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PatientStatusOverride.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\StudyOperations.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>StudyOperations.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\StudyUpdate_Major.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>StudyUpdate_Major.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\StudyUpdate_Minor.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>StudyUpdate_Minor.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\WebserviceScenarios.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>WebserviceScenarios.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\TempFeatures\XMLScenarios.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>XMLScenarios.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Obsolete\US36583_DL_LabAdministrationLinkInStudyAdministrationPage.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US36583_DL_LabAdministrationLinkInStudyAdministrationPage.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Obsolete\US36586_CreateAndUpdateLab.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US36586_CreateAndUpdateLab.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Obsolete\US36587-DL_SiteToLabAssociationIncludingLinkOnSiteManagementPage.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US36587-DL_SiteToLabAssociationIncludingLinkOnSiteManagementPage.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Obsolete\US37126_AddLabsGridOnSiteDetailsScreen.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US37126_AddLabsGridOnSiteDetailsScreen.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\DictionaryNotifications.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DictionaryNotifications.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63094_VerifyforCodelistGroupsandLinkages_Updated.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63094_VerifyforCodelistGroupsandLinkages_Updated.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63102_Useexisting Linkages and save.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63102_Useexisting Linkages and save.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63112_US63121_Verify_Functionality_Different_Study_Scenarios_Import57to59.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63112_US63121_Verify_Functionality_Different_Study_Scenarios_Import57to59.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63100_UseExistingCodelistGroupsSave.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63100_UseExistingCodelistGroupsSave.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63093_DisplayOfCodelistGroupsandLinkagesLabel_CreateFromfromExisting.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63093_DisplayOfCodelistGroupsandLinkagesLabel_CreateFromfromExisting.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63093_DisplayOfCodelistGroupsandLinkagesLabel_Import.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63093_DisplayOfCodelistGroupsandLinkagesLabel_Import.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63112_DifferentStudyDuplicate_Scenarios.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63112_DifferentStudyDuplicate_Scenarios.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63112_US63121_all the check boxes should be checked by default_Different_Study_Scenarios.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63112_DifferentStudy.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63123_CFFE- Include and use existing for domain, domain items on save.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63123_CFFE- Include and use existing for domain, domain items on save.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US68945_Create_Form_from_existing_Include_for_codelist_on_save.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US68945_Create_Form_from_existing_Include_for_codelist_on_save.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63113_Create Form from existing_Codelist verification.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63113_Create Form from existing_Codelist verification.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63110_US63108_DSCreateFormfromexisting_Use Existing UI changes.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63110_US63108_DSCreateFormfromexisting_Use Existing UI changes.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\F10746_DS_Labs_DemoFeedback.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>F10746_DS_Labs_DemoFeedback.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63112_US63121_all the check boxes should be checked by default_same study.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63112_US63121_all the check boxes should be checked by default_same study.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US68936 _UI_NewChanges _Verify_Newlabelmessages.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US68936 _UI_NewChanges _Verify_Newlabelmessages.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\LabComponentsDataSetup.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>LabComponentsDataSetup.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US51092_CodelistgroupsinQueryscripting.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US51092_CodelistgroupsinQueryscripting.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63136_DS_Study publish from Labs enabled to disabled %28xml tag%29 and viceversa.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63136_DS_Study publish from Labs enabled to disabled %28xml tag%29 and viceversa.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63129_Study properties saved with and without Labs enabled.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63129_Study properties saved with and without Labs enabled.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63127_confugurationsettingsforLabsmodule.feature">
+      <LastGenOutput>US63127_confugurationsettingsforLabsmodule1.feature.cs</LastGenOutput>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+    </None>
+    <None Include="Features\Designer\US63147_CreateStudyFromExisting.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63147_CreateStudyFromExisting.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US63653_StudyVerificationRules.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US63653_StudyVerificationRules.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US64424_Lab_Items.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US64424_Lab_Items.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\DataLabs_V5.8.0_ReassociateReferenceRange_LabDataChange.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DataLabs_V5.8.0_ReassociateReferenceRange_LabDataChange.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\DataLabs\Labs\Labs-Add Notification.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Labs-Add Notification.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US65400_ LabsIcon.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US65400_ LabsIcon.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US656001_ConversationFactorZero.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US656001_ConversationFactorZero.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US65599-Verification rule to restrict open autobuild table questions_Labs.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US65599-Verification rule to restrict open autobuild table questions_Labs.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US70936_Create_form_from_existing_Save_with_include_checked_and_unchecked.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US70936_Create_form_from_existing_Save_with_include_checked_and_unchecked.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US70936_SaveFunctionality_createNewStudy.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US70936_SaveFunctionality_createNewStudy.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Designer\US_71558_Create form from existing with Derivations.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>US_71558_Create form from existing with Derivations.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Webfocus\Reporting_Standard Report.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Reporting_Standard Report.feature.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporting\OELogTemplate.docx" />
+    <None Include="runtests.cmd" />
+    <None Include="SpecRunTestProfile.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpecRunTestProfile_2011_09.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APIUtilities\APIUtilities.csproj">
+      <Project>{8dce9102-5eeb-444b-9e15-edfb990d42da}</Project>
+      <Name>APIUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessProcesses\BusinessProcesses.csproj">
+      <Project>{4bce2a74-023a-4db0-b898-a24ec9262196}</Project>
+      <Name>BusinessProcesses</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{7d440347-a1d3-4d53-8f0b-d0fca377c480}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtilities\DBUtilities.csproj">
+      <Project>{a492d35c-a0b6-40bb-bb4c-5b9b0ad9f4c3}</Project>
+      <Name>DBUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.csproj">
+      <Project>{985b6ef8-78ec-40a5-95af-524fee9669b8}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{764ed9b4-966a-4170-a09e-09dbbbacc962}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pages\Pages.csproj">
+      <Project>{d9ebbff7-6ab2-4da6-b39d-5c7a2b509b33}</Project>
+      <Name>Pages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.csproj">
+      <Project>{7368ee52-2da2-4f7f-bbc1-4c3965f1c598}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{2215FC70-9ECA-4572-B01C-ACAF77860F8E}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMLUtilities\XMLUtilities.csproj">
+      <Project>{ae33e213-269c-47ab-ab6b-d778e360a0ef}</Project>
+      <Name>XMLUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestXMLFiles\FlaggingWithSignatureUpdateExpected.xml" />
+    <Content Include="TestXMLFiles\CompletePatientFromUIExpected.xml" />
+    <Content Include="TestXMLFiles\DiscontinuePatientFromUIExpected.xml" />
+    <Content Include="TestXMLFiles\EnrollPatientFromUIExpected2.xml" />
+    <Content Include="TestXMLFiles\FailPatientFromUIExpected.xml" />
+    <Content Include="TestXMLFiles\EnrollPatientFromUIExpected.xml" />
+    <Content Include="TestXMLFiles\AddPatientFromUIExpected.xml" />
+    <Content Include="TestXMLFiles\AddPatientUsingUIExpected2.xml" />
+    <Content Include="TestXMLFiles\AddPatientUsingWSExpected.xml" />
+    <Content Include="TestXMLFiles\AddPatientUsingWSExpected2.xml" />
+    <Content Include="TestXMLFiles\InitialFlagItemAndFormODMExpected.xml" />
+    <Content Include="TestXMLFiles\Questions_20190430_Lab_MetaData.xml" />
+    <Content Include="TestXMLFiles\SampleAddPatientODM.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Selenium.WebDriver.IEDriver.3.14.0\build\Selenium.WebDriver.IEDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.IEDriver.3.14.0\build\Selenium.WebDriver.IEDriver.targets')" />
+  <Import Project="..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets')" />
+  <Import Project="..\packages\Selenium.Chrome.WebDriver.2.40\build\Selenium.Chrome.WebDriver.targets" Condition="Exists('..\packages\Selenium.Chrome.WebDriver.2.40\build\Selenium.Chrome.WebDriver.targets')" />
+  <Import Project="..\packages\Selenium.Firefox.WebDriver.0.21.0\build\Selenium.Firefox.WebDriver.targets" Condition="Exists('..\packages\Selenium.Firefox.WebDriver.0.21.0\build\Selenium.Firefox.WebDriver.targets')" />
+  <Import Project="..\packages\Selenium.WebDriver.IEDriver.3.13.0\build\Selenium.WebDriver.IEDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.IEDriver.3.13.0\build\Selenium.WebDriver.IEDriver.targets')" />
+  <Import Project="..\packages\SpecFlow.2.4.1\build\SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.4.1\build\SpecFlow.targets')" />
+  <Import Project="..\packages\SpecRun.SpecFlow.2-4-0.1.8.5\build\SpecRun.SpecFlow.2-4-0.targets" Condition="Exists('..\packages\SpecRun.SpecFlow.2-4-0.1.8.5\build\SpecRun.SpecFlow.2-4-0.targets')" />
+  <Import Project="..\packages\Microsoft.NET.Test.Sdk.15.0.0\build\net45\Microsoft.Net.Test.Sdk.targets" Condition="Exists('..\packages\Microsoft.NET.Test.Sdk.15.0.0\build\net45\Microsoft.Net.Test.Sdk.targets')" />
+  <Import Project="..\packages\SpecRun.Runner.3.0.344\build\SpecRun.Runner.targets" Condition="Exists('..\packages\SpecRun.Runner.3.0.344\build\SpecRun.Runner.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

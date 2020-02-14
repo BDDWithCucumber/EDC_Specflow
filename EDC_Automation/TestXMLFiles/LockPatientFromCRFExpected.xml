@@ -1,0 +1,153 @@
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Patient State" FileType="Transactional" Granularity="SingleSubject" FileOID="a27f3549-38b9-4a93-a573-ba719cfd4cf7" CreationDateTime="2018-12-17T14:09:42.2535162Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test3210_Base">
+    <GlobalVariables>
+      <StudyName>Test3210_Base</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.3</StudyDescription>
+      <ProtocolName>20070215</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test3210_Base" MetaDataVersionOID="200702151.0">
+    <SubjectData SubjectKey="CBB62441-2E14-4505-817D-2F12E5DED4F0" TransactionType="Update">
+      <AuditRecord>
+        <UserRef UserOID="testadmin" />
+        <LocationRef LocationOID="01-Site" />
+        <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+        <ReasonForChange>Locked</ReasonForChange>
+        <SourceID>8</SourceID>
+      </AuditRecord>
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Screening">
+        <Annotation SeqNum="1">
+          <Comment>Screening</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+            <ReasonForChange>Locked</ReasonForChange>
+            <SourceID>96</SourceID>
+          </AuditRecord>
+        </FormData>
+      </StudyEventData>
+      <StudyEventData StudyEventOID="Visit02">
+        <Annotation SeqNum="1">
+          <Comment>Visit02</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+            <ReasonForChange>Locked</ReasonForChange>
+            <SourceID>97</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form2">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+            <ReasonForChange>Locked</ReasonForChange>
+            <SourceID>98</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form3">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+            <ReasonForChange>Locked</ReasonForChange>
+            <SourceID>99</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form4">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+            <ReasonForChange>Locked</ReasonForChange>
+            <SourceID>100</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form5">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+            <ReasonForChange>Locked</ReasonForChange>
+            <SourceID>101</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form6">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+            <ReasonForChange>Locked</ReasonForChange>
+            <SourceID>102</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form7">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+            <ReasonForChange>Locked</ReasonForChange>
+            <SourceID>103</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form8">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+            <ReasonForChange>Locked</ReasonForChange>
+            <SourceID>104</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form9">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+            <ReasonForChange>Locked</ReasonForChange>
+            <SourceID>105</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="DupEncoding">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+            <ReasonForChange>Locked</ReasonForChange>
+            <SourceID>106</SourceID>
+          </AuditRecord>
+        </FormData>
+      </StudyEventData>
+      <StudyEventData StudyEventOID="Common">
+        <Annotation SeqNum="1">
+          <Comment>Common</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+            <ReasonForChange>Locked</ReasonForChange>
+            <SourceID>95</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Scr">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-17T14:09:41.03</DateTimeStamp>
+            <ReasonForChange>Locked</ReasonForChange>
+            <SourceID>94</SourceID>
+          </AuditRecord>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

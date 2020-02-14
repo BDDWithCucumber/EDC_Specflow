@@ -1,0 +1,41 @@
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Flag Update" FileType="Transactional" Granularity="SingleSubject" FileOID="de315be8-45da-4b3e-a71e-e098c9bf5960" CreationDateTime="2018-11-03T17:23:20.6532454Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test3210_Base">
+    <GlobalVariables>
+      <StudyName>Test3210_Base</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.3</StudyDescription>
+      <ProtocolName>20070215</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test3210_Base" MetaDataVersionOID="200702151.0">
+    <SubjectData SubjectKey="FFF14605-9ED7-4265-AB8E-39DBF6B3711A">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Screening">
+        <Annotation SeqNum="1">
+          <Comment>Screening</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <ItemGroupData ItemGroupOID="Form1_T1" ItemGroupRepeatKey="1" TransactionType="Insert">
+            <ItemData ItemOID="T_Text1" Value="">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-11-03T17:23:19.95</DateTimeStamp>
+                <ReasonForChange>Flag Action</ReasonForChange>
+                <SourceID>32</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Flag>
+                  <FlagValue CodeListOID="SD-Verify">130</FlagValue>
+                  <FlagType CodeListOID="Flag">3</FlagType>
+                </Flag>
+              </Annotation>
+              <Annotation SeqNum="2">
+                <Comment>Additional Notes:SD-Verify [ On ]</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

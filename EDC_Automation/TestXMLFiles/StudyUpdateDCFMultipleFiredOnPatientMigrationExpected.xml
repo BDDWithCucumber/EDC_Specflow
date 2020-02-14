@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Study Update" FileType="Transactional" Granularity="SingleSubject" FileOID="0e3da43f-0030-45a7-9f0b-1a3f97e22f55" CreationDateTime="2018-12-15T16:40:27.1743019Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test3210_Base">
+    <GlobalVariables>
+      <StudyName>Test3210_Base</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.3</StudyDescription>
+      <ProtocolName>20070215</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test3210_Base" MetaDataVersionOID="2007021510.0">
+    <SubjectData SubjectKey="C726658F-EC55-463D-95A3-9DCD79F9A02B">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Visit02">
+        <Annotation SeqNum="1">
+          <Comment>Visit02</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <ItemGroupData ItemGroupOID="Form1_T1" ItemGroupRepeatKey="1" TransactionType="Update">
+            <ItemData ItemOID="T_Text1" TransactionType="Update" Value="DrugText">
+              <dl:DCF OID="15" Description="Field does not contain a valid Decimal Number(s)." Request="Provide a valid Decimal Number(s)." Type="Auto" QueryOID="1987" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">24</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-15T16:40:24.1</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Sent</dl:ReasonForChange>
+                    <dl:SourceID>17</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="Form1_S1" ItemGroupRepeatKey="1" TransactionType="Update">
+            <ItemData ItemOID="Integer" TransactionType="Update" Value="10">
+              <dl:DCF OID="13" Description="Field does not contain a valid Date." Request="Provide a valid Date." Type="Auto" QueryOID="1979" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">24</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-15T16:40:24.087</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Sent</dl:ReasonForChange>
+                    <dl:SourceID>15</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+            </ItemData>
+            <ItemData ItemOID="Float" TransactionType="Update" Value="11.11">
+              <dl:DCF OID="14" Description="Field does not contain a valid Number(s)." Request="Provide a valid Number(s)." Type="Auto" QueryOID="1975" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">24</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-15T16:40:24.093</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Sent</dl:ReasonForChange>
+                    <dl:SourceID>16</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

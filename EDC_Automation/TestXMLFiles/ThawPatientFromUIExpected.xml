@@ -1,0 +1,153 @@
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Patient State" FileType="Transactional" Granularity="SingleSubject" FileOID="f1ad8fe6-7dab-434b-9cff-023f9a052b30" CreationDateTime="2018-12-15T16:52:10.3693913Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test3210_Base">
+    <GlobalVariables>
+      <StudyName>Test3210_Base</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.3</StudyDescription>
+      <ProtocolName>20070215</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test3210_Base" MetaDataVersionOID="200702151.0">
+    <SubjectData SubjectKey="D76F814A-8DAC-4721-875E-5064884AFCCE" TransactionType="Update">
+      <AuditRecord>
+        <UserRef UserOID="testadmin" />
+        <LocationRef LocationOID="01-Site" />
+        <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+        <ReasonForChange>Thawed</ReasonForChange>
+        <SourceID>6</SourceID>
+      </AuditRecord>
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Screening">
+        <Annotation SeqNum="1">
+          <Comment>Screening</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+            <ReasonForChange>Thawed</ReasonForChange>
+            <SourceID>70</SourceID>
+          </AuditRecord>
+        </FormData>
+      </StudyEventData>
+      <StudyEventData StudyEventOID="Visit02">
+        <Annotation SeqNum="1">
+          <Comment>Visit02</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+            <ReasonForChange>Thawed</ReasonForChange>
+            <SourceID>71</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form2">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+            <ReasonForChange>Thawed</ReasonForChange>
+            <SourceID>72</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form3">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+            <ReasonForChange>Thawed</ReasonForChange>
+            <SourceID>73</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form4">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+            <ReasonForChange>Thawed</ReasonForChange>
+            <SourceID>74</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form5">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+            <ReasonForChange>Thawed</ReasonForChange>
+            <SourceID>75</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form6">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+            <ReasonForChange>Thawed</ReasonForChange>
+            <SourceID>76</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form7">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+            <ReasonForChange>Thawed</ReasonForChange>
+            <SourceID>77</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form8">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+            <ReasonForChange>Thawed</ReasonForChange>
+            <SourceID>78</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form9">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+            <ReasonForChange>Thawed</ReasonForChange>
+            <SourceID>79</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="DupEncoding">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+            <ReasonForChange>Thawed</ReasonForChange>
+            <SourceID>80</SourceID>
+          </AuditRecord>
+        </FormData>
+      </StudyEventData>
+      <StudyEventData StudyEventOID="Common">
+        <Annotation SeqNum="1">
+          <Comment>Common</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+            <ReasonForChange>Thawed</ReasonForChange>
+            <SourceID>69</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Scr">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T16:52:09.44</DateTimeStamp>
+            <ReasonForChange>Thawed</ReasonForChange>
+            <SourceID>68</SourceID>
+          </AuditRecord>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Signature Status" FileType="Transactional" Granularity="SingleSubject" FileOID="442d4c34-e1fe-40ec-bd67-87d317a66b42" CreationDateTime="2018-12-18T10:01:03.2709311Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500_QUER">
+    <GlobalVariables>
+      <StudyName>Test4500_QUER</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500_QUER" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="531C8145-F738-4853-9852-355602796823">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Visit02">
+        <Annotation SeqNum="1">
+          <Comment>Visit02</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-18T10:01:02.913</DateTimeStamp>
+            <ReasonForChange>PI Signature [ Ready ]</ReasonForChange>
+            <SourceID>61</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form2">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-18T10:01:02.917</DateTimeStamp>
+            <ReasonForChange>PI Signature [ Ready ]</ReasonForChange>
+            <SourceID>62</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form3">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-18T10:01:02.92</DateTimeStamp>
+            <ReasonForChange>PI Signature [ Ready ]</ReasonForChange>
+            <SourceID>63</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="Form4">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-18T10:01:02.927</DateTimeStamp>
+            <ReasonForChange>PI Signature [ Ready ]</ReasonForChange>
+            <SourceID>64</SourceID>
+          </AuditRecord>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

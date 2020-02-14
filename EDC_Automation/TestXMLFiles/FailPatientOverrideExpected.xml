@@ -1,0 +1,69 @@
+﻿<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Patient Status" FileType="Transactional" Granularity="SingleSubject" FileOID="4f2f10b6-0b39-4d94-a141-48eec89c8871" CreationDateTime="2018-12-15T15:59:52.7935411Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500">
+    <GlobalVariables>
+      <StudyName>Test4500</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="D9A37671-057D-4600-A6EE-88C24B00E793" TransactionType="Update">
+      <AuditRecord>
+        <UserRef UserOID="testadmin" />
+        <LocationRef LocationOID="01-Site" />
+        <DateTimeStamp>2018-12-15T15:59:52.647</DateTimeStamp>
+        <ReasonForChange>Override (Screened)</ReasonForChange>
+        <SourceID>13</SourceID>
+      </AuditRecord>
+      <SiteRef LocationOID="01-Site" />
+      <Annotation SeqNum="1">
+        <Comment>Additional Notes:Status override from Failed to Screened</Comment>
+      </Annotation>
+      <StudyEventData StudyEventOID="Fail">
+        <Annotation SeqNum="1">
+          <Comment>Fail</Comment>
+        </Annotation>
+        <FormData FormOID="Fail_Re">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T15:59:52.653</DateTimeStamp>
+            <ReasonForChange>Unpublished</ReasonForChange>
+            <SourceID>231</SourceID>
+          </AuditRecord>
+        </FormData>
+        <dl:AuditRecords>
+          <dl:AuditRecord>
+            <dl:UserRef UserOID="testadmin" />
+            <dl:LocationRef LocationOID="01-Site" />
+            <dl:DateTimeStamp>2018-12-15T15:59:52.653</dl:DateTimeStamp>
+            <dl:ReasonForChange>Unpublished</dl:ReasonForChange>
+            <dl:SourceID>114</dl:SourceID>
+          </dl:AuditRecord>
+          <dl:AuditRecord>
+            <dl:UserRef UserOID="testadmin" />
+            <dl:LocationRef LocationOID="01-Site" />
+            <dl:DateTimeStamp>2018-12-15T15:59:52.653</dl:DateTimeStamp>
+            <dl:ReasonForChange>Patient Status Override</dl:ReasonForChange>
+            <dl:SourceID>113</dl:SourceID>
+            <dl:AdditionalNotes>Status override from Failed to Screened</dl:AdditionalNotes>
+          </dl:AuditRecord>
+        </dl:AuditRecords>
+      </StudyEventData>
+      <StudyEventData StudyEventOID="Common">
+        <Annotation SeqNum="1">
+          <Comment>Common</Comment>
+        </Annotation>
+        <FormData FormOID="Fail">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T15:59:52.653</DateTimeStamp>
+            <ReasonForChange>Unpublished</ReasonForChange>
+            <SourceID>232</SourceID>
+          </AuditRecord>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

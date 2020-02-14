@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Study Update" FileType="Transactional" Granularity="SingleSubject" FileOID="0b5417ed-ebbd-4184-8d26-a919811d5fdf" CreationDateTime="2018-12-04T09:47:48.8432012Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test3210_Base">
+    <GlobalVariables>
+      <StudyName>Test3210_Base</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.3</StudyDescription>
+      <ProtocolName>20070215</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test3210_Base" MetaDataVersionOID="200702152.0">
+    <SubjectData SubjectKey="558B2E40-A06D-40C7-82EE-414302E7442F">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Visit02">
+        <Annotation SeqNum="1">
+          <Comment>Visit02</Comment>
+        </Annotation>
+        <FormData FormOID="Form4">
+          <dl:AuditRecords>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2018-12-04T09:47:07.763</dl:DateTimeStamp>
+              <dl:ReasonForChange>Thawed</dl:ReasonForChange>
+              <dl:SourceID>338</dl:SourceID>
+              <dl:AdditionalNotes>Form thawed due to Patient Migration.</dl:AdditionalNotes>
+            </dl:AuditRecord>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2018-12-04T09:47:09.28</dl:DateTimeStamp>
+              <dl:ReasonForChange>Saved [Incomplete]</dl:ReasonForChange>
+              <dl:SourceID>339</dl:SourceID>
+            </dl:AuditRecord>
+          </dl:AuditRecords>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

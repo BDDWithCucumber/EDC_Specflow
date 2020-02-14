@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Visit Date" FileType="Transactional" Granularity="SingleSubject" FileOID="c584792e-7201-40de-93ef-d3b6eade15db" CreationDateTime="2018-12-05T06:45:01.4194025Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500_EDBDDST">
+    <GlobalVariables>
+      <StudyName>Test4500_EDBDDST</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500_EDBDDST" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="4E1B7464-B8CE-4E42-8EE5-27E08D10C005">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Visit07" TransactionType="Update">
+        <AuditRecord>
+          <UserRef UserOID="System" />
+          <LocationRef LocationOID="01-Site" />
+          <DateTimeStamp>2018-12-05T06:45:00.303</DateTimeStamp>
+          <ReasonForChange>Derived</ReasonForChange>
+          <SourceID>3</SourceID>
+        </AuditRecord>
+        <Annotation SeqNum="1">
+          <Comment>12/06/2018</Comment>
+        </Annotation>
+        <Annotation SeqNum="2">
+          <Comment>Additional Notes:</Comment>
+        </Annotation>
+        <Annotation SeqNum="3">
+          <Comment>Visit07</Comment>
+        </Annotation>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

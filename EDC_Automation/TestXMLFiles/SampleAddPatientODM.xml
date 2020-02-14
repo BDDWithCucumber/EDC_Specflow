@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ODM Description="Description1" FileType="Snapshot" Granularity="All" Archival="Yes" FileOID="FileOID1" CreationDateTime="1900-01-01T01:01:01+05:30" PriorFileOID="PriorFileOID1" AsOfDateTime="1900-01-01T01:01:01+05:30" ODMVersion="1.2" Originator="Originator1" SourceSystem="SourceSystem1" SourceSystemVersion="SourceSystemVersion1" ID="ID1" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="OID1">
+    <GlobalVariables>
+      <StudyName>StudyName1</StudyName>
+      <StudyDescription>StudyDescription1</StudyDescription>
+      <ProtocolName>ProtocolName1</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="StudyOID1" MetaDataVersionOID="MetaDataVersionOID1">
+    <SubjectData SubjectKey="SubjectKey1" TransactionType="Insert" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+      <AuditRecord EditPoint="Monitoring" UsedImputationMethod="Yes" ID="ID2">
+        <UserRef UserOID="UserOID1" />
+        <LocationRef LocationOID="LocationOID1" />
+        <DateTimeStamp>1900-01-01T01:01:01+05:30</DateTimeStamp>
+        <ReasonForChange>ReasonForChange1</ReasonForChange>
+        <SourceID>SourceID1</SourceID>
+      </AuditRecord>
+      <SiteRef LocationOID="LocationOID1" />
+      <Annotation SeqNum="1" TransactionType="Insert" ID="ID3">
+        <Comment SponsorOrSite="Sponsor">Comment1</Comment>
+      </Annotation>
+      <StudyEventData StudyEventOID="Common" StudyEventRepeatKey="StudyEventRepeatKey1" TransactionType="Insert">
+        <FormData FormOID="Scr" FormRepeatKey="FormRepeatKey1" TransactionType="Insert">
+          <ItemGroupData ItemGroupOID="Scr_S1" ItemGroupRepeatKey="ItemGroupRepeatKey1" TransactionType="Insert">
+            <ItemData ItemOID="SCRNID" TransactionType="Insert" IsNull="Yes" Value="Value1">
+              <MeasurementUnitRef MeasurementUnitOID="MeasurementUnitOID1" />
+            </ItemData>
+            <ItemData ItemOID="SCRNDATE" TransactionType="Update" IsNull="Yes" Value="Value2">
+              <MeasurementUnitRef MeasurementUnitOID="MeasurementUnitOID2" />
+            </ItemData>
+            <ItemData ItemOID="SCRNIDENT" TransactionType="Remove" IsNull="Yes" Value="Value3">
+              <MeasurementUnitRef MeasurementUnitOID="MeasurementUnitOID3" />
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+      <StudyEventData StudyEventOID="Week_1" StudyEventRepeatKey="StudyEventRepeatKey2" TransactionType="Insert">
+        <FormData FormOID="DEMO" FormRepeatKey="FormRepeatKey2" TransactionType="Insert"/>
+        <FormData FormOID="LOCATION" FormRepeatKey="FormRepeatKey2" TransactionType="Insert"/>
+        <FormData FormOID="LOC_AB" FormRepeatKey="FormRepeatKey2" TransactionType="Insert"/>
+        <FormData FormOID="LOC_TAB" FormRepeatKey="FormRepeatKey2" TransactionType="Insert"/>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

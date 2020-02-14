@@ -1,0 +1,78 @@
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Item Data Update" FileType="Transactional" Granularity="SingleSubject" FileOID="0ebbcf1b-36f7-461a-b2fc-9bfca67220be" CreationDateTime="2018-12-18T14:06:42.6805205Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500_QUER">
+    <GlobalVariables>
+      <StudyName>Test4500_QUER</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500_QUER" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="A3FA0DC8-BC3E-4BE0-9B2C-6FE5BEB84253">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Screening">
+        <Annotation SeqNum="1">
+          <Comment>Screening</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <ItemGroupData ItemGroupOID="Form1_S1" ItemGroupRepeatKey="1" TransactionType="Update">
+            <ItemData ItemOID="Date" TransactionType="Update" Value="08/26/2005">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-18T14:06:41.443</DateTimeStamp>
+                <ReasonForChange>DCF</ReasonForChange>
+                <SourceID>14</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Updated date</Comment>
+              </Annotation>
+              <dl:DCF OID="2" Description="Q6: Value is not within the expected normal range (1/1/1950 to 1/1/2000)" Request="Please verify." Response="Forced closed due to data change." Type="Auto" QueryOID="1997" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">28</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-18T14:06:41.507</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Closed</dl:ReasonForChange>
+                    <dl:SourceID>7</dl:SourceID>
+                  </dl:AuditRecord>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-18T14:06:41.497</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Answered</dl:ReasonForChange>
+                    <dl:SourceID>6</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+              <dl:DCF OID="4" Description="Q6: Value is not within the expected normal range (1/1/1950 to 1/1/2000)" Request="Please verify." Type="Auto" QueryOID="1997" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">24</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-18T14:06:41.513</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Sent</dl:ReasonForChange>
+                    <dl:SourceID>8</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+              <dl:DCF OID="5" Description="Q6: Value is not within expected study normal range (1/1/1953 to 1/1/2003)." Request="Please verify." Type="Auto" QueryOID="1998" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">23</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-18T14:06:41.543</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Draft</dl:ReasonForChange>
+                    <dl:SourceID>9</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

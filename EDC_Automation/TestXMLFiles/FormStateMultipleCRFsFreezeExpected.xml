@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Form State" FileType="Transactional" Granularity="SingleSubject" FileOID="a09d6647-70d6-4477-b23a-ef7e20c4c8a9" CreationDateTime="2018-12-05T13:50:48.3633586Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500">
+    <GlobalVariables>
+      <StudyName>Test4500</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="BFF33EDF-439F-455F-9800-837A3D6DA1A1">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Screening">
+        <Annotation SeqNum="1">
+          <Comment>Screening</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-05T13:50:47.61</DateTimeStamp>
+            <ReasonForChange>Frozen</ReasonForChange>
+            <SourceID>66</SourceID>
+          </AuditRecord>
+        </FormData>
+        <FormData FormOID="DEMO_RTSM">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-05T13:50:47.61</DateTimeStamp>
+            <ReasonForChange>Frozen</ReasonForChange>
+            <SourceID>67</SourceID>
+          </AuditRecord>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

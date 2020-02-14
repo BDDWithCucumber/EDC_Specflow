@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Export xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.perceptive.com/2010/10/DataLabsXC/Integration/AdvancedExport">
+  <Mapping>
+    <DataShapes>
+      <DataShape Name="Questions" Type="Labs">
+        <SubDataShape Name="D1" Category="Lab Mapping" IsMultipleInstance="true" DomainName="D1">
+          <DataReference Name="LAB_ID" Label="Lab ID" Value="Data.*.*.*.LabIDForD1.Value" SortOrder="2" MappingType="D" LabelString="Data.*.*.*.LabIDForD1.Value" />
+          <DataReference Name="Lab_Name" Label="Lab Name" Value="Data.*.*.*.LabNameForD1.Value" SortOrder="3" MappingType="D" LabelString="Data.*.*.*.LabNameForD1.Value" />
+          <DataReference Name="Company" Label="Company" Value="Data.*.*.*.CompanyForD1.Value" SortOrder="4" MappingType="D" LabelString="Data.*.*.*.CompanyForD1.Value" />
+          <DataReference Name="Lab_Address" Label="Lab Address" Value="Data.*.*.*.LabAddressforD1.Value" SortOrder="5" MappingType="D" LabelString="Data.*.*.*.LabAddressforD1.Value" />
+          <DataReference Name="Country" Label="Country" Value="Data.*.*.*.CountryForD1.Value" SortOrder="6" MappingType="D" LabelString="Data.*.*.*.CountryForD1.Value" />
+          <DataReference Name="CRF_Collection_Date" Label="CRF Collection Date" Value="Data.*.*.*.CollectionDateForD1.Value" SortOrder="8" MappingType="D" LabelString="Data.*.*.*.CollectionDateForD1.Value" />
+          <DataReference Name="CRF_Lab_Test_Name" Label="CRF Lab Test Name" Value="Data.*.*.*.CRFLabTESTNAmeForD1.Value" SortOrder="9" MappingType="D" LabelString="Data.*.*.*.CRFLabTESTNAmeForD1.Value" />
+          <DataReference Name="Lab_Test_Description" Label="Lab Test Description" Value="" SortOrder="10" LabelString="" />
+          <DataReference Name="CRF_Lab_Value" Label="CRF Lab Value" Value="Data.*.*.*.CRFLabValueForD1.Value" SortOrder="11" MappingType="D" LabelString="Data.*.*.*.CRFLabValueForD1.Value" />
+          <DataReference Name="CRF_Lab_Original_Unit" Label="CRF Lab (Original) Unit" Value="Data.*.*.*.CRFLabUnitForD1.Value" SortOrder="12" MappingType="D" LabelString="Data.*.*.*.CRFLabUnitForD1.Value" />
+          <DataReference Name="Lab_Test_Name" Label="Lab Test Name" Value="Data.*.*.*.LabTestNameForD1.Value" SortOrder="14" MappingType="D" LabelString="Data.*.*.*.LabTestNameForD1.Value" />
+          <DataReference Name="Lab_Test_Code" Label="Lab Test Code" Value="Data.*.*.*.LabTestCodeForD1.Value" SortOrder="15" MappingType="D" LabelString="Data.*.*.*.LabTestCodeForD1.Value" />
+          <DataReference Name="LOINC_Code" Label="LOINC Code" Value="Data.*.*.*.LIONICCodeForD1.Value" SortOrder="17" MappingType="D" LabelString="Data.*.*.*.LIONICCodeForD1.Value" />
+          <DataReference Name="Category" Label="Category" Value="Data.*.*.*.CategoryForD1.Value" SortOrder="18" MappingType="D" LabelString="Data.*.*.*.CategoryForD1.Value" />
+          <DataReference Name="Sub_category" Label="Subcategory" Value="Data.*.*.*.SubCategoryForD1.Value" SortOrder="19" MappingType="D" LabelString="Data.*.*.*.SubCategoryForD1.Value" />
+          <DataReference Name="Specimen" Label="Specimen" Value="Data.*.*.*.SpecimenForD1.Value" SortOrder="20" MappingType="D" LabelString="Data.*.*.*.SpecimenForD1.Value" />
+          <DataReference Name="Method" Label="Method" Value="Data.*.*.*.MethodForD1.Value" SortOrder="21" MappingType="D" LabelString="Data.*.*.*.MethodForD1.Value" />
+          <DataReference Name="Result_Type" Label="Result Type" Value="Data.*.*.*.ResultTypeForD1.Value" SortOrder="22" MappingType="D" LabelString="Data.*.*.*.ResultTypeForD1.Value" />
+          <DataReference Name="Normal_Reference_Range_Low" Label="Normal Reference Range Low" Value="Data.*.*.*.NorRRLowForD1.Value" SortOrder="24" MappingType="D" LabelString="Data.*.*.*.NorRRLowForD1.Value" />
+          <DataReference Name="Normal_Reference_Range_High" Label="Normal Reference Range High" Value="Data.*.*.*.NorRRHighForD1.Value" SortOrder="25" MappingType="D" LabelString="Data.*.*.*.NorRRHighForD1.Value" />
+          <DataReference Name="Critical_Reference_Range_Low" Label="Critical Reference Range Low" Value="Data.*.*.*.CriticalRRLowForD1.Value" SortOrder="26" MappingType="D" LabelString="Data.*.*.*.CriticalRRLowForD1.Value" />
+          <DataReference Name="Critical_Reference_Range_High" Label="Critical Reference Range High" Value="Data.*.*.*.CriticalRRHighForD1.Value" SortOrder="27" MappingType="D" LabelString="Data.*.*.*.CriticalRRHighForD1.Value" />
+          <DataReference Name="Reference_Range_Not_Applicable" Label="Reference Range Not Applicable" Value="Data.*.*.*.RRNAForD1.Value" SortOrder="28" MappingType="D" LabelString="Data.*.*.*.RRNAForD1.Value" />
+          <DataReference Name="Reference_Range_ID" Label="Reference Range ID" Value="Data.*.*.*.RRIDForD1.Value" SortOrder="29" MappingType="D" LabelString="Data.*.*.*.RRIDForD1.Value" />
+          <DataReference Name="Out_of_Normal_Range_Indicator" Label="Out of Normal Range Indicator" Value="Data.*.*.*.OutNRInDForD1.Value" SortOrder="30" MappingType="D" LabelString="Data.*.*.*.OutNRInDForD1.Value" />
+          <DataReference Name="Normalized_Patient_Lab_Value" Label="Normalized Patient Lab Value" Value="Data.*.*.*.NorPatientLabValuForD1.Value" SortOrder="32" MappingType="D" LabelString="Data.*.*.*.NorPatientLabValuForD1.Value" />
+          <DataReference Name="Normalized_Lab_Unit" Label="Normalized Lab Unit" Value="Data.*.*.*.NormaliLabUnitForD1.Value" SortOrder="33" MappingType="D" LabelString="Data.*.*.*.NormaliLabUnitForD1.Value" />
+          <DataReference Name="Normalized_Normal_Reference_Range_Low" Label="Normalized Normal Reference Range Low" Value="Data.*.*.*.NormaliNormalRRLowForD1.Value" SortOrder="34" MappingType="D" LabelString="Data.*.*.*.NormaliNormalRRLowForD1.Value" />
+          <DataReference Name="Normalized_Normal_Reference_Range_High" Label="Normalized Normal Reference Range High" Value="Data.*.*.*.NormalizedNormalRRHighForD1.Value" SortOrder="35" MappingType="D" LabelString="Data.*.*.*.NormalizedNormalRRHighForD1.Value" />
+          <DataReference Name="Normalized_Critical_Reference_Range_Low" Label="Normalized Critical Reference Range Low" Value="Data.*.*.*.NormalizeCriticalRRLowForD1.Value" SortOrder="36" MappingType="D" LabelString="Data.*.*.*.NormalizeCriticalRRLowForD1.Value" />
+          <DataReference Name="Normalized_Critical_Reference_Range_High" Label="Normalized Critical Reference Range High" Value="Data.*.*.*.NormalizCriticalRRHighForD1.Value" SortOrder="37" MappingType="D" LabelString="Data.*.*.*.NormalizCriticalRRHighForD1.Value" />
+          <DataReference Name="Precision" Label="Precision" Value="Data.*.*.*.PrecisionForD1.Value" SortOrder="38" MappingType="D" LabelString="Data.*.*.*.PrecisionForD1.Value" />
+          <DataReference Name="Conversion_Factor" Label="Conversion Factor" Value="Data.*.*.*.ConversionFactorForD1.Value" SortOrder="39" MappingType="D" LabelString="Data.*.*.*.ConversionFactorForD1.Value" />
+        </SubDataShape>
+        <SubDataShape Name="Attribute Mapping" Category="Attribute Mapping" IsMultipleInstance="false">
+          <DataReference Name="GENDER" Label="Gender" Value="Data.Event1.FrmDemographics.DI_Gender.DI_Gender.Value" SortOrder="1" MappingType="M" LabelString="Data.Event 1.Demographics.DI_Gender (What is your gender).DI_Gender.Value">
+            <CodeListMappings SourceCodeListName="CL_Gender" StandardCodeListName="GENDER_LAB">
+              <CodeListMapping SourceItemName="Male" StandardItemName="Male" />
+              <CodeListMapping SourceItemName="Female" StandardItemName="Female" />
+              <CodeListMapping SourceItemName="Not Specified" StandardItemName="Not Specified" />
+            </CodeListMappings>
+          </DataReference>
+          <DataReference Name="DATE_OF_BIRTH_SELECTION" Label="Date of Birth / Age" Value="Age" SortOrder="2" MappingType="D" LabelString="Age" />
+          <DataReference Name="AGE" Label="Age" Value="Data.Event1.FrmDemographics.DI_Age.DI_Age.Value" SortOrder="7" MappingType="M" LabelString="Data.Event 1.Demographics.DI_Age (What is your age).DI_Age.Value" />
+          <DataReference Name="AGE_UNIT" Label="Age Unit" Value="Data.Event1.FrmDemographics.DI_AgeUnit.DI_AgeUnit.Value" SortOrder="8" MappingType="M" LabelString="Data.Event 1.Demographics.DI_AgeUnit (Age Unit).DI_AgeUnit.Value">
+            <CodeListMappings SourceCodeListName="CL_AgeUnit" StandardCodeListName="AGE_UNIT_LAB">
+              <CodeListMapping SourceItemName="Month" StandardItemName="Months" />
+              <CodeListMapping SourceItemName="Day" StandardItemName="Days" />
+              <CodeListMapping SourceItemName="Year" StandardItemName="Years" />
+            </CodeListMappings>
+          </DataReference>
+        </SubDataShape>
+      </DataShape>
+    </DataShapes>
+    <LabCategory>
+      <Category Name="Lab Mapping" Desc="Lab Mapping" IsMultipleInstance="true">
+        <Attribute Name="Laboratory" Label="Laboratory" AgeCalculationType="None" />
+        <Attribute Name="LAB_ID" Label="Lab ID" AgeCalculationType="None" />
+        <Attribute Name="Lab_Name" Label="Lab Name" AgeCalculationType="None" />
+        <Attribute Name="Company" Label="Company" AgeCalculationType="None" />
+        <Attribute Name="Lab_Address" Label="Lab Address" AgeCalculationType="None" />
+        <Attribute Name="Country" Label="Country" AgeCalculationType="None" />
+        <Attribute Name="Subject_Lab_Value" Label="Subject Lab Value" AgeCalculationType="None" />
+        <Attribute Name="CRF_Collection_Date" Label="CRF Collection Date" AgeCalculationType="None" />
+        <Attribute Name="CRF_Lab_Test_Name" Label="CRF Lab Test Name" AgeCalculationType="None" />
+        <Attribute Name="Lab_Test_Description" Label="Lab Test Description" AgeCalculationType="None" />
+        <Attribute Name="CRF_Lab_Value" Label="CRF Lab Value" AgeCalculationType="None" />
+        <Attribute Name="CRF_Lab_Original_Unit" Label="CRF Lab (Original) Unit" AgeCalculationType="None" />
+        <Attribute Name="Dictionary_Lab_Test_Properties" Label="Dictionary Lab Test Properties" AgeCalculationType="None" />
+        <Attribute Name="Lab_Test_Name" Label="Lab Test Name" AgeCalculationType="None" />
+        <Attribute Name="Lab_Test_Code" Label="Lab Test Code" AgeCalculationType="None" />
+        <Attribute Name="LOINC_Code" Label="LOINC Code" AgeCalculationType="None" />
+        <Attribute Name="Category" Label="Category" AgeCalculationType="None" />
+        <Attribute Name="Sub_category" Label="Subcategory" AgeCalculationType="None" />
+        <Attribute Name="Specimen" Label="Specimen" AgeCalculationType="None" />
+        <Attribute Name="Method" Label="Method" AgeCalculationType="None" />
+        <Attribute Name="Result_Type" Label="Result Type" AgeCalculationType="None" />
+        <Attribute Name="Reference_Range" Label="Reference Range" AgeCalculationType="None" />
+        <Attribute Name="Normal_Reference_Range_Low" Label="Normal Reference Range Low" AgeCalculationType="None" />
+        <Attribute Name="Normal_Reference_Range_High" Label="Normal Reference Range High" AgeCalculationType="None" />
+        <Attribute Name="Critical_Reference_Range_Low" Label="Critical Reference Range Low" AgeCalculationType="None" />
+        <Attribute Name="Critical_Reference_Range_High" Label="Critical Reference Range High" AgeCalculationType="None" />
+        <Attribute Name="Reference_Range_Not_Applicable" Label="Reference Range Not Applicable" AgeCalculationType="None" />
+        <Attribute Name="Reference_Range_ID" Label="Reference Range ID" AgeCalculationType="None" />
+        <Attribute Name="Out_of_Normal_Range_Indicator" Label="Out of Normal Range Indicator" AgeCalculationType="None" />
+        <Attribute Name="Normalization" Label="Normalization" AgeCalculationType="None" />
+        <Attribute Name="Normalized_Patient_Lab_Value" Label="Normalized Patient Lab Value" AgeCalculationType="None" />
+        <Attribute Name="Normalized_Lab_Unit" Label="Normalized Lab Unit" AgeCalculationType="None" />
+        <Attribute Name="Normalized_Normal_Reference_Range_Low" Label="Normalized Normal Reference Range Low" AgeCalculationType="None" />
+        <Attribute Name="Normalized_Normal_Reference_Range_High" Label="Normalized Normal Reference Range High" AgeCalculationType="None" />
+        <Attribute Name="Normalized_Critical_Reference_Range_Low" Label="Normalized Critical Reference Range Low" AgeCalculationType="None" />
+        <Attribute Name="Normalized_Critical_Reference_Range_High" Label="Normalized Critical Reference Range High" AgeCalculationType="None" />
+        <Attribute Name="Precision" Label="Precision" AgeCalculationType="None" />
+        <Attribute Name="Conversion_Factor" Label="Conversion Factor" AgeCalculationType="None" />
+      </Category>
+      <Category Name="Attribute Mapping" Desc="Attribute Mapping" IsMultipleInstance="false">
+        <Attribute Name="GENDER" Label="Gender" AgeCalculationType="None" />
+        <Attribute Name="DATE_OF_BIRTH_SELECTION" Label="Date of Birth / Age" AgeCalculationType="None" />
+        <Attribute Name="DATE_OF_BIRTH_WHOLEDATE" Label="Date of Birth (Whole Date)" AgeCalculationType="Date of Birth (Whole Date)" />
+        <Attribute Name="DATE_OF_BIRTH_DAY" Label="Date of Birth (Day)" AgeCalculationType="Date of Birth (Day, Month, Year)" />
+        <Attribute Name="DATE_OF_BIRTH_MONTH" Label="Date of Birth (Month)" AgeCalculationType="Date of Birth (Day, Month, Year)" />
+        <Attribute Name="DATE_OF_BIRTH_YEAR" Label="Date of Birth (Year)" AgeCalculationType="Date of Birth (Day, Month, Year)" />
+        <Attribute Name="AGE" Label="Age" AgeCalculationType="Age" />
+        <Attribute Name="AGE_UNIT" Label="Age Unit" AgeCalculationType="Age" />
+      </Category>
+    </LabCategory>
+    <DictionaryMapping>
+      <LabDictionary LabDictionaryName="LabDict" LabDictionaryLabel="labDict" FileName="DataLabsEDC_LabDictionary_GS1.xlsx" />
+      <TestMappings>
+        <TestMapping TestName="MRRTEST1" TestDescription="Test1" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC1" SubCategory="Serum1" DisplayinReferenceRange="true" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST2" TestDescription="Test2" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC2" SubCategory="Serum2" DisplayinReferenceRange="false" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST3" TestDescription="Test3" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC3" SubCategory="Serum3" DisplayinReferenceRange="false" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST4" TestDescription="Test4" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC4" SubCategory="Serum4" DisplayinReferenceRange="false" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST5" TestDescription="Test5" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC5" SubCategory="Serum5" DisplayinReferenceRange="false" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST6" TestDescription="Test6" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC6" SubCategory="Serum6" DisplayinReferenceRange="false" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST7" TestDescription="Test7" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC7" SubCategory="Serum7" DisplayinReferenceRange="false" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST8" TestDescription="Test8" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC8" SubCategory="Serum8" DisplayinReferenceRange="false" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST9" TestDescription="Test9" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC9" SubCategory="Serum9" DisplayinReferenceRange="false" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST10" TestDescription="Test10" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC10" SubCategory="Serum10" DisplayinReferenceRange="false" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST11" TestDescription="Test11" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC11" SubCategory="Serum11" DisplayinReferenceRange="false" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST12" TestDescription="Test12" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC12" SubCategory="Serum12" DisplayinReferenceRange="false" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST13" TestDescription="Test13" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC13" SubCategory="Serum13" DisplayinReferenceRange="false" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST14" TestDescription="Test14" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC14" SubCategory="Serum14" DisplayinReferenceRange="false" IsValid="false" IsCopied="false" />
+        <TestMapping TestName="MRRTEST15" TestDescription="Test15" XCCode_GUID="0000009c-0000-0000-0000-000000000000" XCCodeList_GUID="00000071-0000-0000-0000-000000000000" Category="Hemo" SubCategory="RBC" DisplayinReferenceRange="true" IsValid="true" IsCopied="false" />
+        <TestMapping TestName="MRRTEST16" TestDescription="Test16" XCCode_GUID="00000087-0000-0000-0000-000000000000" XCCodeList_GUID="00000071-0000-0000-0000-000000000000" Category="Hemo" SubCategory="RBC" DisplayinReferenceRange="true" IsValid="true" IsCopied="false" />
+        <TestMapping TestName="MRRTEST10" TestDescription="Test10" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" Category="RBC10" SubCategory="Serum10" DisplayinReferenceRange="false" IsValid="false" IsCopied="true" />
+      </TestMappings>
+      <UnitMappings>
+        <UnitMapping UnitName="1Unit" UnitDescription="Unit1desc" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" IsValid="false" IsCopied="false" />
+        <UnitMapping UnitName="2Unit" UnitDescription="Unit2desc" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" IsValid="false" IsCopied="false" />
+        <UnitMapping UnitName="3Unit" UnitDescription="Unit3desc" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" IsValid="false" IsCopied="false" />
+        <UnitMapping UnitName="4unit" UnitDescription="Unit4desc" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" IsValid="false" IsCopied="false" />
+        <UnitMapping UnitName="5Unit" UnitDescription="Unit5desc" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" IsValid="false" IsCopied="false" />
+        <UnitMapping UnitName="6Unit" UnitDescription="Unit6desc" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" IsValid="false" IsCopied="false" />
+        <UnitMapping UnitName="7Unit" UnitDescription="Unit7desc" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" IsValid="false" IsCopied="false" />
+        <UnitMapping UnitName="8Unit" UnitDescription="Unit8desc" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" IsValid="false" IsCopied="false" />
+        <UnitMapping UnitName="9Unit" UnitDescription="Unit9desc" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" IsValid="false" IsCopied="false" />
+        <UnitMapping UnitName="10Unit" UnitDescription="Unit10desc" XCCode_GUID="0000009f-0000-0000-0000-000000000000" XCCodeList_GUID="00000072-0000-0000-0000-000000000000" IsValid="true" IsCopied="false" />
+        <UnitMapping UnitName="11Unit" UnitDescription="Unit11desc" XCCode_GUID="000000a0-0000-0000-0000-000000000000" XCCodeList_GUID="00000072-0000-0000-0000-000000000000" IsValid="true" IsCopied="false" />
+        <UnitMapping UnitName="12unit" UnitDescription="Unit12desc" XCCode_GUID="000000a1-0000-0000-0000-000000000000" XCCodeList_GUID="00000072-0000-0000-0000-000000000000" IsValid="true" IsCopied="false" />
+        <UnitMapping UnitName="12unit" UnitDescription="Unit12desc" XCCode_GUID="00000000-0000-0000-0000-000000000000" XCCodeList_GUID="00000000-0000-0000-0000-000000000000" IsValid="false" IsCopied="true" />
+      </UnitMappings>
+    </DictionaryMapping>
+  </Mapping>
+</Export>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Item Data Update" FileType="Transactional" Granularity="SingleSubject" FileOID="f39c953b-9666-458d-ac38-74ca5d1a07ce" CreationDateTime="2018-12-09T08:05:54.7111Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500">
+    <GlobalVariables>
+      <StudyName>Test4500</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="69080780-DD70-4A1C-88A0-5F8A83FB0B41">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Visit02">
+        <Annotation SeqNum="1">
+          <Comment>Visit02</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-09T08:05:53.623</DateTimeStamp>
+            <ReasonForChange>Submitted</ReasonForChange>
+            <SourceID>60</SourceID>
+          </AuditRecord>
+          <Annotation SeqNum="1">
+            <Comment>Additional Notes:</Comment>
+          </Annotation>
+          <ItemGroupData ItemGroupOID="Form1_S1" ItemGroupRepeatKey="1" TransactionType="Update">
+            <ItemData ItemOID="Float" TransactionType="Insert" Value="">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-09T08:05:53.617</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>14</SourceID>
+              </AuditRecord>
+              <dl:DCF OID="1" Description="Q5: Value does not meet the minimum precision of 2." Request="Please verify." Type="Auto" QueryOID="1075" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">23</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-09T08:05:54.04</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Draft</dl:ReasonForChange>
+                    <dl:SourceID>1</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+              <dl:DCF OID="2" Description="Q5: Value does not meet the minimum length requirement of 4." Request="Please Verify" Type="Auto" QueryOID="1077" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">23</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-09T08:05:54.11</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Draft</dl:ReasonForChange>
+                    <dl:SourceID>2</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

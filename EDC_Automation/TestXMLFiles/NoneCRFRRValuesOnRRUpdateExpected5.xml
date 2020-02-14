@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Item Data Update" FileType="Transactional" Granularity="SingleSubject" FileOID="490fd814-2261-4279-9d97-046eafcf07b8" CreationDateTime="2019-06-28T17:51:44.0840605Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.8.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="TestLabs_Data">
+    <GlobalVariables>
+      <StudyName>TestLabs_Data</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="TestLabs_Data" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="E2465465-85C8-4D8A-94C1-B0448682519O">
+      <SiteRef LocationOID="02-Site" />
+      <StudyEventData StudyEventOID="Visit02">
+        <Annotation SeqNum="1">
+          <Comment>Visit02</Comment>
+        </Annotation>
+        <FormData FormOID="LabForm1">
+          <ItemGroupData ItemGroupOID="LabForm1_T1" ItemGroupRepeatKey="2" TransactionType="Update">
+            <ItemData ItemOID="CRFLabDescription" TransactionType="Update" Value="RBC">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T17:51:42.807</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29350</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="ReferenceRangeID" TransactionType="Update" Value="1000">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T17:51:42.817</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29351</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="ReferenceRangeNotApplicable" TransactionType="Update" Value="No">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T17:51:42.823</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29352</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

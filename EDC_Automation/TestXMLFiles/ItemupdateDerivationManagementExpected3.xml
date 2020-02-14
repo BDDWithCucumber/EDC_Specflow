@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Item Data Update" FileType="Transactional" Granularity="SingleSubject" FileOID="1d38da07-bcee-49f2-a115-b92e732cd917" CreationDateTime="2018-12-26T08:03:35.6713674Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500_deriva">
+    <GlobalVariables>
+      <StudyName>Test4500_deriva</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500_deriva" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="D8A966C2-DEC0-468B-972F-10B6A26481C1">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="AutoBuild_Event51">
+        <Annotation SeqNum="1">
+          <Comment>AutoBuild_Event51</Comment>
+        </Annotation>
+        <FormData FormOID="AutoBuild_Form01">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-26T08:03:34.92</DateTimeStamp>
+            <ReasonForChange>Saved [Incomplete]</ReasonForChange>
+            <SourceID>92</SourceID>
+          </AuditRecord>
+          <Annotation SeqNum="1">
+            <Comment>Additional Notes:</Comment>
+          </Annotation>
+          <ItemGroupData ItemGroupOID="AutoBuild_Form01_T1" ItemGroupRepeatKey="1" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2018-12-26T08:03:34.453</DateTimeStamp>
+              <ReasonForChange>Row # 7: Added</ReasonForChange>
+              <SourceID>91</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:</Comment>
+            </Annotation>
+            <ItemData ItemOID="CodeList2_Yes01" TransactionType="Insert" Value="Head">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.223</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>176</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Text01" TransactionType="Insert" Value="Enrolled">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.233</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>178</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Integer01" TransactionType="Insert" Value="1">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.24</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>179</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Date01" TransactionType="Insert" Value="12/26/2018">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.243</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>180</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Float01" TransactionType="Insert" Value="34.76">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.25</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>181</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AutoBuild_Form01_T1" ItemGroupRepeatKey="2" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2018-12-26T08:03:34.453</DateTimeStamp>
+              <ReasonForChange>Row # 7: Added</ReasonForChange>
+              <SourceID>91</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:</Comment>
+            </Annotation>
+            <ItemData ItemOID="CodeList2_Yes01" TransactionType="Insert" Value="Eyes">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.257</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>183</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Text01" TransactionType="Insert" Value="Enrolled">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.267</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>185</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Integer01" TransactionType="Insert" Value="1">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.273</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>186</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Date01" TransactionType="Insert" Value="12/26/2018">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.277</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>187</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Float01" TransactionType="Insert" Value="34.76">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.283</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>188</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AutoBuild_Form01_T1" ItemGroupRepeatKey="3" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2018-12-26T08:03:34.453</DateTimeStamp>
+              <ReasonForChange>Row # 7: Added</ReasonForChange>
+              <SourceID>91</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:</Comment>
+            </Annotation>
+            <ItemData ItemOID="CodeList2_Yes01" TransactionType="Insert" Value="Ears">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.293</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>190</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Text01" TransactionType="Insert" Value="Enrolled">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.303</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>192</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Integer01" TransactionType="Insert" Value="1">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.307</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>193</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Date01" TransactionType="Insert" Value="12/26/2018">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.313</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>194</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Float01" TransactionType="Insert" Value="34.76">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.31</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>195</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AutoBuild_Form01_T1" ItemGroupRepeatKey="4" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2018-12-26T08:03:34.453</DateTimeStamp>
+              <ReasonForChange>Row # 7: Added</ReasonForChange>
+              <SourceID>91</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:</Comment>
+            </Annotation>
+            <ItemData ItemOID="CodeList2_Yes01" TransactionType="Insert" Value="Nose">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.32</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>197</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Text01" TransactionType="Insert" Value="Enrolled">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.33</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>199</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Integer01" TransactionType="Insert" Value="1">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.333</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>200</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Date01" TransactionType="Insert" Value="12/26/2018">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.337</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>201</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Float01" TransactionType="Insert" Value="34.76">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.343</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>202</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AutoBuild_Form01_T1" ItemGroupRepeatKey="5" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2018-12-26T08:03:34.453</DateTimeStamp>
+              <ReasonForChange>Row # 7: Added</ReasonForChange>
+              <SourceID>91</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:</Comment>
+            </Annotation>
+            <ItemData ItemOID="CodeList2_Yes01" TransactionType="Insert" Value="Chest">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.353</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>204</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Text01" TransactionType="Insert" Value="Enrolled">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.363</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>206</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Integer01" TransactionType="Insert" Value="1">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.367</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>207</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Date01" TransactionType="Insert" Value="12/26/2018">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.373</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>208</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Float01" TransactionType="Insert" Value="34.76">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.377</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>209</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AutoBuild_Form01_T1" ItemGroupRepeatKey="6" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2018-12-26T08:03:34.453</DateTimeStamp>
+              <ReasonForChange>Row # 7: Added</ReasonForChange>
+              <SourceID>91</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:</Comment>
+            </Annotation>
+            <ItemData ItemOID="CodeList2_Yes01" TransactionType="Insert" Value="Arm">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.387</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>211</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Text01" TransactionType="Insert" Value="Enrolled">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.397</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>213</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Integer01" TransactionType="Insert" Value="1">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.4</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>214</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Date01" TransactionType="Insert" Value="12/26/2018">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.407</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>215</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Float01" TransactionType="Insert" Value="34.76">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.41</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>216</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AutoBuild_Form01_T1" ItemGroupRepeatKey="7" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2018-12-26T08:03:34.453</DateTimeStamp>
+              <ReasonForChange>Row # 7: Added</ReasonForChange>
+              <SourceID>91</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:</Comment>
+            </Annotation>
+            <ItemData ItemOID="CodeList2_Yes01" TransactionType="Insert" Value="Leg">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.42</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>218</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Text01" TransactionType="Insert" Value="Enrolled">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.43</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>220</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Integer01" TransactionType="Insert" Value="1">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.437</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>221</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Date01" TransactionType="Insert" Value="12/26/2018">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.44</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>222</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="AB_Float01" TransactionType="Insert" Value="34.76">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-26T08:03:34.447</DateTimeStamp>
+                <ReasonForChange>Initial Entry</ReasonForChange>
+                <SourceID>223</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:Submitted</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

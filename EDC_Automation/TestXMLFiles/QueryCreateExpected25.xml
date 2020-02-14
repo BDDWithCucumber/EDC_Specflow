@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Query Update" FileType="Transactional" Granularity="SingleSubject" FileOID="3690fb1a-c85d-4bca-8184-28f0c72b7843" CreationDateTime="2018-12-25T23:20:31.8278001Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500_QUER">
+    <GlobalVariables>
+      <StudyName>Test4500_QUER</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500_QUER" MetaDataVersionOID="200903305.0">
+    <SubjectData SubjectKey="18513154-D05D-40D8-9C70-7D41DB47FF0C">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Screening">
+        <Annotation SeqNum="1">
+          <Comment>Screening</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <dl:DCF OID="16" Description="Please enter the value for all items." Request="Please Verify the given value." Type="Manual" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+            <dl:Status CodeListOID="DCF">23</dl:Status>
+            <dl:AuditRecords>
+              <dl:AuditRecord>
+                <dl:UserRef UserOID="testadmin" />
+                <dl:LocationRef LocationOID="01-Site" />
+                <dl:DateTimeStamp>2018-12-25T23:20:30.95</dl:DateTimeStamp>
+                <dl:ReasonForChange>Draft</dl:ReasonForChange>
+                <dl:SourceID>34</dl:SourceID>
+              </dl:AuditRecord>
+            </dl:AuditRecords>
+          </dl:DCF>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Signature Status" FileType="Transactional" Granularity="SingleSubject" FileOID="47a042e0-1985-4bfa-bb55-ad6232fd15a7" CreationDateTime="2018-12-23T11:31:26.6029597Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500_QUER">
+    <GlobalVariables>
+      <StudyName>Test4500_QUER</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <AdminData StudyOID="Test4500_QUER">
+    <SignatureDef OID="PISignature.1" Methodology="Electronic">
+      <Meaning>PISignature</Meaning>
+      <LegalReason>By my dated signature below, I verify that this case report form accurately displays the results of the examinations, tests, evaluations, and treatments noted within. Pursuant to Section 11.100 of Title 21 of the Code of Federal Regulations, this is to certify that I intend that this electronic signature is to be the legally binding equivalent of my handwritten signature.</LegalReason>
+    </SignatureDef>
+  </AdminData>
+  <ClinicalData StudyOID="Test4500_QUER" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="255842E1-A4AD-4D10-B8EB-AD433F9DE7B3">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Visit02">
+        <Annotation SeqNum="1">
+          <Comment>Visit02</Comment>
+        </Annotation>
+        <FormData FormOID="Form3">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-23T11:31:26.3</DateTimeStamp>
+            <ReasonForChange>PI Signature [ Rejected ]</ReasonForChange>
+            <SourceID>78</SourceID>
+          </AuditRecord>
+          <Annotation SeqNum="1">
+            <Comment>Additional Notes:Invalid data</Comment>
+          </Annotation>
+        </FormData>
+      </StudyEventData>
+      <StudyEventData StudyEventOID="Visit04">
+        <Annotation SeqNum="1">
+          <Comment>Visit04</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-23T11:31:26.337</DateTimeStamp>
+            <ReasonForChange>PI Signature [ Signed ]</ReasonForChange>
+            <SourceID>79</SourceID>
+          </AuditRecord>
+          <Signature>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <SignatureRef SignatureOID="PISignature.1" />
+            <DateTimeStamp>2018-12-23T11:31:26.337</DateTimeStamp>
+          </Signature>
+          <Annotation SeqNum="1">
+            <Comment>Additional Notes:</Comment>
+          </Annotation>
+          <ItemGroupData ItemGroupOID="Form1_S1" ItemGroupRepeatKey="1">
+            <ItemData ItemOID="Text" Value="Sample Text">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-23T11:31:26.343</DateTimeStamp>
+                <ReasonForChange>Signature Action</ReasonForChange>
+                <SourceID>55</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:PI Signature [ Signed ]</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Select" Value="X">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-23T11:31:26.343</DateTimeStamp>
+                <ReasonForChange>Signature Action</ReasonForChange>
+                <SourceID>56</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:PI Signature [ Signed ]</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Radio" Value="X">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-23T11:31:26.343</DateTimeStamp>
+                <ReasonForChange>Signature Action</ReasonForChange>
+                <SourceID>57</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:PI Signature [ Signed ]</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Integer" Value="19">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-23T11:31:26.343</DateTimeStamp>
+                <ReasonForChange>Signature Action</ReasonForChange>
+                <SourceID>58</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:PI Signature [ Signed ]</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Float" Value="12.32">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-23T11:31:26.343</DateTimeStamp>
+                <ReasonForChange>Signature Action</ReasonForChange>
+                <SourceID>59</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:PI Signature [ Signed ]</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Date" Value="">
+              <AuditRecord>
+                <UserRef UserOID="testadmin" />
+                <LocationRef LocationOID="01-Site" />
+                <DateTimeStamp>2018-12-23T11:31:26.343</DateTimeStamp>
+                <ReasonForChange>Signature Action</ReasonForChange>
+                <SourceID>60</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:PI Signature [ Signed ]</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

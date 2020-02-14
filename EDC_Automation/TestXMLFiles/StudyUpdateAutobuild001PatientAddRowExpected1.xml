@@ -1,0 +1,2656 @@
+﻿<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Study Update" FileType="Transactional" Granularity="SingleSubject" FileOID="1f86257e-e68e-4065-adc9-8ce5f807b353" CreationDateTime="2019-07-04T09:10:24.4315397Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.8.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500_GREAT_F">
+    <GlobalVariables>
+      <StudyName>Test4500_GREAT_F</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500_GREAT_F" MetaDataVersionOID="200903303.0">
+    <SubjectData SubjectKey="C3963F09-AE9B-4961-908F-73E581E878D0">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Visit02">
+        <Annotation SeqNum="1">
+          <Comment>Visit02</Comment>
+        </Annotation>
+        <FormData FormOID="AB_WithOneKeySequenceColumn">
+          <Annotation SeqNum="1">
+            <Flag>
+              <FlagValue CodeListOID="D-Review">135</FlagValue>
+              <FlagType CodeListOID="Flag">1</FlagType>
+            </Flag>
+          </Annotation>
+          <Annotation SeqNum="2">
+            <Flag>
+              <FlagValue CodeListOID="M-Review">135</FlagValue>
+              <FlagType CodeListOID="Flag">2</FlagType>
+            </Flag>
+          </Annotation>
+          <Annotation SeqNum="3">
+            <Flag>
+              <FlagValue CodeListOID="SD-Verify">135</FlagValue>
+              <FlagType CodeListOID="Flag">3</FlagType>
+            </Flag>
+          </Annotation>
+          <ItemGroupData ItemGroupOID="AB_WithOneKeySequenceColumn_T1" ItemGroupRepeatKey="1" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #1: Added</ReasonForChange>
+              <SourceID>1061</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="BRegioin" TransactionType="Insert" Value="Hair">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.12</dl:DateTimeStamp>
+                  <dl:SourceID>6168</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithOneKeySequenceColumn_T1" ItemGroupRepeatKey="2" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #1 renumbered to #2</ReasonForChange>
+              <SourceID>1054</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithOneKeySequenceColumn_T1" ItemGroupRepeatKey="3" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #2 renumbered to #3</ReasonForChange>
+              <SourceID>1055</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithOneKeySequenceColumn_T1" ItemGroupRepeatKey="4" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #3 renumbered to #4</ReasonForChange>
+              <SourceID>1056</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithOneKeySequenceColumn_T1" ItemGroupRepeatKey="5" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #4 renumbered to #5</ReasonForChange>
+              <SourceID>1057</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithOneKeySequenceColumn_T1" ItemGroupRepeatKey="6" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #5 renumbered to #6</ReasonForChange>
+              <SourceID>1058</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithOneKeySequenceColumn_T1" ItemGroupRepeatKey="7" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #6 renumbered to #7</ReasonForChange>
+              <SourceID>1059</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithOneKeySequenceColumn_T1" ItemGroupRepeatKey="8" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #7 renumbered to #8</ReasonForChange>
+              <SourceID>1060</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <dl:AuditRecords>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2019-07-04T09:09:52.123</dl:DateTimeStamp>
+              <dl:ReasonForChange>Saved [Incomplete]</dl:ReasonForChange>
+              <dl:SourceID>1051</dl:SourceID>
+            </dl:AuditRecord>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2019-07-04T09:10:14.22</dl:DateTimeStamp>
+              <dl:ReasonForChange>D-Review [ Some ]</dl:ReasonForChange>
+              <dl:SourceID>1344</dl:SourceID>
+            </dl:AuditRecord>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2019-07-04T09:10:14.22</dl:DateTimeStamp>
+              <dl:ReasonForChange>M-Review [ Some ]</dl:ReasonForChange>
+              <dl:SourceID>1350</dl:SourceID>
+            </dl:AuditRecord>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2019-07-04T09:10:14.22</dl:DateTimeStamp>
+              <dl:ReasonForChange>SD-Verify [ Some ]</dl:ReasonForChange>
+              <dl:SourceID>1356</dl:SourceID>
+            </dl:AuditRecord>
+          </dl:AuditRecords>
+        </FormData>
+        <FormData FormOID="AB_WithTwoKeySequenceColumns">
+          <Annotation SeqNum="1">
+            <Flag>
+              <FlagValue CodeListOID="D-Review">135</FlagValue>
+              <FlagType CodeListOID="Flag">1</FlagType>
+            </Flag>
+          </Annotation>
+          <Annotation SeqNum="2">
+            <Flag>
+              <FlagValue CodeListOID="M-Review">135</FlagValue>
+              <FlagType CodeListOID="Flag">2</FlagType>
+            </Flag>
+          </Annotation>
+          <Annotation SeqNum="3">
+            <Flag>
+              <FlagValue CodeListOID="SD-Verify">135</FlagValue>
+              <FlagType CodeListOID="Flag">3</FlagType>
+            </Flag>
+          </Annotation>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T1" ItemGroupRepeatKey="13" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #13: Added</ReasonForChange>
+              <SourceID>1062</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Gender" TransactionType="Insert" Value="NA">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.413</dl:DateTimeStamp>
+                  <dl:SourceID>6169</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="DrugList" TransactionType="Insert" Value="Tylenol">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.42</dl:DateTimeStamp>
+                  <dl:SourceID>6170</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T1" ItemGroupRepeatKey="14" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #14: Added</ReasonForChange>
+              <SourceID>1063</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Gender" TransactionType="Insert" Value="NA">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.427</dl:DateTimeStamp>
+                  <dl:SourceID>6171</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="DrugList" TransactionType="Insert" Value="Contact">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.43</dl:DateTimeStamp>
+                  <dl:SourceID>6172</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T1" ItemGroupRepeatKey="15" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #15: Added</ReasonForChange>
+              <SourceID>1064</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Gender" TransactionType="Insert" Value="NA">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.437</dl:DateTimeStamp>
+                  <dl:SourceID>6173</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="DrugList" TransactionType="Insert" Value="Excedrin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.44</dl:DateTimeStamp>
+                  <dl:SourceID>6174</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="1" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #1: Added</ReasonForChange>
+              <SourceID>1089</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="ProblmeType" TransactionType="Insert" Value="I">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.447</dl:DateTimeStamp>
+                  <dl:SourceID>6175</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Hours" TransactionType="Insert" Value="0">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.45</dl:DateTimeStamp>
+                  <dl:SourceID>6176</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="14" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #14: Added</ReasonForChange>
+              <SourceID>1090</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="ProblmeType" TransactionType="Insert" Value="N">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.457</dl:DateTimeStamp>
+                  <dl:SourceID>6177</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Hours" TransactionType="Insert" Value="0">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.46</dl:DateTimeStamp>
+                  <dl:SourceID>6178</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="2" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #1 renumbered to #2</ReasonForChange>
+              <SourceID>1065</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="3" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #2 renumbered to #3</ReasonForChange>
+              <SourceID>1066</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="4" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #3 renumbered to #4</ReasonForChange>
+              <SourceID>1067</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="5" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #4 renumbered to #5</ReasonForChange>
+              <SourceID>1068</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="6" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #5 renumbered to #6</ReasonForChange>
+              <SourceID>1069</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="7" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #6 renumbered to #7</ReasonForChange>
+              <SourceID>1070</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="8" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #7 renumbered to #8</ReasonForChange>
+              <SourceID>1071</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="9" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #8 renumbered to #9</ReasonForChange>
+              <SourceID>1072</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="10" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #9 renumbered to #10</ReasonForChange>
+              <SourceID>1073</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="11" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #10 renumbered to #11</ReasonForChange>
+              <SourceID>1074</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="12" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #11 renumbered to #12</ReasonForChange>
+              <SourceID>1075</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="13" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #12 renumbered to #13</ReasonForChange>
+              <SourceID>1076</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="15" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #13 renumbered to #15</ReasonForChange>
+              <SourceID>1077</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="16" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #14 renumbered to #16</ReasonForChange>
+              <SourceID>1078</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="17" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #15 renumbered to #17</ReasonForChange>
+              <SourceID>1079</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="18" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #16 renumbered to #18</ReasonForChange>
+              <SourceID>1080</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="19" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #17 renumbered to #19</ReasonForChange>
+              <SourceID>1081</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="20" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #18 renumbered to #20</ReasonForChange>
+              <SourceID>1082</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="21" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #19 renumbered to #21</ReasonForChange>
+              <SourceID>1083</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="22" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #20 renumbered to #22</ReasonForChange>
+              <SourceID>1084</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="23" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #21 renumbered to #23</ReasonForChange>
+              <SourceID>1085</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="24" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #22 renumbered to #24</ReasonForChange>
+              <SourceID>1086</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="25" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #23 renumbered to #25</ReasonForChange>
+              <SourceID>1087</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T2" ItemGroupRepeatKey="26" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #24 renumbered to #26</ReasonForChange>
+              <SourceID>1088</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="3" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #3: Added</ReasonForChange>
+              <SourceID>1101</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="TATYPE" TransactionType="Insert" Value="Non-Lymphatic Lesion">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.467</dl:DateTimeStamp>
+                  <dl:SourceID>6179</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="STATUS" TransactionType="Insert" Value="Critical">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.47</dl:DateTimeStamp>
+                  <dl:SourceID>6180</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="8" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #8: Added</ReasonForChange>
+              <SourceID>1102</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="TATYPE" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.477</dl:DateTimeStamp>
+                  <dl:SourceID>6181</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="STATUS" TransactionType="Insert" Value="Critical">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.48</dl:DateTimeStamp>
+                  <dl:SourceID>6182</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="13" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #13: Added</ReasonForChange>
+              <SourceID>1103</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="TATYPE" TransactionType="Insert" Value="Lymphatic Lesion">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.487</dl:DateTimeStamp>
+                  <dl:SourceID>6183</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="STATUS" TransactionType="Insert" Value="Critical">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.49</dl:DateTimeStamp>
+                  <dl:SourceID>6184</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="16" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #16: Added</ReasonForChange>
+              <SourceID>1104</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="TATYPE" TransactionType="Insert" Value="Lesion">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.497</dl:DateTimeStamp>
+                  <dl:SourceID>6185</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="STATUS" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.5</dl:DateTimeStamp>
+                  <dl:SourceID>6186</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="17" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #17: Added</ReasonForChange>
+              <SourceID>1105</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="TATYPE" TransactionType="Insert" Value="Lesion">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.507</dl:DateTimeStamp>
+                  <dl:SourceID>6187</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="STATUS" TransactionType="Insert" Value="Dead">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.51</dl:DateTimeStamp>
+                  <dl:SourceID>6188</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="18" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #18: Added</ReasonForChange>
+              <SourceID>1106</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="TATYPE" TransactionType="Insert" Value="Lesion">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.517</dl:DateTimeStamp>
+                  <dl:SourceID>6189</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="STATUS" TransactionType="Insert" Value="Critical">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.523</dl:DateTimeStamp>
+                  <dl:SourceID>6190</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="19" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #19: Added</ReasonForChange>
+              <SourceID>1107</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="TATYPE" TransactionType="Insert" Value="Lesion">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.527</dl:DateTimeStamp>
+                  <dl:SourceID>6191</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="STATUS" TransactionType="Insert" Value="Lost to follow-up">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.533</dl:DateTimeStamp>
+                  <dl:SourceID>6192</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="20" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #20: Added</ReasonForChange>
+              <SourceID>1108</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="TATYPE" TransactionType="Insert" Value="Lesion">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.537</dl:DateTimeStamp>
+                  <dl:SourceID>6193</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="STATUS" TransactionType="Insert" Value="Alive">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.543</dl:DateTimeStamp>
+                  <dl:SourceID>6194</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="4" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #3 renumbered to #4</ReasonForChange>
+              <SourceID>1091</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="5" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #4 renumbered to #5</ReasonForChange>
+              <SourceID>1092</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="6" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #5 renumbered to #6</ReasonForChange>
+              <SourceID>1093</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="7" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #6 renumbered to #7</ReasonForChange>
+              <SourceID>1094</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="9" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #7 renumbered to #9</ReasonForChange>
+              <SourceID>1095</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="10" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #8 renumbered to #10</ReasonForChange>
+              <SourceID>1096</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="11" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #9 renumbered to #11</ReasonForChange>
+              <SourceID>1097</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="12" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #10 renumbered to #12</ReasonForChange>
+              <SourceID>1098</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="14" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #11 renumbered to #14</ReasonForChange>
+              <SourceID>1099</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithTwoKeySequenceColumns_T3" ItemGroupRepeatKey="15" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #12 renumbered to #15</ReasonForChange>
+              <SourceID>1100</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <dl:AuditRecords>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2019-07-04T09:10:14.22</dl:DateTimeStamp>
+              <dl:ReasonForChange>D-Review [ Some ]</dl:ReasonForChange>
+              <dl:SourceID>1345</dl:SourceID>
+            </dl:AuditRecord>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2019-07-04T09:10:14.22</dl:DateTimeStamp>
+              <dl:ReasonForChange>M-Review [ Some ]</dl:ReasonForChange>
+              <dl:SourceID>1351</dl:SourceID>
+            </dl:AuditRecord>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2019-07-04T09:10:14.22</dl:DateTimeStamp>
+              <dl:ReasonForChange>SD-Verify [ Some ]</dl:ReasonForChange>
+              <dl:SourceID>1357</dl:SourceID>
+            </dl:AuditRecord>
+          </dl:AuditRecords>
+        </FormData>
+        <FormData FormOID="AB_WithThreeKeySequenceColumns_4">
+          <Annotation SeqNum="1">
+            <Flag>
+              <FlagValue CodeListOID="D-Review">135</FlagValue>
+              <FlagType CodeListOID="Flag">1</FlagType>
+            </Flag>
+          </Annotation>
+          <Annotation SeqNum="2">
+            <Flag>
+              <FlagValue CodeListOID="M-Review">135</FlagValue>
+              <FlagType CodeListOID="Flag">2</FlagType>
+            </Flag>
+          </Annotation>
+          <Annotation SeqNum="3">
+            <Flag>
+              <FlagValue CodeListOID="SD-Verify">135</FlagValue>
+              <FlagType CodeListOID="Flag">3</FlagType>
+            </Flag>
+          </Annotation>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="4" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #4: Added</ReasonForChange>
+              <SourceID>1124</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Study Regimen">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:52.97</dl:DateTimeStamp>
+                  <dl:SourceID>6195</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Leucovorin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.09</dl:DateTimeStamp>
+                  <dl:SourceID>6196</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="NEW DRUG2">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.11</dl:DateTimeStamp>
+                  <dl:SourceID>6197</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="5" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #5: Added</ReasonForChange>
+              <SourceID>1125</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Study Regimen">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.127</dl:DateTimeStamp>
+                  <dl:SourceID>6198</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.15</dl:DateTimeStamp>
+                  <dl:SourceID>6199</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="nab-Paclitaxel">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.177</dl:DateTimeStamp>
+                  <dl:SourceID>6200</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="6" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #6: Added</ReasonForChange>
+              <SourceID>1126</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Study Regimen">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.2</dl:DateTimeStamp>
+                  <dl:SourceID>6201</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.23</dl:DateTimeStamp>
+                  <dl:SourceID>6202</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.263</dl:DateTimeStamp>
+                  <dl:SourceID>6203</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="7" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #7: Added</ReasonForChange>
+              <SourceID>1127</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Study Regimen">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.293</dl:DateTimeStamp>
+                  <dl:SourceID>6204</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.33</dl:DateTimeStamp>
+                  <dl:SourceID>6205</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="Gemcitabine">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.363</dl:DateTimeStamp>
+                  <dl:SourceID>6206</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="8" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #8: Added</ReasonForChange>
+              <SourceID>1128</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Study Regimen">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.403</dl:DateTimeStamp>
+                  <dl:SourceID>6207</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.447</dl:DateTimeStamp>
+                  <dl:SourceID>6208</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="NEW DRUG2">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.49</dl:DateTimeStamp>
+                  <dl:SourceID>6209</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="12" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #12: Added</ReasonForChange>
+              <SourceID>1129</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Study Regimen">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.537</dl:DateTimeStamp>
+                  <dl:SourceID>6210</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.583</dl:DateTimeStamp>
+                  <dl:SourceID>6211</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="NEW DRUG2">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.633</dl:DateTimeStamp>
+                  <dl:SourceID>6212</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="16" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #16: Added</ReasonForChange>
+              <SourceID>1130</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Oxaliplatin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.687</dl:DateTimeStamp>
+                  <dl:SourceID>6213</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Leucovorin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.733</dl:DateTimeStamp>
+                  <dl:SourceID>6214</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="NEW DRUG2">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.79</dl:DateTimeStamp>
+                  <dl:SourceID>6215</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="17" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #17: Added</ReasonForChange>
+              <SourceID>1131</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Oxaliplatin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.85</dl:DateTimeStamp>
+                  <dl:SourceID>6216</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.91</dl:DateTimeStamp>
+                  <dl:SourceID>6217</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="nab-Paclitaxel">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:53.973</dl:DateTimeStamp>
+                  <dl:SourceID>6218</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="18" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #18: Added</ReasonForChange>
+              <SourceID>1132</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Oxaliplatin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:54.04</dl:DateTimeStamp>
+                  <dl:SourceID>6219</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:54.107</dl:DateTimeStamp>
+                  <dl:SourceID>6220</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:54.18</dl:DateTimeStamp>
+                  <dl:SourceID>6221</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="19" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #19: Added</ReasonForChange>
+              <SourceID>1133</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Oxaliplatin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:54.253</dl:DateTimeStamp>
+                  <dl:SourceID>6222</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:54.33</dl:DateTimeStamp>
+                  <dl:SourceID>6223</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="Gemcitabine">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:54.407</dl:DateTimeStamp>
+                  <dl:SourceID>6224</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="20" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #20: Added</ReasonForChange>
+              <SourceID>1134</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Oxaliplatin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:54.49</dl:DateTimeStamp>
+                  <dl:SourceID>6225</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:54.573</dl:DateTimeStamp>
+                  <dl:SourceID>6226</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="NEW DRUG2">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:54.66</dl:DateTimeStamp>
+                  <dl:SourceID>6227</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="24" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #24: Added</ReasonForChange>
+              <SourceID>1135</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Oxaliplatin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:54.75</dl:DateTimeStamp>
+                  <dl:SourceID>6228</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:54.84</dl:DateTimeStamp>
+                  <dl:SourceID>6229</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="NEW DRUG2">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:54.933</dl:DateTimeStamp>
+                  <dl:SourceID>6230</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="28" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #28: Added</ReasonForChange>
+              <SourceID>1136</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:55.027</dl:DateTimeStamp>
+                  <dl:SourceID>6231</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Leucovorin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:55.123</dl:DateTimeStamp>
+                  <dl:SourceID>6232</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="NEW DRUG2">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:55.22</dl:DateTimeStamp>
+                  <dl:SourceID>6233</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="29" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #29: Added</ReasonForChange>
+              <SourceID>1137</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:55.32</dl:DateTimeStamp>
+                  <dl:SourceID>6234</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:55.43</dl:DateTimeStamp>
+                  <dl:SourceID>6235</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="nab-Paclitaxel">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:55.54</dl:DateTimeStamp>
+                  <dl:SourceID>6236</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="30" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #30: Added</ReasonForChange>
+              <SourceID>1138</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:55.647</dl:DateTimeStamp>
+                  <dl:SourceID>6237</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:55.763</dl:DateTimeStamp>
+                  <dl:SourceID>6238</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:55.887</dl:DateTimeStamp>
+                  <dl:SourceID>6239</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="31" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #31: Added</ReasonForChange>
+              <SourceID>1139</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:56.007</dl:DateTimeStamp>
+                  <dl:SourceID>6240</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:56.127</dl:DateTimeStamp>
+                  <dl:SourceID>6241</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="Gemcitabine">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:56.25</dl:DateTimeStamp>
+                  <dl:SourceID>6242</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="32" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #32: Added</ReasonForChange>
+              <SourceID>1140</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:56.373</dl:DateTimeStamp>
+                  <dl:SourceID>6243</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:56.503</dl:DateTimeStamp>
+                  <dl:SourceID>6244</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="NEW DRUG2">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:56.633</dl:DateTimeStamp>
+                  <dl:SourceID>6245</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="36" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #36: Added</ReasonForChange>
+              <SourceID>1141</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:56.763</dl:DateTimeStamp>
+                  <dl:SourceID>6246</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:56.893</dl:DateTimeStamp>
+                  <dl:SourceID>6247</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="NEW DRUG2">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:57.03</dl:DateTimeStamp>
+                  <dl:SourceID>6248</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="37" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #37: Added</ReasonForChange>
+              <SourceID>1142</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="NEW DRUG">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:57.17</dl:DateTimeStamp>
+                  <dl:SourceID>6249</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Leucovorin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:57.313</dl:DateTimeStamp>
+                  <dl:SourceID>6250</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="nab-Paclitaxel">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:57.46</dl:DateTimeStamp>
+                  <dl:SourceID>6251</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="38" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #38: Added</ReasonForChange>
+              <SourceID>1143</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="NEW DRUG">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:57.607</dl:DateTimeStamp>
+                  <dl:SourceID>6252</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Leucovorin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:57.757</dl:DateTimeStamp>
+                  <dl:SourceID>6253</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:57.907</dl:DateTimeStamp>
+                  <dl:SourceID>6254</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="39" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #39: Added</ReasonForChange>
+              <SourceID>1144</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="NEW DRUG">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:58.06</dl:DateTimeStamp>
+                  <dl:SourceID>6255</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Leucovorin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:58.213</dl:DateTimeStamp>
+                  <dl:SourceID>6256</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="Gemcitabine">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:58.377</dl:DateTimeStamp>
+                  <dl:SourceID>6257</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="40" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #40: Added</ReasonForChange>
+              <SourceID>1145</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="NEW DRUG">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:58.54</dl:DateTimeStamp>
+                  <dl:SourceID>6258</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Leucovorin">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:58.703</dl:DateTimeStamp>
+                  <dl:SourceID>6259</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="NEW DRUG2">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:58.87</dl:DateTimeStamp>
+                  <dl:SourceID>6260</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="41" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #41: Added</ReasonForChange>
+              <SourceID>1146</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="NEW DRUG">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:59.03</dl:DateTimeStamp>
+                  <dl:SourceID>6261</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:59.2</dl:DateTimeStamp>
+                  <dl:SourceID>6262</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="nab-Paclitaxel">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:59.373</dl:DateTimeStamp>
+                  <dl:SourceID>6263</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="42" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #42: Added</ReasonForChange>
+              <SourceID>1147</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="NEW DRUG">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:59.55</dl:DateTimeStamp>
+                  <dl:SourceID>6264</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:59.73</dl:DateTimeStamp>
+                  <dl:SourceID>6265</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:09:59.907</dl:DateTimeStamp>
+                  <dl:SourceID>6266</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="43" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #43: Added</ReasonForChange>
+              <SourceID>1148</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="NEW DRUG">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:00.093</dl:DateTimeStamp>
+                  <dl:SourceID>6267</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:00.277</dl:DateTimeStamp>
+                  <dl:SourceID>6268</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="Gemcitabine">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:00.463</dl:DateTimeStamp>
+                  <dl:SourceID>6269</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="44" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #44: Added</ReasonForChange>
+              <SourceID>1149</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="NEW DRUG">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:00.657</dl:DateTimeStamp>
+                  <dl:SourceID>6270</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="NEW DRUG1">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:00.847</dl:DateTimeStamp>
+                  <dl:SourceID>6271</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="NEW DRUG2">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:01.04</dl:DateTimeStamp>
+                  <dl:SourceID>6272</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="45" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #45: Added</ReasonForChange>
+              <SourceID>1150</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="NEW DRUG">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:01.233</dl:DateTimeStamp>
+                  <dl:SourceID>6273</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:01.433</dl:DateTimeStamp>
+                  <dl:SourceID>6274</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="nab-Paclitaxel">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:01.633</dl:DateTimeStamp>
+                  <dl:SourceID>6275</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="46" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #46: Added</ReasonForChange>
+              <SourceID>1151</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="NEW DRUG">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:01.84</dl:DateTimeStamp>
+                  <dl:SourceID>6276</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:02.043</dl:DateTimeStamp>
+                  <dl:SourceID>6277</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:02.257</dl:DateTimeStamp>
+                  <dl:SourceID>6278</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="47" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #47: Added</ReasonForChange>
+              <SourceID>1152</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="NEW DRUG">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:02.467</dl:DateTimeStamp>
+                  <dl:SourceID>6279</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:02.68</dl:DateTimeStamp>
+                  <dl:SourceID>6280</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="Gemcitabine">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:02.897</dl:DateTimeStamp>
+                  <dl:SourceID>6281</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="48" TransactionType="Insert">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #48: Added</ReasonForChange>
+              <SourceID>1153</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+            <ItemData ItemOID="Drug0" TransactionType="Insert" Value="NEW DRUG">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:03.11</dl:DateTimeStamp>
+                  <dl:SourceID>6282</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug1" TransactionType="Insert" Value="Blank">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:03.327</dl:DateTimeStamp>
+                  <dl:SourceID>6283</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+            <ItemData ItemOID="Drug2" TransactionType="Insert" Value="NEW DRUG2">
+              <dl:AuditRecords>
+                <dl:AuditRecord>
+                  <dl:UserRef UserOID="System" />
+                  <dl:LocationRef LocationOID="01-Site" />
+                  <dl:DateTimeStamp>2019-07-04T09:10:03.557</dl:DateTimeStamp>
+                  <dl:SourceID>6284</dl:SourceID>
+                  <dl:AdditionalNotes>Study Design Change</dl:AdditionalNotes>
+                </dl:AuditRecord>
+              </dl:AuditRecords>
+            </ItemData>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="9" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #4 renumbered to #9</ReasonForChange>
+              <SourceID>1109</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="10" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #5 renumbered to #10</ReasonForChange>
+              <SourceID>1110</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="11" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #6 renumbered to #11</ReasonForChange>
+              <SourceID>1111</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="13" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #7 renumbered to #13</ReasonForChange>
+              <SourceID>1112</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="14" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #8 renumbered to #14</ReasonForChange>
+              <SourceID>1113</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="15" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #9 renumbered to #15</ReasonForChange>
+              <SourceID>1114</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="21" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #10 renumbered to #21</ReasonForChange>
+              <SourceID>1115</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="22" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #11 renumbered to #22</ReasonForChange>
+              <SourceID>1116</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="23" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #12 renumbered to #23</ReasonForChange>
+              <SourceID>1117</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="25" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #13 renumbered to #25</ReasonForChange>
+              <SourceID>1118</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="26" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #14 renumbered to #26</ReasonForChange>
+              <SourceID>1119</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="27" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #15 renumbered to #27</ReasonForChange>
+              <SourceID>1120</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="33" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #16 renumbered to #33</ReasonForChange>
+              <SourceID>1121</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="34" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #17 renumbered to #34</ReasonForChange>
+              <SourceID>1122</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <ItemGroupData ItemGroupOID="AB_WithThreeKeySequenceColumns_4_T1" ItemGroupRepeatKey="35" TransactionType="Update">
+            <AuditRecord>
+              <UserRef UserOID="System" />
+              <LocationRef LocationOID="01-Site" />
+              <DateTimeStamp>2019-07-04T09:10:14.043</DateTimeStamp>
+              <ReasonForChange>Row  #18 renumbered to #35</ReasonForChange>
+              <SourceID>1123</SourceID>
+            </AuditRecord>
+            <Annotation SeqNum="1">
+              <Comment>Additional Notes:Study design change</Comment>
+            </Annotation>
+          </ItemGroupData>
+          <dl:AuditRecords>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2019-07-04T09:10:03.82</dl:DateTimeStamp>
+              <dl:ReasonForChange>Saved [Incomplete]</dl:ReasonForChange>
+              <dl:SourceID>1053</dl:SourceID>
+            </dl:AuditRecord>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2019-07-04T09:09:53</dl:DateTimeStamp>
+              <dl:ReasonForChange>PI Signature [ Changed ]</dl:ReasonForChange>
+              <dl:SourceID>1052</dl:SourceID>
+            </dl:AuditRecord>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2019-07-04T09:10:14.22</dl:DateTimeStamp>
+              <dl:ReasonForChange>D-Review [ Some ]</dl:ReasonForChange>
+              <dl:SourceID>1346</dl:SourceID>
+            </dl:AuditRecord>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2019-07-04T09:10:14.22</dl:DateTimeStamp>
+              <dl:ReasonForChange>M-Review [ Some ]</dl:ReasonForChange>
+              <dl:SourceID>1352</dl:SourceID>
+            </dl:AuditRecord>
+            <dl:AuditRecord>
+              <dl:UserRef UserOID="System" />
+              <dl:LocationRef LocationOID="01-Site" />
+              <dl:DateTimeStamp>2019-07-04T09:10:14.22</dl:DateTimeStamp>
+              <dl:ReasonForChange>SD-Verify [ Some ]</dl:ReasonForChange>
+              <dl:SourceID>1358</dl:SourceID>
+            </dl:AuditRecord>
+          </dl:AuditRecords>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

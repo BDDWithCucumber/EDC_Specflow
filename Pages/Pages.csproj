@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9EBBFF7-6AB2-4DA6-B39D-5C7A2B509B33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pages</RootNamespace>
+    <AssemblyName>Pages</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.QualityTools.UnitTestFramework.Updated.15.0.26228\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataLabs\AdvancedSearch\DL_AdvancedSearchResultsPage.cs" />
+    <Compile Include="DataLabs\Common\DatalabsPageFooter.cs" />
+    <Compile Include="DataLabs\Common\DL_AdvancedSearchWindow.cs" />
+    <Compile Include="DataLabs\Common\DL_DCFs_FlagsPalette.cs" />
+    <Compile Include="DataLabs\Common\DL_DCFs_SearchPalette.cs" />
+    <Compile Include="DataLabs\Common\DL_UserPreferencesPage.cs" />
+    <Compile Include="DataLabs\Data\AddCommentsForQuestion.cs" />
+    <Compile Include="DataLabs\Data\AddPatientData.cs" />
+    <Compile Include="DataLabs\Data\BreadCrumbData.cs" />
+    <Compile Include="DataLabs\Data\CreateFrFromxisiting.cs" />
+    <Compile Include="DataLabs\Data\CRF_TableHistoryData.cs" />
+    <Compile Include="DataLabs\Data\DropDownInfo.cs" />
+    <Compile Include="DataLabs\Data\Event_New_EventDate.cs" />
+    <Compile Include="DataLabs\Data\FlagManagementData.cs" />
+    <Compile Include="DataLabs\Data\FlagMultipleCRFsData.cs" />
+    <Compile Include="DataLabs\Data\ManageReferenceRangesData.cs" />
+    <Compile Include="DataLabs\Data\MRRLabTestData.cs" />
+    <Compile Include="DataLabs\Data\CRFFlatQuestionsData.cs" />
+    <Compile Include="DataLabs\Data\CRFTableQuestionsData.cs" />
+    <Compile Include="DataLabs\Data\CRF_CommentsData.cs" />
+    <Compile Include="DataLabs\Data\CRF_DCFTabData.cs" />
+    <Compile Include="DataLabs\Data\CRF_ItemChangeHistoryData.cs" />
+    <Compile Include="DataLabs\Data\CRF_New_ManualDCFData.cs" />
+    <Compile Include="DataLabs\Data\CRF_WorkflowTabData.cs" />
+    <Compile Include="DataLabs\Data\DCFPrintWizardStep1Data.cs" />
+    <Compile Include="DataLabs\Data\EditDCFPageHeaderData.cs" />
+    <Compile Include="DataLabs\Data\EnrollPatientData.cs" />
+    <Compile Include="DataLabs\Data\GroupPermissionsData.cs" />
+    <Compile Include="DataLabs\Data\IntegrationManagementData.cs" />
+    <Compile Include="DataLabs\Data\ListItemsDataOnCRF.cs" />
+    <Compile Include="DataLabs\Data\MainDCFsTab_SearchData.cs" />
+    <Compile Include="DataLabs\Data\MrrLabTestSubColumnData.cs" />
+    <Compile Include="DataLabs\Data\Mrr_ChangeHistoryData.cs" />
+    <Compile Include="DataLabs\Data\Mrr_LabTests.cs" />
+    <Compile Include="DataLabs\Data\Mrr_Table_Columns.cs" />
+    <Compile Include="DataLabs\Data\PatientCasebookData.cs" />
+    <Compile Include="DataLabs\Data\PatientTableData.cs" />
+    <Compile Include="DataLabs\Data\PatientTransferData.cs" />
+    <Compile Include="DataLabs\Data\PDEP_FormAccesssRestrictionMessageData.cs" />
+    <Compile Include="DataLabs\Data\PDEP_FormIconsData.cs" />
+    <Compile Include="DataLabs\Data\PDEP_MismatchedFlatQuestionData.cs" />
+    <Compile Include="DataLabs\Data\PermissionType_PermissionData.cs" />
+    <Compile Include="DataLabs\Data\QuickExportData.cs" />
+    <Compile Include="DataLabs\Data\ReferenceRangesData.cs" />
+    <Compile Include="DataLabs\Data\RequestSignatureData.cs" />
+    <Compile Include="DataLabs\Data\RowIndex.cs" />
+    <Compile Include="DataLabs\Data\SignCasebookData.cs" />
+    <Compile Include="DataLabs\Data\SiteInfo.cs" />
+    <Compile Include="DataLabs\Data\SiteManagementMigratePatientsData.cs" />
+    <Compile Include="DataLabs\Data\Site_ManageVersionsData.cs" />
+    <Compile Include="DataLabs\Data\StudyArchive_SiteData.cs" />
+    <Compile Include="DataLabs\Data\UnschedueledEventFormsData.cs" />
+    <Compile Include="DataLabs\DerivationManagement\DL_DerivationManagement.cs" />
+    <Compile Include="DataLabs\DerivationManagement\DL_DerivationRunWizardCriteriaPage.cs" />
+    <Compile Include="DataLabs\DerivationManagement\DL_DerivationRunWizardPage.cs" />
+    <Compile Include="DataLabs\DerivationManagement\DL_DerivationRunWizardSitesPage.cs" />
+    <Compile Include="DataLabs\Export\DL_ArchiveExportPage.cs" />
+    <Compile Include="DataLabs\Export\DL_ExportPage.cs" />
+    <Compile Include="DataLabs\Export\DL_QuickExportPage.cs" />
+    <Compile Include="DataLabs\FlagManagement\DL_CreateFlagPlanPage.cs" />
+    <Compile Include="DataLabs\FlagManagement\DL_CreateFlagDataGroupPage.cs" />
+    <Compile Include="DataLabs\FlagManagement\DL_FlagManagementPage.cs" />
+    <Compile Include="DataLabs\IntegrationManagement\DL_DefinePatientIdentifiers.cs" />
+    <Compile Include="DataLabs\IntegrationManagement\DL_GeneralConfigurations.cs" />
+    <Compile Include="DataLabs\Main\CRF\DL_CRF_MainPage.cs" />
+    <Compile Include="DataLabs\Main\CRF\DL_CRF_PDEP_EventsPage.cs" />
+    <Compile Include="DataLabs\Main\CRF\DL_SubmitCRFsPage.cs" />
+    <Compile Include="DataLabs\Main\DCF\DL_DCF_DraftDCFsPage.cs" />
+    <Compile Include="DataLabs\Main\DCF\DL_DCF_PatientsPage.cs" />
+    <Compile Include="DataLabs\Main\DCF\DL_DCF_SearchResultsPage.cs" />
+    <Compile Include="DataLabs\Main\DCF\DL_DCFPrintWizardStep1Page.cs" />
+    <Compile Include="DataLabs\Main\DCF\DL_DCFPrintWizardStep2Page.cs" />
+    <Compile Include="DataLabs\Main\DCF\DL_DCFPrintWizardStep3Page.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\DL_Lab_ManageReferenceRanges.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\DL_Lab_ManageReferenceRanges_Actions.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\DL_Lab_Mrr_AuditHistory.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\DL_Lab_Mrr_Delete.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\DL_Lab_Mrr_Pagination.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\DL_Lab_MRR_Table.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\DL_Lab_MRR_Table_Changes.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\DL_Lab_Mrr_Table_Pagination.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\ReferenceRangesPage.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_AddComment.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_AnswerDCF.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_ClearItem.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_CRF_MarkItem.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_DeleteTableRow.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_FormComments.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_ItemChangeHistory.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_LabInformation.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_ManualDCF.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_RequeryDCF.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_ResetCRF.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_RestoreTableRow.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_TableChangeHistory.cs" />
+    <Compile Include="DataLabs\Pager\DL_CRF_Comments_Pagination.cs" />
+    <Compile Include="DataLabs\Pager\DL_CRF_DCF_Pagination.cs" />
+    <Compile Include="DataLabs\Pager\DL_CRF_Workflow_Pagination.cs" />
+    <Compile Include="DataLabs\Patients\DL_FlagMultipleCRFsPage.cs" />
+    <Compile Include="DataLabs\Patients\DL_FreezePatientPage.cs" />
+    <Compile Include="DataLabs\Patients\DL_FreezeThawCRFs.cs" />
+    <Compile Include="DataLabs\Patients\DL_LockPatientPage.cs" />
+    <Compile Include="DataLabs\Patients\DL_ThawPatientPage.cs" />
+    <Compile Include="DataLabs\Patients\DL_UnlockPatientPage.cs" />
+    <Compile Include="DataLabs\Patients\UnscheduledEvent\DL_AddUnscheduledEventStep1Page.cs" />
+    <Compile Include="DataLabs\Patients\UnscheduledEvent\DL_AddUnscheduledEventStep2Page.cs" />
+    <Compile Include="DataLabs\Patients\UnscheduledEvent\DL_AddUnscheduledEventStep3Page.cs" />
+    <Compile Include="DataLabs\Patients\DL_CRF_QuestionBase.cs" />
+    <Compile Include="DataLabs\Patients\DL_CRF_Question_Icon.cs" />
+    <Compile Include="DataLabs\Patients\DL_PatientStatusOverridePage.cs" />
+    <Compile Include="DataLabs\Patients\DL_Patient_AddEvetnsPage.cs" />
+    <Compile Include="DataLabs\Patients\DL_RequestSignaturePage.cs" />
+    <Compile Include="DataLabs\Patients\DL_SignCasebookPage.cs" />
+    <Compile Include="DataLabs\Patients\DL_TransferPatientPage.cs" />
+    <Compile Include="DataLabs\Patients\Form\DL_EditDCFPage.cs" />
+    <Compile Include="DataLabs\Patients\Form\DL_FormPage.cs" />
+    <Compile Include="DataLabs\Labs\DL_AddLabPage.cs" />
+    <Compile Include="DataLabs\Data\GroupPermissionData.cs" />
+    <Compile Include="DataLabs\Data\LabData.cs" />
+    <Compile Include="DataLabs\Data\SiteData.cs" />
+    <Compile Include="DataLabs\Common\DL_ActionPalette.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_CRF_QueriesResult.cs" />
+    <Compile Include="DataLabs\Patients\DL_Patient_EventFormsPage.cs" />
+    <Compile Include="DataLabs\PermissionsGroup\DL_AddGroupsPage.cs" />
+    <Compile Include="DataLabs\PermissionsGroup\DL_DeleteGroupsPage.cs" />
+    <Compile Include="DataLabs\QueryManagement\DL_QueryRunWizardCriteriaPage.cs" />
+    <Compile Include="DataLabs\QueryManagement\DL_QueryRunWizardPage.cs" />
+    <Compile Include="DataLabs\QueryManagement\DL_QueryRunWizardSitesPage.cs" />
+    <Compile Include="DataLabs\NormalizeLabData\DL_NormalizeLabDataPage.cs" />
+    <Compile Include="DataLabs\Safety\DL_SafetyHomePage.cs" />
+    <Compile Include="DataLabs\SignatureManagement\DL_PISignaturePage.cs" />
+    <Compile Include="DataLabs\SignatureManagement\DL_SignatureManagementPage.cs" />
+    <Compile Include="DataLabs\Sites\DL_AddSitePage.cs" />
+    <Compile Include="DataLabs\Common\DL_CommonObjects.cs" />
+    <Compile Include="DataLabs\Main\DL_Common_TopBar.cs" />
+    <Compile Include="DataLabs\DL_CRFPage.cs" />
+    <Compile Include="DataLabs\PermissionsGroup\DL_GroupManagementPage.cs" />
+    <Compile Include="DataLabs\PermissionsGroup\DL_GroupPage.cs" />
+    <Compile Include="DataLabs\Inbox\DL_InboxPage.cs" />
+    <Compile Include="DataLabs\Labs\DL_LabManagementPage.cs" />
+    <Compile Include="DataLabs\Labs\DL_Labs_AssociateSitesPage.cs" />
+    <Compile Include="DataLabs\Login\DL_LoginPage.cs" />
+    <Compile Include="DataLabs\Login\DL_ActivityLogWindow.cs" />
+    <Compile Include="DataLabs\Main\DL_MainPage.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow.cs" />
+    <Compile Include="DataLabs\Modal\DL_ModalWindow_ResetSession.cs" />
+    <Compile Include="DataLabs\Pager\DL_Pagination.cs" />
+    <Compile Include="DataLabs\Pager\DL_Pagination1.cs" />
+    <Compile Include="DataLabs\Patients\DL_PatientsPage.cs" />
+    <Compile Include="DataLabs\Permissions\DL_PermissionsPage.cs" />
+    <Compile Include="DataLabs\Main\DL_PrimaryTabs.cs" />
+    <Compile Include="DataLabs\Sites\DL_MigratePatientsPage.cs" />
+    <Compile Include="DataLabs\Sites\DL_SiteDetailsPage.cs" />
+    <Compile Include="DataLabs\Sites\DL_SiteManagementPage.cs" />
+    <Compile Include="DataLabs\Sites\DL_Sites_AssociateLabsPage.cs" />
+    <Compile Include="DataLabs\Sites\DL_Site_ManageUsersPage.cs" />
+    <Compile Include="DataLabs\Sites\DL_Site_ManageVersionsPage.cs" />
+    <Compile Include="DataLabs\Study\DL_PublishStudyFlagsPage.cs" />
+    <Compile Include="DataLabs\Study\DL_PublishStudyPage_MajorStudyUpdate.cs" />
+    <Compile Include="DataLabs\Study\DL_PublishStudyPage_MinorStudyUpdate.cs" />
+    <Compile Include="DataLabs\Study\DL_StudyAdministrationPage.cs" />
+    <Compile Include="DataLabs\Study\DL_StudyManagementPage.cs" />
+    <Compile Include="DataLabs\Study\DL_StudyVersionManagementPage.cs" />
+    <Compile Include="DataLabs\Study\DL_StudyVersionPropertiesPage.cs" />
+    <Compile Include="DataLabs\Study\EditPreferences\DL_Study_EditPreferencesPage.cs" />
+    <Compile Include="DataLabs\Study\DL_UploadStudyFilePage.cs" />
+    <Compile Include="DataLabs\Study\EditPreferences\DL_Study_EditPreferences_DCFsPage.cs" />
+    <Compile Include="DataLabs\Study\EditPreferences\DL_Study_EditPreferences_FormsPage.cs" />
+    <Compile Include="DataLabs\Study\EditPreferences\DL_Study_EditPreferences_PaperEntryPage.cs" />
+    <Compile Include="DataLabs\Study\EditPreferences\DL_Study_EditPreferences_PatientDataEventingPage.cs" />
+    <Compile Include="DataLabs\UserPreferences\DL_ChangePasswordPage.cs" />
+    <Compile Include="Designer\CodeLists\CodeListsGroupPage.cs" />
+    <Compile Include="Designer\CodeLists\CodeListsPage.cs" />
+    <Compile Include="Designer\Common\DS_CommonObjects.cs" />
+    <Compile Include="Designer\CompareStudy\CompareStudyPopup.cs" />
+    <Compile Include="Designer\ConfirmationPopup\DS_ConfirmationPopup.cs" />
+    <Compile Include="Designer\Data\AttributeMappingData.cs" />
+    <Compile Include="Designer\Data\BreadCrumbData.cs" />
+    <Compile Include="Designer\Data\CodelistItemsData.cs" />
+    <Compile Include="Designer\Data\CreateFormfromExistingTable.cs" />
+    <Compile Include="Designer\Data\DomainItemsData.cs" />
+    <Compile Include="Designer\Data\EventData.cs" />
+    <Compile Include="Designer\Data\FormQuestion.cs" />
+    <Compile Include="Designer\Data\FormQuestionsData.cs" />
+    <Compile Include="Designer\Data\ImportLabDictErrorData.cs" />
+    <Compile Include="Designer\Data\LabDictData.cs" />
+    <Compile Include="Designer\Data\Lab_DomainItemMappingData.cs" />
+    <Compile Include="Designer\Data\LadMappingData.cs" />
+    <Compile Include="Designer\Data\MapLabDictionary.cs" />
+    <Compile Include="Designer\Data\StudyCompareReportData.cs" />
+    <Compile Include="Designer\Data\StudyData.cs" />
+    <Compile Include="Designer\Data\StudyVerificationErrorsData.cs" />
+    <Compile Include="Designer\Data\StudyVerificationWarningsData.cs" />
+    <Compile Include="Designer\Data\Tabs.cs" />
+    <Compile Include="Designer\Data\XMLNodeData.cs" />
+    <Compile Include="Designer\Domains\DS_Domains.cs" />
+    <Compile Include="Designer\Domains\DS_QuestionPage.cs" />
+    <Compile Include="Designer\Events\DS_Event.cs" />
+    <Compile Include="Designer\HomePage\DS_HomePage.cs" />
+    <Compile Include="Designer\Forms\DS_Forms.cs" />
+    <Compile Include="Designer\LabDictionary\DS_LabDictionary.cs" />
+    <Compile Include="Designer\LabMapping\LabMappingsPage.cs" />
+    <Compile Include="Designer\Labs\DS_Labs.cs" />
+    <Compile Include="Designer\Login\DS_LoginPage.cs" />
+    <Compile Include="Designer\ManageLabs\ImportLabDictionaryPage.cs" />
+    <Compile Include="Designer\ManageLabs\ManageLabsPage.cs" />
+    <Compile Include="Designer\ManageSponsors\DS_ManageSponsors.cs" />
+    <Compile Include="Designer\MapLabDictionary\MapLabDictionary.cs" />
+    <Compile Include="Designer\ModelDialog\CodeListsItemDeleteDialog.cs" />
+    <Compile Include="Designer\ModelDialog\DS_LabMappingsSpecificationDialog.cs" />
+    <Compile Include="Designer\ModelDialog\DS_Labs_ModalBase.cs" />
+    <Compile Include="Designer\ModelDialog\DS_Labs_StudySaveConfirmationDialog.cs" />
+    <Compile Include="Designer\ModelDialog\DS_MapLabDictionary_ErrorDialog.cs" />
+    <Compile Include="Designer\ModelDialog\DS_ModelDialog.cs" />
+    <Compile Include="Designer\ModelDialog\DS_StudyVerificationMessagesDialog.cs" />
+    <Compile Include="Designer\Pager\DS_PagerControl.cs" />
+    <Compile Include="Designer\Scripting\ScriptingPage.cs" />
+    <Compile Include="Designer\Study Management Jobs\StudyManagemantJobsPage.cs" />
+    <Compile Include="Designer\StudyProperties\DS_StudyProperties.cs" />
+    <Compile Include="Designer\StudyVerificationMessages\StudyVerificationMessagesPopup.cs" />
+    <Compile Include="Designer\VerifyStudy\VerifyStudyPopup.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebFocus\Data\FiltersList.cs" />
+    <Compile Include="WebFocus\wf_Page_Frame.cs" />
+    <Compile Include="WebFocus\wf_Page_Login.cs" />
+    <Compile Include="WebFocus\wf_Page_Main.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{7d440347-a1d3-4d53-8f0b-d0fca377c480}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.csproj">
+      <Project>{985b6ef8-78ec-40a5-95af-524fee9669b8}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{764ed9b4-966a-4170-a09e-09dbbbacc962}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.csproj">
+      <Project>{7368ee52-2da2-4f7f-bbc1-4c3965f1c598}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{2215fc70-9eca-4572-b01c-acaf77860f8e}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

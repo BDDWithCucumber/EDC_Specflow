@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ConsumeODM1_2Str_AddNewPatients xmlns="http://tempuri.org/DataLabsXC.InterchangeService/CDISCService">
+      <ODM>ODMDATA</ODM>
+      <AddNewPatients>AddNewPatientsDATA</AddNewPatients>
+    </ConsumeODM1_2Str_AddNewPatients>
+  </soap:Body>
+</soap:Envelope>

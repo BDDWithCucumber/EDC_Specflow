@@ -1,0 +1,51 @@
+﻿2019-06-14T10:22:15.0350760+05:30;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2019-06-14T10:22:15.0350760+05:30;VSTestExecutionThread;Info;SpecFlow+Runner 3.0.344 in Framework clr40 in x86 mode execution started
+2019-06-14T10:22:15.0350760+05:30;VSTestExecutionThread;Info;TestAdapter Location: C:\SQA\SQA Auto\EDC Specflow Automation\packages\SpecRun.Runner.3.0.344\tools\net45\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2019-06-14T10:22:15.2072252+05:30;VSTestExecutionThread;Info;SpecRun: running tests in C:\SQA\SQA Auto\EDC Specflow Automation\EDC_Automation\bin\Debug\EDC_Automation.dll
+2019-06-14T10:22:15.2082209+05:30;VSTestExecutionThread;Info;Output folder configured to "C:\SQA\SQA Auto\EDC Specflow Automation\TestResults" (default)
+2019-06-14T10:22:15.2082209+05:30;VSTestExecutionThread;Info;Profile: EDC_Automation
+2019-06-14T10:22:15.2480400+05:30;VSTestExecutionThread;Info;Log file path: C:\SQA\SQA Auto\EDC Specflow Automation\TestResults\EDC_Automation_EDC_Automation_2019-06-14T102215.log
+2019-06-14T10:22:15.2669536+05:30;VSTestExecutionThread;Info;SpecFlow+Runner Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2019-06-14T10:22:15.2779045+05:30;Thread#19;Info;Checking license
+2019-06-14T10:22:15.3000435+05:30;Thread#19;Info;Evaluation mode: test execution starts in 5 seconds... (this delay is removed in the registered version)
+2019-06-14T10:22:20.2942095+05:30;Thread#19;Info;Evaluation delay finished.
+2019-06-14T10:22:20.2979468+05:30;Thread#19;Info;License check completed
+2019-06-14T10:22:20.2979468+05:30;Thread#19;Info;starting test run
+2019-06-14T10:22:20.3612538+05:30;Thread#19;Info;Discovering target: Default
+2019-06-14T10:22:20.3612538+05:30;Thread#19;Info;Discovering tests from assembly: C:\SQA\SQA Auto\EDC Specflow Automation\EDC_Automation\bin\Debug\EDC_Automation.dll
+2019-06-14T10:22:20.5311150+05:30:framework error: System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileLoadException: Could not load file or assembly 'TechTalk.SpecRun.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=d0fc5cc18b3b389b' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+   at TechTalk.SpecRun.Framework.CurrentExecutionModelSettings.GetCurrent()
+   at TechTalk.SpecRun.Framework.SubfolderAssemblyResolver.Enable()
+   at TechTalk.SpecRun.Framework.Remoting.RemoteDomainInitializer..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(String assemblyString, String typeName, Boolean ignoreCase, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes, Evidence securityInfo, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(String assemblyName, String typeName)
+   at System.AppDomain.CreateInstance(String assemblyName, String typeName)
+   at System.AppDomain.CreateInstanceAndUnwrap(String assemblyName, String typeName)
+   at System.AppDomain.CreateInstanceAndUnwrap(String assemblyName, String typeName)
+   at TechTalk.SpecRun.Framework.Remoting.AppDomainReference.CreateObject[T]()
+   at TechTalk.SpecRun.Framework.Remoting.AppDomainManager.CreateAppDomainFor(String assemblyPath, Boolean useConfig, String customConfigFilePath)
+   at TechTalk.SpecRun.Framework.TestSuiteProviders.TestSuiteProvider.BuildTestCollectionFromAssembly(String testAssemblyPath, FilterItem filterPredicate, INodeIdProvider& nodeIdProvider, TestCollection parentCollection)
+   at TechTalk.SpecRun.Framework.TestSuiteProviders.TestSuiteProvider.GetTestSuite(TestProfile testProfile)
+   at TechTalk.SpecRun.Framework.TestSuiteRunner.Run()
+2019-06-14T10:22:20.5589914+05:30;Thread#19;Info;test run finished
+2019-06-14T10:22:20.5599893+05:30;Thread#19;Info;publishing test results
+2019-06-14T10:22:20.6210592+05:30;Thread#19;Info;test results published
+2019-06-14T10:22:20.6210592+05:30;Thread#19;Info;generating reports
+2019-06-14T10:22:20.7905617+05:30;Thread#19;Info;Starting external report generation process
+2019-06-14T10:22:24.3860224+05:30;Thread#19;Error;Could not generate test run result reports. An error occurred in the generator.
+2019-06-14T10:22:24.3860224+05:30;Thread#19;Error;Error output of external program:
+2019-06-14T10:22:24.4159415+05:30:Total: 0
+2019-06-14T10:22:24.4219288+05:30:Succeeded: 0
+2019-06-14T10:22:24.4229218+05:30:Ignored: 0
+2019-06-14T10:22:24.4239202+05:30:Pending: 0
+2019-06-14T10:22:24.4239202+05:30:Skipped: 0
+2019-06-14T10:22:24.4249192+05:30:Failed: 0
+2019-06-14T10:22:24.4398794+05:30;VSTestExecutionThread;Info;Adding attachments to VSTest
+========== End of log file ==========

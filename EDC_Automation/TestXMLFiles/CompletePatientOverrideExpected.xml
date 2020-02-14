@@ -1,0 +1,69 @@
+﻿<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Patient Status" FileType="Transactional" Granularity="SingleSubject" FileOID="045a5713-39d3-4247-baa6-c158d479d1e5" CreationDateTime="2018-12-15T13:54:49.959523Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500">
+    <GlobalVariables>
+      <StudyName>Test4500</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="0B6CA340-A3B2-4923-8A77-1A291B9CDE7D" TransactionType="Update">
+      <AuditRecord>
+        <UserRef UserOID="testadmin" />
+        <LocationRef LocationOID="01-Site" />
+        <DateTimeStamp>2018-12-15T13:54:49.5</DateTimeStamp>
+        <ReasonForChange>Override (Enrolled)</ReasonForChange>
+        <SourceID>10</SourceID>
+      </AuditRecord>
+      <SiteRef LocationOID="01-Site" />
+      <Annotation SeqNum="1">
+        <Comment>Additional Notes:Status override from Completed to Enrolled</Comment>
+      </Annotation>
+      <StudyEventData StudyEventOID="Complete">
+        <Annotation SeqNum="1">
+          <Comment>Complete</Comment>
+        </Annotation>
+        <FormData FormOID="Follow_Up">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T13:54:49.51</DateTimeStamp>
+            <ReasonForChange>Unpublished</ReasonForChange>
+            <SourceID>146</SourceID>
+          </AuditRecord>
+        </FormData>
+        <dl:AuditRecords>
+          <dl:AuditRecord>
+            <dl:UserRef UserOID="testadmin" />
+            <dl:LocationRef LocationOID="01-Site" />
+            <dl:DateTimeStamp>2018-12-15T13:54:49.51</dl:DateTimeStamp>
+            <dl:ReasonForChange>Unpublished</dl:ReasonForChange>
+            <dl:SourceID>48</dl:SourceID>
+          </dl:AuditRecord>
+          <dl:AuditRecord>
+            <dl:UserRef UserOID="testadmin" />
+            <dl:LocationRef LocationOID="01-Site" />
+            <dl:DateTimeStamp>2018-12-15T13:54:49.51</dl:DateTimeStamp>
+            <dl:ReasonForChange>Patient Status Override</dl:ReasonForChange>
+            <dl:SourceID>47</dl:SourceID>
+            <dl:AdditionalNotes>Status override from Completed to Enrolled</dl:AdditionalNotes>
+          </dl:AuditRecord>
+        </dl:AuditRecords>
+      </StudyEventData>
+      <StudyEventData StudyEventOID="Common">
+        <Annotation SeqNum="1">
+          <Comment>Common</Comment>
+        </Annotation>
+        <FormData FormOID="Comp">
+          <AuditRecord>
+            <UserRef UserOID="testadmin" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-15T13:54:49.51</DateTimeStamp>
+            <ReasonForChange>Unpublished</ReasonForChange>
+            <SourceID>147</SourceID>
+          </AuditRecord>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

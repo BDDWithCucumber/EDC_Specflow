@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Study Update" FileType="Transactional" Granularity="SingleSubject" FileOID="0fbfb891-6ee3-4075-acff-42b0e19af66b" CreationDateTime="2018-12-24T14:52:01.8477086Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500_QUER">
+    <GlobalVariables>
+      <StudyName>Test4500_QUER</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500_QUER" MetaDataVersionOID="200903305.1">
+    <SubjectData SubjectKey="9CBAAD01-B75E-4FDF-BBF6-10E82239B2D6">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Screening">
+        <Annotation SeqNum="1">
+          <Comment>Screening</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <ItemGroupData ItemGroupOID="Form1_S1" ItemGroupRepeatKey="1">
+            <ItemData ItemOID="Integer" Value="1080">
+              <dl:DCF OID="15" Description="Q4: Value is not within the expected range (10 to 1000), Please give in range value." Request="Please verify." Response="Auto-Closed due to Param Changed - Study Update" Type="Auto" QueryOID="1429" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">28</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-24T14:51:44.093</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Closed</dl:ReasonForChange>
+                    <dl:SourceID>36</dl:SourceID>
+                  </dl:AuditRecord>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-24T14:51:44.083</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Answered</dl:ReasonForChange>
+                    <dl:SourceID>35</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+            </ItemData>
+            <ItemData ItemOID="Date" Value="08/26/2005">
+              <dl:DCF OID="13" Description="Q6: Value is not within expected study normal range (1/1/1953 to 1/1/2003)." Request="Please verify." Response="Auto-Closed due to Param Changed - Study Update" Type="Auto" QueryOID="1427" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">28</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-24T14:51:44.117</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Closed</dl:ReasonForChange>
+                    <dl:SourceID>38</dl:SourceID>
+                  </dl:AuditRecord>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-24T14:51:44.113</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Answered</dl:ReasonForChange>
+                    <dl:SourceID>37</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

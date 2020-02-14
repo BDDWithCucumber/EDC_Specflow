@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Form Status" FileType="Transactional" Granularity="SingleSubject" FileOID="185a9361-5387-4fc7-ae0c-65aa270f4549" CreationDateTime="2018-12-25T12:11:03.2464302Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test3210_FoStPsA">
+    <GlobalVariables>
+      <StudyName>Test3210_FoStPsA</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.3</StudyDescription>
+      <ProtocolName>20070215</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test3210_FoStPsA" MetaDataVersionOID="200702151.0">
+    <SubjectData SubjectKey="73A198C8-348F-47DE-95FF-9D33AAA5FE9A">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="AutoBuild_Event51">
+        <Annotation SeqNum="1">
+          <Comment>AutoBuild_Event51</Comment>
+        </Annotation>
+        <FormData FormOID="AutoBuild_Form02">
+          <AuditRecord>
+            <UserRef UserOID="System" />
+            <LocationRef LocationOID="01-Site" />
+            <DateTimeStamp>2018-12-25T12:11:02.76</DateTimeStamp>
+            <ReasonForChange>Unpublished</ReasonForChange>
+            <SourceID>65</SourceID>
+          </AuditRecord>
+          <Annotation SeqNum="1">
+            <Comment>Additional Notes:Unpublished (pScript: UnpublishFormOn_Eventdate)</Comment>
+          </Annotation>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

@@ -1,0 +1,49 @@
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Query Update" FileType="Transactional" Granularity="SingleSubject" FileOID="e75a1c9e-2821-4c5d-8a44-6f09bccc596e" CreationDateTime="2018-12-18T14:19:36.5349219Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500_QUER">
+    <GlobalVariables>
+      <StudyName>Test4500_QUER</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500_QUER" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="A3FA0DC8-BC3E-4BE0-9B2C-6FE5BEB84253">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Screening">
+        <Annotation SeqNum="1">
+          <Comment>Screening</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <ItemGroupData ItemGroupOID="Form1_S1" ItemGroupRepeatKey="1">
+            <ItemData ItemOID="Text" Value="">
+              <dl:DCF OID="8" Description="Re-query as DRAFT" Request="Re-query, Please Verify Value." Type="Manual" ParentDCFOID="7" RequeryCount="1" IsRequery="false">
+                <dl:Status CodeListOID="DCF">23</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="testadmin" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-18T14:19:36.41</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Draft</dl:ReasonForChange>
+                    <dl:SourceID>17</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+              <dl:DCF OID="7" Description="Enter the correct value." Request="Please Verify and update the value." Response="DCF answered" Type="Manual" ParentDCFOID="7" RequeryCount="0" IsRequery="true">
+                <dl:Status CodeListOID="DCF">28</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-18T14:19:36.38</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Closed</dl:ReasonForChange>
+                    <dl:SourceID>16</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

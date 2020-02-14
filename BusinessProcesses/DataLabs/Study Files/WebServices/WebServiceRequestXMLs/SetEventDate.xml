@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pat="http://tempuri.org/DataLabsXC.InterchangeService/PatientEventService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <pat:SetEventDate>
+         <pat:PatientKey>PatientKeyData</pat:PatientKey>
+         <pat:PatientEventKey>PatientEventKeyData</pat:PatientEventKey>
+         <pat:EventDate>EventDateData</pat:EventDate>
+      </pat:SetEventDate>
+   </soapenv:Body>
+</soapenv:Envelope>

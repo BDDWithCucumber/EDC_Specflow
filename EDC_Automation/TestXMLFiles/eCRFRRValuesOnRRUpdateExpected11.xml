@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Item Data Update" FileType="Transactional" Granularity="SingleSubject" FileOID="f8fda69a-7a09-47b3-b616-e04edd550845" CreationDateTime="2019-06-28T18:00:21.5485507Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.8.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="TestLabs_Data">
+    <GlobalVariables>
+      <StudyName>TestLabs_Data</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="TestLabs_Data" MetaDataVersionOID="200903301.0">
+    <SubjectData SubjectKey="E2465465-85C8-4D8A-94C1-B0448682519N">
+      <SiteRef LocationOID="02-Site" />
+      <StudyEventData StudyEventOID="Visit02">
+        <Annotation SeqNum="1">
+          <Comment>Visit02</Comment>
+        </Annotation>
+        <FormData FormOID="LabForm2">
+          <ItemGroupData ItemGroupOID="LabForm2_T1" ItemGroupRepeatKey="1" TransactionType="Update">
+            <ItemData ItemOID="CRFLabDescription" TransactionType="Update" Value="WBC">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:19.967</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29593</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="LabTestName" TransactionType="Update" Value="WBC">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:19.973</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29594</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="LabTestCode" TransactionType="Update" Value="01">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:19.98</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29595</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="LOINCCode" TransactionType="Update" Value="1">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:19.987</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29596</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Category" TransactionType="Update" Value="Cat1">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:19.997</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29597</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="SubCategory" TransactionType="Update" Value="SubCat1">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.003</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29598</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Specimen" TransactionType="Update" Value="Specimen1">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.067</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29599</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Method" TransactionType="Update" Value="Method1">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.077</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29600</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="ResultType" TransactionType="Update" Value="Result1">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.083</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29601</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="NormlReferenceRangeHigh" TransactionType="Update" Value="&lt; 15.00">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.09</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29602</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="CriticalReferenceRangeLow" TransactionType="Update" Value="&gt; 4.00">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.097</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29603</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="NormalReferenceRangeLow" TransactionType="Update" Value="&gt; 5.00">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.103</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29604</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="CriticalreferenceRangeHigh" TransactionType="Update" Value="&lt; 17.00">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.11</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29605</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="ReferenceRangeID" TransactionType="Update" Value="1001">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.12</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29606</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="OutofNormalRangeIndicator" TransactionType="Update" Value="Below normal range low">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.127</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29607</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="NormalizedPatientLabValue" TransactionType="Update" Value="12">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.133</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29608</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="NormalizedLabUnit" TransactionType="Update" Value="gm/dL">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.14</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29609</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="NormalizedNormalReferenceRangeLow" TransactionType="Update" Value="&gt; 15.00">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.15</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29610</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="NormalizedNormalReferenceRangeHigh" TransactionType="Update" Value="&lt; 45.00">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.157</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29611</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="NormalizedCriticalreferenceRangeLow" TransactionType="Update" Value="&gt; 12.00">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.163</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29612</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="ReferenceRangeNotApplicable" TransactionType="Update" Value="No">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.17</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29613</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="NormalizedCriticalReferenceRangeHig" TransactionType="Update" Value="&lt; 51.00">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.177</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29614</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="Precision" TransactionType="Update" Value="2">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.183</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29615</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+            <ItemData ItemOID="ConversionFactor" TransactionType="Update" Value="3">
+              <AuditRecord>
+                <UserRef UserOID="System" />
+                <LocationRef LocationOID="02-Site" />
+                <DateTimeStamp>2019-06-28T18:00:20.19</DateTimeStamp>
+                <ReasonForChange>Derived</ReasonForChange>
+                <SourceID>29616</SourceID>
+              </AuditRecord>
+              <Annotation SeqNum="1">
+                <Comment>Additional Notes:</Comment>
+              </Annotation>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>

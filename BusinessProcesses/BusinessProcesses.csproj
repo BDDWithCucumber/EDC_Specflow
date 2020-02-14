@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BCE2A74-023A-4DB0-B898-A24EC9262196}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessProcesses</RootNamespace>
+    <AssemblyName>BusinessProcesses</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataLabs\AdvancedSearch\BP_AdvancedSearchResultsUtilities.cs" />
+    <Compile Include="DataLabs\Common\BP_ActionPaletteUtilities.cs" />
+    <Compile Include="DataLabs\Common\BP_KeyboardUtilities.cs" />
+    <Compile Include="DataLabs\DB\BP_DataVerificationUtilities.cs" />
+    <Compile Include="DataLabs\DerivationManagement\BP_DerivationManagementUtilities.cs" />
+    <Compile Include="DataLabs\Export\BP_ArchiveExportUtilities.cs" />
+    <Compile Include="DataLabs\FileExplorer\BP_FileUtilities.cs" />
+    <Compile Include="DataLabs\FlagManagement\BP_FlagManagementUtilities.cs" />
+    <Compile Include="DataLabs\IntegrationManagement\BP_IntegrationManagementUtilities.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\BP_ManageReferenceRangeUtilities.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\BP_MRR_AddUtilities.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\BP_ManageReferenceRange_MRRUtilities.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\BP_MrrCreationUtilities.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\BP_MrrTableUtilities.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\BP_Mrr_AuditHistory.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\BP_Mrr_DeleteUtilities.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\BP_Mrr_EditUtilities.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\BP_Mrr_PagerUtilities.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\BP_Mrr_StudyDeltaChanges.cs" />
+    <Compile Include="DataLabs\ManageReferenceRanges\BP_ReferenceRangesUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_AdvancedSearchUtilities.cs" />
+    <Compile Include="DataLabs\Common\BP_BreadCrumbUtilities.cs" />
+    <Compile Include="DataLabs\Common\BP_ChangePasswordUtilities.cs" />
+    <Compile Include="DataLabs\Common\BP_DCFs_PaletteUtilities.cs" />
+    <Compile Include="DataLabs\Common\BP_DLPageUtilities.cs" />
+    <Compile Include="DataLabs\Common\BP_UserPreferencesUtilities.cs" />
+    <Compile Include="DataLabs\DerivationManagement\BP_DerivationRunWizardCriteriaUtilities.cs" />
+    <Compile Include="DataLabs\DerivationManagement\BP_DerivationRunWizardSitesUtilities.cs" />
+    <Compile Include="DataLabs\DerivationManagement\BP_DerivationRunWizardUtilities.cs" />
+    <Compile Include="DataLabs\Export\BP_ExportUtilities.cs" />
+    <Compile Include="DataLabs\Export\BP_QuickExportUtilities.cs" />
+    <Compile Include="DataLabs\Main\CRF\BP_CRF_PDEP_EventsPageUtilities.cs" />
+    <Compile Include="DataLabs\Main\CRF\BP_CRF_MainPageUtilities.cs" />
+    <Compile Include="DataLabs\Main\CRF\BP_SubmitCRFsUtilities.cs" />
+    <Compile Include="DataLabs\Main\DCF\BP_DCFPrintWizardStep1Utilites.cs" />
+    <Compile Include="DataLabs\Main\DCF\BP_DCFPrintWizardStep2Utilites.cs" />
+    <Compile Include="DataLabs\Main\DCF\BP_DCFPrintWizardStep3Utilites.cs" />
+    <Compile Include="DataLabs\Main\DCF\BP_DCF_DraftDCFsPage.cs" />
+    <Compile Include="DataLabs\Main\DCF\BP_DCF_PatientsPageUtilities.cs" />
+    <Compile Include="DataLabs\Main\DCF\BP_MainDCFsTabUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_CRF_AnswerDCFUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_CRF_FormCommentsModalUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_CRF_ManualDCFUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_Modal_AddCommentUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_Modal_ClearItemUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_Modal_CRF_MarkItemUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_Modal_DeleteTableRowUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_Modal_ItemChangeHistoryUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_Modal_LabInformationUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_Modal_ResetCRFUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_Modal_RestoreTableRowUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_Modal_TableHistoryUtilities.cs" />
+    <Compile Include="DataLabs\Pager\BP_CRF_Workflow_PagerUtilities.cs" />
+    <Compile Include="DataLabs\Patients\AddUnscheduledEvent\BP_AddUnscheduledEventUtilities.cs" />
+    <Compile Include="DataLabs\Patients\BP_CRF_QuestionCommentsUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_CRF_QueriesModalUtilities.cs" />
+    <Compile Include="DataLabs\Main\BP_Common_TopBar_Utilities.cs" />
+    <Compile Include="DataLabs\LoginLogout\BP_LoginUtilities.cs" />
+    <Compile Include="DataLabs\LoginLogout\BP_LogoutUtilities.cs" />
+    <Compile Include="DataLabs\Main\BP_DataManagerPortalDropdownUtilities.cs" />
+    <Compile Include="DataLabs\Main\BP_MainNavigationUtilities.cs" />
+    <Compile Include="DataLabs\Patients\BP_CRFUtilities.cs" />
+    <Compile Include="DataLabs\Inbox\BP_InboxUtilities.cs" />
+    <Compile Include="DataLabs\Inbox\BP_Inbox_ActionPaletteUtilities.cs" />
+    <Compile Include="DataLabs\Pager\BP_CRF_Comments_PagerUtilities.cs" />
+    <Compile Include="DataLabs\Pager\BP_CRF_DCF_PagerUtilites.cs" />
+    <Compile Include="DataLabs\Patients\BP_CRF_IconUtilities.cs" />
+    <Compile Include="DataLabs\Patients\BP_FlagCRFsUtilities.cs" />
+    <Compile Include="DataLabs\Patients\BP_FreezeThawCRFUtilities.cs" />
+    <Compile Include="DataLabs\Patients\BP_PatientCasebookUtilities.cs" />
+    <Compile Include="DataLabs\Patients\BP_PatientState_FreezePatient.cs" />
+    <Compile Include="DataLabs\Patients\BP_PatientState_UnlockPatient.cs" />
+    <Compile Include="DataLabs\Patients\BP_PatientState_ThawPatient.cs" />
+    <Compile Include="DataLabs\Patients\BP_PatientState_LockPatient.cs" />
+    <Compile Include="DataLabs\Patients\BP_PatientStatusOverrideUtilities.cs" />
+    <Compile Include="DataLabs\Patients\BP_PatientUtilities.cs" />
+    <Compile Include="DataLabs\Patients\BP_Patient_AddEvetnsUtilities.cs" />
+    <Compile Include="DataLabs\Patients\BP_Patient_EventFormUtilities.cs" />
+    <Compile Include="DataLabs\Patients\BP_RequestSignatureUtilities.cs" />
+    <Compile Include="DataLabs\Patients\BP_SignCasebookUtilities.cs" />
+    <Compile Include="DataLabs\Patients\BP_TransferPatientUtilities.cs" />
+    <Compile Include="DataLabs\Patients\Form\BP_CRF_CommentsTabUtilities.cs" />
+    <Compile Include="DataLabs\Patients\Form\BP_CRF_DCFUtilities.cs" />
+    <Compile Include="DataLabs\Patients\Form\BP_CRF_WorkflowUtilities.cs" />
+    <Compile Include="DataLabs\Patients\Form\BP_EditDCFPageUtilities.cs" />
+    <Compile Include="DataLabs\Patients\Form\BP_FormUtilities.cs" />
+    <Compile Include="DataLabs\QueryManagement\BP_QueryRunWizardUtilities.cs" />
+    <Compile Include="DataLabs\QueryManagement\BP_QueryRunWizardCriteriaUtilities.cs" />
+    <Compile Include="DataLabs\QueryManagement\BP_QueryRunWizardSitesUtilities.cs" />
+    <Compile Include="DataLabs\Safety\BP_SafetyHome.cs" />
+    <Compile Include="DataLabs\SignatureManagement\BP_PISignatureUtilities.cs" />
+    <Compile Include="DataLabs\SignatureManagement\BP_SignatureManagementUtilities.cs" />
+    <Compile Include="DataLabs\Sites\BP_MigratePatientsUtilities.cs" />
+    <Compile Include="DataLabs\Sites\BP_SiteDetailsUtilities.cs" />
+    <Compile Include="DataLabs\Sites\BP_Site_ManageVersionsUtilities.cs" />
+    <Compile Include="DataLabs\StudyAdministration\BP_StudyAdministationUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_ModalWindow.cs" />
+    <Compile Include="DataLabs\Labs\BP_LabCreationUtilities.cs" />
+    <Compile Include="DataLabs\Labs\BP_LabManagementUtilities.cs" />
+    <Compile Include="DataLabs\Labs\BP_Lab_AssociateSitesUtilities.cs" />
+    <Compile Include="DataLabs\Modal\BP_Modal_ResetSession.cs" />
+    <Compile Include="DataLabs\Pager\BP_PagerUtilities.cs" />
+    <Compile Include="DataLabs\Pager\BP_PagerUtilities1.cs" />
+    <Compile Include="DataLabs\PermissionGrop\BP_PermissionGroupUtilities.cs" />
+    <Compile Include="DataLabs\Permissions\BP_PermissionUtilities.cs" />
+    <Compile Include="DataLabs\Study\BP_PublishStudyFlagsUtilities.cs" />
+    <Compile Include="DataLabs\Study\BP_PublishStudyPage_MajorStudyUpdateUtilities.cs" />
+    <Compile Include="DataLabs\Study\BP_PublishStudyPage_MinorStudyUpdateUtilities.cs" />
+    <Compile Include="DataLabs\Study\BP_StudyManagementUtilities.cs" />
+    <Compile Include="DataLabs\Study\BP_StudyUtilities.cs" />
+    <Compile Include="DataLabs\Study\BP_StudyVersionManagementUtilities.cs" />
+    <Compile Include="DataLabs\Study\EditPreferences\BP_Study_EditPreferencesUtilities.cs" />
+    <Compile Include="DataLabs\Study\EditPreferences\BP_Study_EditPreferences_DCFsUtilities.cs" />
+    <Compile Include="DataLabs\Study\BP_UploadStudyFileUtilities.cs" />
+    <Compile Include="DataLabs\Study\EditPreferences\BP_Study_EditPreferences_FormsUtilities.cs" />
+    <Compile Include="DataLabs\Study\EditPreferences\BP_Study_EditPreferences_PaperEntryUtilities.cs" />
+    <Compile Include="DataLabs\Study\EditPreferences\BP_Study_EditPreferences_PatientDataEventingUtilities.cs" />
+    <Compile Include="DataLabs\Study Files\WebServices\Data\ResponseData.cs" />
+    <Compile Include="DataLabs\Study Files\WebServices\Data\WebServiceRequestData.cs" />
+    <Compile Include="Designer\BP_DS_FormPageUtilities.cs" />
+    <Compile Include="Designer\BP_DS_LoginUtilities.cs" />
+    <Compile Include="Designer\BP_DS_HomePageUtilities.cs" />
+    <Compile Include="Designer\BP_DS_ImportStudyUtilities.cs" />
+    <Compile Include="Designer\BP_DS_ScriptingUtilities.cs" />
+    <Compile Include="Designer\BP_DS_StudyCreationUtilities.cs" />
+    <Compile Include="Designer\BP_DS_CreateStudyFromExistingUtilities.cs" />
+    <Compile Include="Designer\CodeLists\CodelistsGroupUtilities.cs" />
+    <Compile Include="Designer\CodeLists\CodeListsUtilities.cs" />
+    <Compile Include="Designer\Common\DS_BP_BreadCrumbUtilities.cs" />
+    <Compile Include="Designer\Common\DS_BP_NotificationUtilities.cs" />
+    <Compile Include="Designer\Common\HeaderStudyVerifyErrorUtilities.cs" />
+    <Compile Include="Designer\CompareStudy\CompareStudyPopupUtilities.cs" />
+    <Compile Include="Designer\CompareStudy\CompareStudyUtilities.cs" />
+    <Compile Include="Designer\Domains\DomainsUtilities.cs" />
+    <Compile Include="Designer\DS_BP_StudyProperties.cs" />
+    <Compile Include="Designer\Events\BP_DS_EventCreationUtilities.cs" />
+    <Compile Include="Designer\LabMapping\DS_LabMappingUtilities.cs" />
+    <Compile Include="Designer\ManageLabs\ManageLabsUtilities.cs" />
+    <Compile Include="Designer\MapLabDict\MapLabDictUtilities.cs" />
+    <Compile Include="Designer\ModalDialogs\BP_DS_LabMappingsSpecificationDialog.cs" />
+    <Compile Include="Designer\ModalDialogs\BP_DS_Labs_StudySaveConfirmationDialog.cs" />
+    <Compile Include="Designer\ModalDialogs\BP_DS_StudyVerificationMessagesUtilities.cs" />
+    <Compile Include="Designer\ModalDialogs\DS_ImportStudyDialogUtilities.cs" />
+    <Compile Include="Designer\ConfirmationPopup\DS_BP_ConfirmationPopupUtilities.cs" />
+    <Compile Include="Designer\ModalDialogs\DS_UploadLabDictUtilities.cs" />
+    <Compile Include="Designer\StudyManagementJobs\StudyManagementJobsUtilities.cs" />
+    <Compile Include="Designer\VerifyStudy\BP_DS_CreateFormFromExisitng.cs" />
+    <Compile Include="Designer\VerifyStudy\DS_BP_VerifyStudyUtilities.cs" />
+    <Compile Include="Forms\CreateFormFromExisting.cs" />
+    <Compile Include="Forms\FormQuestionsUtilities.cs" />
+    <Compile Include="Forms\FormUtilities.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataLabs\Sites\BP_SiteManagementUtilities.cs" />
+    <Compile Include="DataLabs\Sites\BP_Site_AssociateLabsUtilities.cs" />
+    <Compile Include="DataLabs\Sites\BP_Site_ManageUsersUtilities.cs" />
+    <Compile Include="DataLabs\Sites\BP_SiteCreationUtilities.cs" />
+    <Compile Include="WebFocus\BP_wf_LoginUtilities.cs" />
+    <Compile Include="WebFocus\Common\BP_wf_ActionUtil.cs" />
+    <Compile Include="WebFocus\Helpers\BP_wf_FrameHelper.cs" />
+    <Compile Include="WebFocus\Helpers\BP_wf_VerificationHelpers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataLabs\Study Files\AllmappedforD1_1_20191213_T12120518.zip" />
+    <None Include="DataLabs\Study Files\AllmappedforD1_1_20200108_T16201803.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\CodelistChange\Test4500_GREAT_Base.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\CodelistChange\Test4500_GREAT_Update.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\DB Backups\AB_BaseStudyForCodeItemValue.bak" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\DB Backups\AB_BaseStudyForReorder.bak" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\DB Backups\Autobuild_BaseForAdd.bak" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\DB Backups\Autobuild_BaseForDelete.bak" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\DCF\Test4500_BASE_DCF.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\DCF\Test4500_Update1_Add.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\DCF\Test4500_Update2_Delete.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\DCF\Test4500_Update3_ValueChange.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\DCF\Test4500_Update4_Delete.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\DCF\Test4500_Update5_DescriptionChange.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\DCF\Test4500_Update6_ValueChange.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\DCF\Test4500_Update7_NewQuery.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\DCF\Test4500_Update8_Reorder.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\Test4500_GREAT_FormStatus_1_Reorder.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\Test4500_GREAT_FormStatus_2_AddReorder.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\Test4500_GREAT_FormStatus_3_DelReorder.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\Test4500_GREAT_FormStatus_4_Description.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\Test4500_GREAT_FormStatus_5_CodeItemValue.zip" />
+    <None Include="DataLabs\Study Files\AutobuildEnhancementStudies\Test4500_GREAT_FormStatus_Base.zip" />
+    <None Include="DataLabs\Study Files\CreateNewStudy_20190905_T11371586_Attribute Mapping.zip" />
+    <None Include="DataLabs\Study Files\D1AllD2RequiredM.zip" />
+    <None Include="DataLabs\Study Files\DictLabData_MinorStudyUpdate.zip" />
+    <None Include="DataLabs\Study Files\DictLabData_MinorStudyUpdate_New1.zip" />
+    <None Include="DataLabs\Study Files\DictLabData_MinorStudyUpdate_New2.zip" />
+    <None Include="DataLabs\Study Files\DictLabData_MinorStudyUpdate_New3.zip" />
+    <None Include="DataLabs\Study Files\DictLabData_MinorStudyUpdate_New4.zip" />
+    <None Include="DataLabs\Study Files\DictLabData_MinorStudyUpdate_New5.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_AddedtheRemovedQuestionsinLabForm1.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_AllDictionaryChanges.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_BaseFileForDictionaryChanges.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_BaseFile_No.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_Base_AgeUnit.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_ChangedtheAttributeMappingsForAgeUnit.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_changedtheDictionaryName.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_changedtheDomainItemsForDictionary.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_Inserted_LabForm4.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_Invalid_LabMappings.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_LabFormInsertedofDifferentDomain.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_LabMappings_Removed.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_LabsSettoNo.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_MajorAllNullValues.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_NewCodelistAddedInAttributeMappings.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_RemovedAllTheLabMappings.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_RemovedQuestions.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_RemovedQuestionsinLabfrom1and2.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_SiteChangesnew1.zip" />
+    <None Include="DataLabs\Study Files\Import_Study1_UnlockPatients.zip" />
+    <None Include="DataLabs\Study Files\Import_Study2_20190905_T12265351_FormQuestions.zip" />
+    <None Include="DataLabs\Study Files\Import_Study2_20190905_T12483607_FormQuestions.zip" />
+    <None Include="DataLabs\Study Files\Import_Study2_20190916_T10102385_FormQuestion.zip" />
+    <None Include="DataLabs\Study Files\Import_Study_20190905_T10300900_LabMappingErrors.zip" />
+    <None Include="DataLabs\Study Files\Import_Study_20190905_T12152169_Lab Dictionary Mapping.zip" />
+    <None Include="DataLabs\Study Files\Import_US61472_Base.zip" />
+    <None Include="DataLabs\Study Files\Import_US61472_Base1.zip" />
+    <None Include="DataLabs\Study Files\Import_US61472_SAmeunitdoesnotexistincfsheet.zip" />
+    <None Include="DataLabs\Study Files\Linkages_Hidden_20190905_T12335432.zip" />
+    <None Include="DataLabs\Study Files\QuestionAllMapped_D1.zip" />
+    <None Include="DataLabs\Study Files\Questions_1D_Few_Mapped.zip" />
+    <None Include="DataLabs\Study Files\Questions_20181130_T05232076.zip" />
+    <None Include="DataLabs\Study Files\Questions_CopyFormsForD1andD2.zip" />
+    <None Include="DataLabs\Study Files\Questions_D1D2_Update.zip" />
+    <None Include="DataLabs\Study Files\Questions_D1InstanceDeleted.zip" />
+    <None Include="DataLabs\Study Files\Questions_NoMapping_1D.zip" />
+    <None Include="DataLabs\Study Files\Study Publish_No_Yes.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181009_T12550981.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181010_T09563934.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181012_T11351602.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181012_T14390083.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181015_T11234399.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181015_T13361950.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181015_T13550985.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181016_T16550627.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181024_T10215882.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181024_T10554018.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181024_T11153114.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181024_T15505995.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181024_T16371238.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181024_T16441287.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181024_T20572960.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181025_T13353267.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181025_T13560369.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181025_T14105440.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181025_T14293528.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181025_T17231509.zip" />
+    <None Include="DataLabs\Study Files\Study2_DICT_20181109_T05004165.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181030_T16251150.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181030_T16593309.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181031_T10220548_modified.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181101_T07175133.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181101_T07302162.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181101_T07442257.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181101_T07592345.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181101_T08035352.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181101_T08172433.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181101_T08395557.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181101_T10310340.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181101_T10471565.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181101_T11283784.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181101_T11450871.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181101_T11495886.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181109_T12035523.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181109_T12104553.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181109_T13104870.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181109_T13202937.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181109_T13245955.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181109_T13282965.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181110_T10362370.zip" />
+    <None Include="DataLabs\Study Files\Study2_Hemo_20181111_T00011484.zip" />
+    <None Include="DataLabs\Study Files\Study4_20181211_T11565144.zip" />
+    <None Include="DataLabs\Study Files\Study5_20181212_T10124600.zip" />
+    <None Include="DataLabs\Study Files\StudyPublish.zip" />
+    <None Include="DataLabs\Study Files\StudyPublish_RecalRR_ChangeAttributeMapping.zip" />
+    <None Include="DataLabs\Study Files\StudyPublish_RecalRR_FUnit_TUnit.zip" />
+    <None Include="DataLabs\Study Files\StudyPublish_RecalRR_Precision_ConversionFactor.zip" />
+    <None Include="DataLabs\Study Files\StudyPublish_Yes_No.zip" />
+    <None Include="DataLabs\Study Files\test01new_20190916_T10483512_NoErrors.zip" />
+    <None Include="DataLabs\Study Files\Test3210_Labs_Dict_givenbyedcdev.zip" />
+    <None Include="DataLabs\Study Files\Test3210__CS_082_20180904_T16360489.zip" />
+    <None Include="DataLabs\Study Files\Test4500_Base1.zip" />
+    <None Include="DataLabs\Study Files\Test4500_Base1_DayMonthYear.zip" />
+    <None Include="DataLabs\Study Files\Test4500_ChrisIL_20181204_T12350122.zip" />
+    <None Include="DataLabs\Study Files\Test4500_Chris_20181204_T12352143.zip" />
+    <None Include="DataLabs\Study Files\Test4500_CLGEC.zip" />
+    <None Include="DataLabs\Study Files\Test4500_Codelist groups Minor and major study Upadate Base study V1.zip" />
+    <None Include="DataLabs\Study Files\Test4500_Codelist Groups Minor study Update V2.zip" />
+    <None Include="DataLabs\Study Files\Test4500_CodelistLinkages_Base.zip" />
+    <None Include="DataLabs\Study Files\Test4500_GREAT_FormStatus_Base.zip" />
+    <None Include="DataLabs\Study Files\Test4500_Labs_20190604_T15432019.zip" />
+    <None Include="DataLabs\Study Files\Test4500_Labs_20190714_T17383463.zip" />
+    <None Include="DataLabs\Study Files\Test4500_Labs_20190801_T09021325_V1.zip" />
+    <None Include="DataLabs\Study Files\Test4500_Labs_20190801_T09064798_V2.zip" />
+    <None Include="DataLabs\Study Files\Test4500_Labs_20190802_T04193062_V3.zip" />
+    <None Include="DataLabs\Study Files\Test4500_Labs_20190802_T04435988_V4.zip" />
+    <None Include="DataLabs\Study Files\Test4500_Labs_Unlocked_Patients2.zip" />
+    <None Include="DataLabs\Study Files\Test4500_Linkages_Editchecks and Custom Queries.zip" />
+    <None Include="DataLabs\Study Files\Test4500_ODM_Eventing_DeriveEnrollID.zip" />
+    <None Include="DataLabs\Study Files\Test4500_ODM_Eventing_NoInitials.zip" />
+    <None Include="DataLabs\Study Files\TestCGstudy_FlatandTable-Auto1.zip" />
+    <None Include="DataLabs\Study Files\Test4500_ODM_Eventing_Base.zip" />
+    <None Include="DataLabs\Study Files\TestStudy_Original.zip" />
+    <None Include="DataLabs\Study Files\test_Normalization.zip" />
+    <None Include="Designer\LabDictFiles\DataLabsEDC_LabDictionary_GS1.xlsx" />
+    <None Include="Designer\LabDictFiles\DataLabsEDC_LabDictionary_LabDictionary_PS1_V10.xlsx" />
+    <None Include="Designer\LabDictFiles\DataLabsEDC_LabDictionary_LabDictionary_PS1_V12.xlsx" />
+    <None Include="Designer\LabDictFiles\DataLabsEDC_LabDictionary_LabDictionary_PS1_V14.xlsx" />
+    <None Include="Designer\LabDictFiles\DataLabsEDC_LabDictionary_LabDictionary_PS1_V2.xlsx" />
+    <None Include="Designer\LabDictFiles\DataLabsEDC_LabDictionary_LabDictionary_PS1_V7.xlsx" />
+    <None Include="Designer\LabDictFiles\Dictionary_Error_1.xlsx" />
+    <None Include="Designer\StudyFiles\BaseStudy_01_20191120_T10174708.zip" />
+    <None Include="Designer\StudyFiles\Create_Scr_Stdy_NoErrors-NoErrors.zip" />
+    <None Include="Designer\StudyFiles\Import1_20191012_T20551331_59withLabsNo.zip" />
+    <None Include="Designer\StudyFiles\Import_1_US68936.zip" />
+    <None Include="DataLabs\Study Files\Local_Labs_Enab.zip" />
+    <None Include="DataLabs\Study Files\Not_Enabl_CL.zip" />
+    <None Include="DataLabs\Study Files\Not_Enbled.zip" />
+    <None Include="Designer\StudyFiles\Import_Source59_US63093.zip" />
+    <None Include="Designer\StudyFiles\Import_Source59_US63112_Source3.zip" />
+    <None Include="Designer\StudyFiles\Import_Study59_D_US63112_Target2.zip" />
+    <None Include="Designer\StudyFiles\Import_Study59_US63112_SameStudy.zip" />
+    <None Include="Designer\StudyFiles\Import_Study59_US63112_Source.zip" />
+    <None Include="Designer\StudyFiles\Import_Study59_US63112_Source1.zip" />
+    <None Include="Designer\StudyFiles\Import_Study59_US63112_Source2.zip" />
+    <None Include="Designer\StudyFiles\Import_Study59_US63112_Target3.zip" />
+    <None Include="Designer\StudyFiles\Scripting_1.zip" />
+    <None Include="Designer\StudyFiles\study1_20190620_T18595558.zip" />
+    <None Include="Designer\StudyFiles\StudyFile_VerificationRules.zip" />
+    <None Include="Designer\StudyFiles\Study_57_US63093_1.zip" />
+    <None Include="Designer\StudyFiles\test01_20191120_T12233893.zip" />
+    <None Include="Designer\StudyFiles\Test4500_Labs_20191013_T09370580_withLabsYes.zip" />
+    <None Include="Designer\StudyFiles\Test4500_Labs_Original.zip" />
+    <None Include="Designer\StudyFiles\Test4500_Labs_Unlocked_Patients2.zip" />
+    <None Include="Designer\StudyFiles\TestStudy_Original_56.zip" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{7d440347-a1d3-4d53-8f0b-d0fca377c480}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtilities\DBUtilities.csproj">
+      <Project>{a492d35c-a0b6-40bb-bb4c-5b9b0ad9f4c3}</Project>
+      <Name>DBUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.csproj">
+      <Project>{985b6ef8-78ec-40a5-95af-524fee9669b8}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{764ed9b4-966a-4170-a09e-09dbbbacc962}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pages\Pages.csproj">
+      <Project>{d9ebbff7-6ab2-4da6-b39d-5c7a2b509b33}</Project>
+      <Name>Pages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.csproj">
+      <Project>{7368ee52-2da2-4f7f-bbc1-4c3965f1c598}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{2215fc70-9eca-4572-b01c-acaf77860f8e}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataLabs\Study Files\WebServices\WebServiceRequestXMLs\AddNewPatient.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

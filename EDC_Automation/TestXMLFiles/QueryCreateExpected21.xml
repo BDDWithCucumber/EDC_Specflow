@@ -1,0 +1,125 @@
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dl="http://www.datalabs.com/schema/cdisc/def" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Description="Study Update" FileType="Transactional" Granularity="SingleSubject" FileOID="2e0723b7-9e1a-4685-bbef-9931706bc91e" CreationDateTime="2018-12-18T14:57:06.2796879Z" ODMVersion="1.3.2" Originator="PAREXEL" SourceSystem="DataLabs" SourceSystemVersion="5.7.0" xmlns="http://www.cdisc.org/ns/odm/v1.3">
+  <Study OID="Test4500_QUER">
+    <GlobalVariables>
+      <StudyName>Test4500_QUER</StudyName>
+      <StudyDescription>This study will be used for testing of version 4.5</StudyDescription>
+      <ProtocolName>20090330</ProtocolName>
+    </GlobalVariables>
+  </Study>
+  <ClinicalData StudyOID="Test4500_QUER" MetaDataVersionOID="200903302.0">
+    <SubjectData SubjectKey="A3FA0DC8-BC3E-4BE0-9B2C-6FE5BEB84253">
+      <SiteRef LocationOID="01-Site" />
+      <StudyEventData StudyEventOID="Screening">
+        <Annotation SeqNum="1">
+          <Comment>Screening</Comment>
+        </Annotation>
+        <FormData FormOID="Form1">
+          <ItemGroupData ItemGroupOID="Form1_S1" ItemGroupRepeatKey="1" TransactionType="Update">
+            <ItemData ItemOID="Float" TransactionType="Update" Value="1234">
+              <dl:DCF OID="12" Description="Q5: Value does not meet the minimum precision of 2." Request="Please verify. and update with correct value." Type="Auto" QueryOID="2124" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">23</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-18T14:57:05.13</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Draft</dl:ReasonForChange>
+                    <dl:SourceID>28</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+            </ItemData>
+            <ItemData ItemOID="Date" TransactionType="Update" Value="08/26/2005">
+              <dl:DCF OID="13" Description="Q6: Value is not within expected study normal range (1/1/1953 to 1/1/2003)." Request="Please verify." Type="Auto" QueryOID="2125" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">24</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-18T14:57:05.15</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Sent</dl:ReasonForChange>
+                    <dl:SourceID>29</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+            </ItemData>
+            <ItemData ItemOID="Integer" TransactionType="Update" Value="1080">
+              <dl:DCF OID="14" Description="Q4: Value is not within the expected range (10 to 1000), Please give in range value." Request="Please verify." Type="Auto" QueryOID="2123" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">24</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-18T14:57:05.17</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Sent</dl:ReasonForChange>
+                    <dl:SourceID>30</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+              <dl:DCF OID="9" Description="Q4: Value is not within the expected range (10 to 1000)" Request="Please verify." Response="Closed due to patient migration." Type="Auto" QueryOID="1993" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">28</dl:Status>
+                <dl:AuditRecords>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-18T14:57:03.967</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Answered</dl:ReasonForChange>
+                    <dl:SourceID>26</dl:SourceID>
+                  </dl:AuditRecord>
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-18T14:57:04.02</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Closed</dl:ReasonForChange>
+                    <dl:SourceID>27</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:AuditRecords>
+              </dl:DCF>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+      <StudyEventData StudyEventOID="AutoBuild_Event53">
+        <Annotation SeqNum="1">
+          <Comment>AutoBuild_Event53</Comment>
+        </Annotation>
+        <FormData FormOID="AutoBuild_Form06">
+          <ItemGroupData ItemGroupOID="AutoBuild_Form06_T1" ItemGroupRepeatKey="1" TransactionType="Update">
+            <ItemData ItemOID="AB_Date11" TransactionType="Update" Value="08/26/1990">
+              <dl:DCF OID="10" Description="Minimum Date value in Form06&gt;Table01 where the Text field is not empty is equal to Date value in Form07 &gt; Table01" Request="Please verify" Type="Auto" QueryOID="1867" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">23</dl:Status>
+                <dl:QueryCategory Category="SYS_LAB">
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-18T14:57:05.89</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Initial Entry</dl:ReasonForChange>
+                    <dl:SourceID>1</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:QueryCategory>
+              </dl:DCF>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+        <FormData FormOID="AutoBuild_Form07">
+          <ItemGroupData ItemGroupOID="AutoBuild_Form07_T1" ItemGroupRepeatKey="1" TransactionType="Update">
+            <ItemData ItemOID="AB_Date12" TransactionType="Update" Value="08/26/1990">
+              <dl:DCF OID="10" Description="Minimum Date value in Form06&gt;Table01 where the Text field is not empty is equal to Date value in Form07 &gt; Table01" Request="Please verify" Type="Auto" QueryOID="1867" ParentDCFOID="-1" RequeryCount="0" IsRequery="false">
+                <dl:Status CodeListOID="DCF">23</dl:Status>
+                <dl:QueryCategory Category="SYS_LAB">
+                  <dl:AuditRecord>
+                    <dl:UserRef UserOID="System" />
+                    <dl:LocationRef LocationOID="01-Site" />
+                    <dl:DateTimeStamp>2018-12-18T14:57:05.89</dl:DateTimeStamp>
+                    <dl:ReasonForChange>Initial Entry</dl:ReasonForChange>
+                    <dl:SourceID>1</dl:SourceID>
+                  </dl:AuditRecord>
+                </dl:QueryCategory>
+              </dl:DCF>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+    </SubjectData>
+  </ClinicalData>
+</ODM>
